@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    border-style: solid;
+    padding: 20px 20px 20px 20px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.button-lr {
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.google-button {
+    margin-top: 20px;
+}
+
+.google-btn {
+    width: 180px;
+}
+
+.google-icon-wrapper {
+    margin: 1px 0px 0px 1px;
+    position: absolute;
+}
+
+.google-icon {
+    margin-top: 11px;
+    margin-left: 10px;
+    height: 18px;
+    width: 18px;
+}
+
+.btn-text {
+    float: right;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: black;
+    margin-right: 15px;
+}
