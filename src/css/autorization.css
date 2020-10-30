@@ -27,7 +27,9 @@
     display: flex;
 }
 
-.lr-button {}
+.lr-button {
+    /* TODO */
+}
 
 .google-button {
     margin-top: 20px;
