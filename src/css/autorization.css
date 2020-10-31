@@ -14,8 +14,8 @@
 
 .button-lr {
     margin: 5px 0px 15px 0px;
-    border-radius: 20px;
-    background-color: #1dbc1d;
+    border-radius: 13px;
+    background-color: #54dd54;
     font-size: 12px;
     font-weight: bold;
     padding: 10px 40px;
@@ -34,7 +34,7 @@
 .google-button {
     margin-top: 20px;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 13px;
     border-style: 1px solid;
 }
 
@@ -72,15 +72,12 @@
 }
 
 .google-button:hover {
-    background-color: rgb(181, 220, 248);
+    background-color: rgb(219, 237, 250);
+    border-color: rgb(48, 163, 245);
 }
 
 .button-lr:hover {
-    background-color: #17ac17;
-}
-
-button {
-    border-radius: 5px;
+    background-color: #31c431;
 }
 
 button:focus {
