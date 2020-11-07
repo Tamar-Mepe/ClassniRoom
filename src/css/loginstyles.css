@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 350px;
-    margin: 300px auto;
+    height: 380px;
+    margin: 280px auto;
     border-style: solid;
     border-width: 1px;
     border-color: gray;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px 20px 0px 20px;
-    background-color: #F5F5F5;
+    background-color: rgb(253, 251, 251);
 }
