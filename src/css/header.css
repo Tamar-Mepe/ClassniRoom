@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+header {
+    font-family: 'Open Sans', serif;
+}
+
 #logo {
     font-size: 20px;
     color: #5f6368;
     letter-spacing: 0.1px;
-    font-family: 'Open Sans', serif;
 }
 
 body {
@@ -18,7 +21,7 @@ header {
 
 nav {
     display: flex;
-    height: 60px;
+    height: 70px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -32,11 +35,25 @@ nav ul {
 }
 
 nav ul li a {
-    font-family: 'Open Sans', serif;
     color: black;
     text-decoration: none;
     font-size: 15px;
     padding: 10px;
     letter-spacing: 0.1px;
-    transition: all 0.5s ease;
+}
+
+.middle-text a {
+    color: #5f6368;
+    font-weight: bold;
+    padding: 23px;
+    letter-spacing: .02em;
+}
+
+.curr-page {
+    border-bottom: 4px solid black;
+    border-radius: 1px;
+}
+
+.middle-text a:hover {
+    background-color: #F0F0F0;
 }
