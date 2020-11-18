@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+main {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 0.5px solid gray;
+    padding: 0px 0px 20px 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+#title-container {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 2rem;
+    border-bottom: 0.5px solid gray;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+#stud-label-styling {
+    font-size: 15px;
+}
+
+.mail-icon {
+    text-align: right
+}
