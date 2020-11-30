@@ -2,7 +2,7 @@
 main {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    width: 40%;
+    width: 800px;
     margin-top: 30px;
 }
 
@@ -17,7 +17,7 @@ table {
     width: 100%;
 }
 
-#title-container {
+.title-container {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ table {
     margin: 20px 0px 0px 0px;
 }
 
-#stud-label-styling {
+.stud-label-styling {
     font-size: 15px;
 }
 
@@ -77,4 +77,35 @@ table {
 
 tr:last-of-type {
     border-bottom: none;
+}
+
+@media only screen and (max-width: 850px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        padding: 0px 0px 10px 10px;
+    }
+    .stud-label-styling {
+        font-size: 12px;
+    }
+    .title-container {
+        font-size: 1.5rem;
+        padding: 10px 0px 10px 10px;
+        margin: 0px;
+    }
+    svg {
+        margin-left: 10px;
+    }
+    td:nth-child(1) {
+        width: 50px;
+    }
+    td:nth-child(3)>svg {
+        margin-right: 10px;
+    }
 }

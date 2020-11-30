@@ -110,6 +110,15 @@ ul:last-child {
     height: 30px;
 }
 
+@media only screen and (max-width: 720px) {
+    .middle-text a {
+        display: none;
+    }
+    .middle-text {
+        margin: 0;
+    }
+}
+
 @media only screen and (max-width: 440px) {
     .burger-icon {
         display: none;
