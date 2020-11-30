@@ -42,7 +42,7 @@ body {
 
 .form {
     margin: 10px 30px;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 15px;
     padding: 5px 12px;
     width: 100%;
@@ -61,11 +61,11 @@ body {
     border-style: none
 }
 
-.nav-buttons {
+.login-button {
     /* TODO */
 }
 
-.lr-button {
+.register-button {
     /* TODO */
 }
 
@@ -113,9 +113,10 @@ body {
 }
 
 button:focus {
-    outline: 0;
+    outline: none;
 }
 
 input:focus {
-    outline: 0;
+    outline: none;
+    border: 2px solid rgb(48, 163, 245);
 }
