@@ -57,6 +57,10 @@ td:nth-child(3)>svg {
     margin-right: 20px;
 }
 
+main {
+    margin-top: 90px;
+}
+
 td {
     vertical-align: middle;
     padding-top: 1em;
