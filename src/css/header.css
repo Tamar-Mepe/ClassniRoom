@@ -4,10 +4,9 @@ header {
 }
 
 .logo {
-    font-size: 23px;
+    font-size: 22px;
     color: #5f6368;
     letter-spacing: 0.1px;
-    align-self: center;
     margin-left: 10px;
 }
 
@@ -105,4 +104,23 @@ ul:last-child {
 
 .middle-text {
     margin-right: 100px;
+}
+
+.right-stuff {
+    height: 30px;
+}
+
+@media only screen and (max-width: 440px) {
+    .burger-icon {
+        display: none;
+    }
+    ul:nth-child(1) {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .logo {
+        display: none;
+    }
 }
