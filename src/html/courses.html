@@ -7,6 +7,7 @@
     <title>Your Courses</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/courses.css">
+    <script src="../js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -18,7 +19,13 @@
                 <li class="logo">ClassniRoom</li>
             </ul>
             <ul class="right-stuff">
-                <li><button class="plus-button">+</button></li>
+                <div class="dropdown">
+                    <button class="plus-button">+</button>
+                    <div class="menu-content">
+                        <button class="dropdown-button">Join Class</button>
+                        <button class="dropdown-button">Create Class</button>
+                    </div>
+                </div>
                 <li><img src="../images/girl.svg" class="girl-icon"></li>
             </ul>
         </nav>

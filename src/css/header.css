@@ -110,6 +110,34 @@ ul:last-child {
     height: 30px;
 }
 
+/* DROPDOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 111;
+    box-shadow: 0 0 5px lightgray;
+}
+
+.dropdown-button {
+    text-align: left;
+    padding: 10px 0px 10px 15px;
+    width: 130px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
 @media only screen and (max-width: 720px) {
     .middle-text a {
         display: none;
