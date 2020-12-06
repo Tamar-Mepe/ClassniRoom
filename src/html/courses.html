@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul class="left-stuff">
@@ -22,14 +23,30 @@
                 <div class="dropdown">
                     <button class="plus-button">+</button>
                     <div class="menu-content">
-                        <button class="dropdown-button">Join Class</button>
-                        <button class="dropdown-button">Create Class</button>
+                        <button class="dropdown-button" id="join-class">Join Class</button>
+                        <button class="dropdown-button" id="create-class">Create Class</button>
                     </div>
                 </div>
                 <li><img src="../images/girl.svg" class="girl-icon"></li>
             </ul>
         </nav>
     </header>
+
+    <div class="popup-container" id="create-class-popup">
+        <div class="popup-style">
+            <div class="popup">
+                <div class="create-label">Create Class</div>
+                <input type="text" placeholder="Class name (required)">
+                <input type="text" placeholder="Section">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Room">
+                <div class="popup-buttons">
+                    <button>Cancel</button>
+                    <button>Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="row">
