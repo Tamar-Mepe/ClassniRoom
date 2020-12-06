@@ -10,4 +10,16 @@ window.onload = function () {
             dropDownButton.style.backgroundColor = "white";
         }
     })
+    document.getElementById("join-class").addEventListener('click', () => {
+        document.getElementById("join-class-popup").style.visibility = "visible";
+    })
+    document.getElementById("close-join").addEventListener('click', () => {
+        document.getElementById("join-class-popup").style.visibility = "hidden";
+    })
+    document.getElementById("create-class").addEventListener('click', () => {
+        document.getElementById("create-class-popup").style.visibility = "visible";
+    })
+    document.getElementById("close").addEventListener('click', () => {
+        document.getElementById("create-class-popup").style.visibility = "hidden";
+    })
 };
