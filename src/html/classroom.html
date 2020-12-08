@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/classroom.css">
+    <link rel="stylesheet" href="../css/invitepopup.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/script.js"></script>
     <title>Programming</title>
 </head>
 
@@ -22,10 +25,23 @@
                 <li><a href="students.html">People</a></li>
             </ul>
             <ul class="right-stuff">
+                <button class="invite-button" id="invite-button">Invite</button>
                 <li><img src="../images/girl.svg" class="girl-icon"></li>
             </ul>
         </nav>
     </header>
+    <div class="invite-popup-container" id="invite-popup-container">
+        <div class="invite-popup-style">
+            <div class="invite-popup">
+                <div class="invite-label">Invite a friend</div>
+                <input type="text" placeholder="Email">
+                <div class="invite-popup-buttons">
+                    <button id="invite-close-button">Cancel</button>
+                    <button>Invite</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
