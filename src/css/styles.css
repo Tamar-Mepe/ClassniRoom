@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 /* ============================== */
@@ -345,21 +345,76 @@ header ul:last-child {
     align-items: center;
 }
 
-.classroom-title-wrapper {
-    position: absolute;
-}
-
 .classroom-title {
     position: absolute;
+    top: 0;
+    left: 0;
     padding: 1.5rem;
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-family: 'Open Sans', Roboto, Arial, sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
 }
 
+.title-image {
+    position: relative;
+    border-radius: 10px;
+    width: 1010px;
+    height: 250px;
+}
+
+.upper-part-label {
+    padding: 13px 0px;
+    font-size: 17px;
+    font-weight: 0;
+    color: gray;
+    font-family: "Roboto"
+}
+
+.upper-part-image {
+    position: relative;
+    width: 1010px;
+    height: 250px;
+}
+
+.additional-info-wrapper {
+    visibility: hidden;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .additional-info {
-    /* TODO */
+    padding: 15px 1.5rem;
+}
+
+.upper-part-bold-label {
+    color: black;
+    font-weight: 900;
+}
+
+.show-additional-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.show-additional-info svg {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.show-additional-info:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* ============================== */

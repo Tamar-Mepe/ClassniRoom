@@ -48,4 +48,26 @@ window.onload = function () {
             document.getElementById("invite-popup-container").style.visibility = "hidden";
         })
     }
+    let dropDownAdditionalInfo = document.getElementById("show-additional-info");
+    if (dropDownAdditionalInfo != null) {
+        dropDownAdditionalInfo.addEventListener('click', () => {
+            let itemToShow = document.getElementById("additional-info-wrapper")
+            if (itemToShow.style.visibility == "visible") {
+                document.getElementById("additional-info-wrapper").style.visibility = "hidden";
+                let image = document.getElementById("title-image");
+                image.style.borderBottomLeftRadius = "10px";
+                image.style.borderBottomRightRadius = "10px";
+                // TODO - Change SVG
+            } else {
+                let dropDown = document.getElementById("additional-info-wrapper")
+                dropDown.style.visibility = "visible";
+                let image = document.getElementById("title-image");
+                image.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
+                dropDown.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
+                image.style.borderBottomLeftRadius = "0";
+                image.style.borderBottomRightRadius = "0";
+                // TODO - Change SVG
+            }
+        })
+    }
 };
