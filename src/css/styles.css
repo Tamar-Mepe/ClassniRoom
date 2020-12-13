@@ -339,10 +339,7 @@ header ul:last-child {
 
 .classroom-container {
     margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 1000px;
 }
 
 .classroom-title {
@@ -359,8 +356,8 @@ header ul:last-child {
 .title-image {
     position: relative;
     border-radius: 10px;
-    width: 1010px;
-    height: 250px;
+    width: 1000px;
+    height: 240px;
 }
 
 .upper-part-label {
@@ -373,12 +370,12 @@ header ul:last-child {
 
 .upper-part-image {
     position: relative;
-    width: 1010px;
-    height: 250px;
+    width: 1000px;
+    height: 240px;
 }
 
 .additional-info-wrapper {
-    visibility: hidden;
+    display: none;
     box-sizing: border-box;
     border: 1px solid lightgray;
     border-bottom-left-radius: 10px;
@@ -417,6 +414,78 @@ header ul:last-child {
     background: rgba(255, 255, 255, 0.05);
 }
 
+.stream-main {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.left-part-container {
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    padding: 25px;
+    border-radius: 5px;
+    font-family: 'Open Sans', serif;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.left-part-button {
+    text-align: right;
+}
+
+.left-part-button a {
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.left-part-button a:hover {
+    color: rgb(93, 92, 92);
+    text-decoration: underline;
+}
+
+.right-part-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Open Sans', serif;
+}
+
+.upcoming-label {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.upcoming-text {
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.post-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    padding: 25px;
+    box-shadow: 0 0px 11px rgba(33, 33, 33, .2);
+    border-radius: 10px;
+}
+
+.post-container svg {
+    width: 35px;
+    height: 35px;
+}
+
+.announcement {
+    margin-left: 20px;
+    color: gray;
+    font-size: 13px;
+}
+
 /* ============================== */
 
 /* STUDENTS PAGE STYLING */
@@ -441,7 +510,6 @@ table {
 .title-container {
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     font-size: 2rem;
     border-bottom: 0.5px solid gray;
@@ -453,7 +521,7 @@ table {
     font-size: 15px;
 }
 
-svg {
+table svg {
     width: 35px;
     height: 35px;
     margin-left: 20px;
@@ -694,7 +762,7 @@ tr:last-of-type {
         padding: 10px 0px 10px 10px;
         margin: 0px;
     }
-    svg {
+    table svg {
         margin-left: 10px;
     }
     td:nth-child(1) {
