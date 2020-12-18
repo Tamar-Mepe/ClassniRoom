@@ -249,7 +249,15 @@ header ul:last-child {
     border-width: 1px;
     border-color: lightgray;
     border-radius: 5px;
-    background-color: rgb(253, 251, 251);
+}
+
+.sign-in-label {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.use-google-label {
+    margin-bottom: 10px;
 }
 
 .auth-wrapper .forms {
@@ -264,6 +272,7 @@ header ul:last-child {
     padding: 5px 12px;
     width: 100%;
     align-self: center;
+    border: 2px solid;
 }
 
 .auth-wrapper input:focus {
@@ -273,64 +282,54 @@ header ul:last-child {
 .button-lr {
     margin: 15px 0px 0px 0px;
     border-radius: 15px;
-    background-color: #54dd54;
+    background-color: #4c8bf5;
     font-size: 12px;
-    font-weight: bold;
     padding: 10px 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-style: none
 }
 
-.login-button {
-    /* TODO */
-}
-
-.register-button {
-    /* TODO */
+.or-label {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 15px;
 }
 
 .google-button {
     margin-top: 15px;
     background-color: #ffffff;
     border-radius: 20px;
-    padding: 0px 10px;
+    padding: 10px 15px;
+    border: 0.6mm solid gray;
 }
 
-.google-icon-wrapper {
-    margin: 1px 0px 0px 1px;
-    position: absolute;
+.button-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .google-icon {
-    margin-top: 11px;
-    margin-left: 5px;
     height: 18px;
     width: 18px;
+    margin-right: 10px;
 }
 
 .btn-text {
-    float: right;
-    color: black;
-    margin-left: 30px;
-    letter-spacing: 1px;
-}
-
-.or-label {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
+    letter-spacing: 0.5px;
+    font-family: "Roboto";
+    font-size: 13px;
+    line-height: 13px;
 }
 
 .google-button:hover {
-    background-color: rgb(219, 237, 250);
-    border-color: rgb(48, 163, 245);
+    /* background-color: rgb(231, 243, 251); */
+    border-color: #377bf0;
 }
 
 .button-lr:hover {
-    background-color: #31c431;
+    background-color: #377bf0;
 }
 
 /* ============================== */
