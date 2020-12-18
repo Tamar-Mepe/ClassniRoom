@@ -849,7 +849,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 285px) {
+@media only screen and (max-width: 279px) {
     header .logo {
         display: none;
     }
@@ -972,4 +972,36 @@ tr:last-of-type {
 
 /* MEDIA QUERIES FOR AUTHORIZATION */
 
-/* TODO */
+@media only screen and (max-width: 400px) {
+    .auth-wrapper .content-style {
+        padding: 30px 30px;
+    }
+    .auth-wrapper input {
+        font-size: 14px;
+        margin: 10px 10px;
+        width: 90%;
+    }
+    .sign-in-label {
+        font-size: 22px;
+    }
+    .use-google-label {
+        font-size: 13px;
+    }
+    .auth-wrapper input {
+        border: 1px solid;
+    }
+    .auth-wrapper input:focus {
+        border: 1px solid rgb(48, 163, 245);
+    }
+    .button-lr {
+        font-size: 10px;
+        padding: 10px 18px;
+    }
+    .google-button {
+        margin-top: 15px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 8px 12px;
+        border: 0.6mm solid gray;
+    }
+}
