@@ -473,6 +473,8 @@ header ul:last-child {
     padding: 20px 30px;
     box-shadow: 0 0px 11px rgba(33, 33, 33, .2);
     border-radius: 10px;
+    color: #5f6368;
+    font-size: 13px;
 }
 
 .right-part-container svg {
@@ -481,9 +483,8 @@ header ul:last-child {
     margin-right: 20px;
 }
 
-.announcement {
-    color: #5f6368;
-    font-size: 13px;
+.announce-container:hover {
+    color: black;
 }
 
 .class-post-container {
@@ -512,10 +513,11 @@ header ul:last-child {
 }
 
 .post-owner {
-    color: rgb(36, 36, 36);
+    color: #3c4043;
     font-family: 'Open Sans', serif;
-    font-weight: bold;
-    font-size: 13px;
+    font-weight: 1000;
+    font-size: 14px;
+    letter-spacing: 0.02em;
 }
 
 .post-class-main-text {
@@ -579,6 +581,36 @@ header ul:last-child {
     border-radius: 20px;
     padding: 10px 20px;
     width: 100%;
+}
+
+.assignment-announcement-logo {
+    background-color: #5f6368;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.assignment-announcement-logo svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+}
+
+.assignment-announcement .class-post-upper {
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.assignment-announcement-comments {
+    padding: 15px 0px 15px 30px;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* ============================== */
