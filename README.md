@@ -5,7 +5,8 @@
 * [ავტორიზაცია](#Authorization)
 * [კურსების ჩამონათვალი](#Courses)
 * [მთავარი გვერდი](#Main-Page)
-* [დავალებების ჩამონათვალი](#Homeworks)
+* [კურსის მასალების გვერდი](#Classwork)
+* [სტუდენტის დავალებების ჩამონათვალი](#Your-Work)
 * [სტუდენტების ჩამონათვალი](#Students)
 * [ნიშნების გვერდი (ლექტორებისთვის)](#Marks)
 
@@ -41,10 +42,17 @@
 
 ---
 
-<a name="Homeworks"></a>
-### დავალებების ჩამონათვალი
+<a name="Classwork"></a>
+### კურსის მასალების გვერდი
 
-*[assignments.html](src/html/assignments.html)*
+*[classwork.html](src/html/classwork.html)*
+
+---
+
+<a name="Your-Work"></a>
+### სტუდენტის დავალებების ჩამონათვალი
+
+*[yourwork.html](src/html/yourwork.html)*
 
 ---
 
