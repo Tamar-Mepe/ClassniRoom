@@ -38,6 +38,7 @@ header .logo {
     color: #5f6368;
     letter-spacing: 0.1px;
     margin-left: 10px;
+    line-height: 20px;
 }
 
 header nav {
@@ -120,6 +121,7 @@ header ul:last-child {
 
 .right-stuff {
     height: 30px;
+    align-content: center;
 }
 
 .invite-button {
@@ -881,7 +883,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 279px) {
+@media only screen and (max-width: 284px) {
     header .logo {
         display: none;
     }
@@ -920,7 +922,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 215px) {
+@media only screen and (max-width: 225px) {
     .stud-label-styling {
         display: none;
     }
