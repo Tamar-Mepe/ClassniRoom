@@ -617,6 +617,72 @@ header ul:last-child {
 
 /* ============================== */
 
+/* CLASSWORK PAGE STYLING */
+
+.assignments-container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.view-your-work-button {
+    padding: 7px 10px;
+    border: none;
+    background-color: white;
+    font-family: 'Open Sans', serif;
+}
+
+.view-your-work-button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.view-your-work-button span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.view-your-work-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.view-your-work-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ============================== */
+
+/* YOUR WORK PAGE STYLING */
+
+.your-work-container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid gray;
+}
+
+.student-info img {
+    width: 80px;
+    height: 80px;
+}
+
+.student-info span {
+    margin-left: 23px;
+    font-size: 35px;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* ============================== */
+
 /* STUDENTS PAGE STYLING */
 
 .students-main {
