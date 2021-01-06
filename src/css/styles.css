@@ -171,7 +171,6 @@ header ul:last-child {
     position: fixed;
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans', serif;
     z-index: 999999;
 }
 
@@ -180,14 +179,74 @@ header ul:last-child {
     left: 0px;
     height: 100%;
     background-color: white;
-    width: 350px;
+    width: 300px;
     box-shadow: 0 8px 12px 6px rgba(60, 64, 67, 0.149);
 }
 
 .sidebar {
+    font-family: 'Open Sans', serif;
     position: relative;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+}
+
+.sidebar-item {
+    background-color: white;
+    padding: 15px 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #3c4043;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.sidebar-item:hover {
+    background-color: #f6f6f6;
+}
+
+.component-label {
+    color: #80868b;
+    padding: 10px 20px;
+    letter-spacing: 0.01em;
+    font-size: 14px;
+}
+
+#sidebar-curr {
+    background-color: #e3eefd;
+}
+
+.sidebar-component {
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 10px 10px 5px 0px;
+}
+
+.sidebar-item span {
+    height: 24px;
+}
+
+.sidebar-component a {
+    text-decoration: none;
+}
+
+.classroom-icon {
+    width: 2rem;
+    height: 2rem !important;
+    background-color: black;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-right: calc(49px - 2rem)
+}
+
+.sidebar-item svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+    margin-right: 25px;
 }
 
 /* ============================== */
