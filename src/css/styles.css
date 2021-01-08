@@ -173,12 +173,9 @@ header ul:last-child {
     height: 100%;
     z-index: 999999;
     display: none;
-    /* TODO */
 }
 
 .sidebar-style {
-    top: 0px;
-    left: 0px;
     height: 100%;
     background-color: white;
     width: 300px;

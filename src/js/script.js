@@ -1,73 +1,111 @@
-window.onload = function () {
-    let dropDownButton = document.querySelector('.plus-button');
-    let menu = document.querySelector('.menu-content');
-    if (dropDownButton != null) {
-        dropDownButton.addEventListener('click', () => {
-            if (menu.style.display === "") {
-                menu.style.display = "block";
-                dropDownButton.style.backgroundColor = "rgb(236, 236, 236)";
-            } else {
-                menu.style.display = "";
-                dropDownButton.style.backgroundColor = "white";
-            }
-        })
-    }
-    let joinClassButton = document.getElementById("join-class");
-    if (joinClassButton != null) {
-        joinClassButton.addEventListener('click', () => {
-            document.getElementById("join-class-popup").style.visibility = "visible";
-        })
-    }
-    let closeJoinButton = document.getElementById("close-join");
-    if (closeJoinButton != null) {
-        document.getElementById("close-join").addEventListener('click', () => {
-            document.getElementById("join-class-popup").style.visibility = "hidden";
-        })
-    }
-    let createClassButton = document.getElementById("create-class");
-    if (createClassButton != null) {
-        createClassButton.addEventListener('click', () => {
-            document.getElementById("create-class-popup").style.visibility = "visible";
-        })
-    }
-    let closeCreateButton = document.getElementById("close");
-    if (closeCreateButton != null) {
-        closeCreateButton.addEventListener('click', () => {
-            document.getElementById("create-class-popup").style.visibility = "hidden";
-        })
-    }
-    let inviteButton = document.getElementById("invite-button");
-    if (inviteButton != null) {
-        inviteButton.addEventListener('click', () => {
-            document.getElementById("invite-popup-container").style.visibility = "visible";
-        })
-    }
-    let inviteClose = document.getElementById("invite-close-button");
-    if (inviteClose != null) {
-        inviteClose.addEventListener('click', () => {
-            document.getElementById("invite-popup-container").style.visibility = "hidden";
-        })
-    }
-    let dropDownAdditionalInfo = document.getElementById("show-additional-info");
-    if (dropDownAdditionalInfo != null) {
-        dropDownAdditionalInfo.addEventListener('click', () => {
-            let itemToShow = document.getElementById("additional-info-wrapper")
-            if (itemToShow.style.display != "block") {
-                document.getElementById("additional-info-wrapper").style.display = "block";
-                let image = document.getElementById("title-image");
-                image.style.borderBottomLeftRadius = "0";
-                image.style.borderBottomRightRadius = "0";
-                // TODO - Change SVG
-            } else {
-                let dropDown = document.getElementById("additional-info-wrapper")
-                dropDown.style.display = "none";
-                let image = document.getElementById("title-image");
-                image.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
-                dropDown.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
-                image.style.borderBottomLeftRadius = "10px";
-                image.style.borderBottomRightRadius = "10px";
-                // TODO - Change SVG
-            }
-        })
-    }
-};
+'use strict'
+
+// Courses Page
+const dropDownButton = document.querySelector('.plus-button');
+const menu = document.querySelector('.menu-content');
+if (dropDownButton) {
+    dropDownButton.addEventListener('click', () => {
+        if (menu.style.display !== "block") {
+            menu.style.display = "block";
+            dropDownButton.style.backgroundColor = "rgb(236, 236, 236)";
+        } else {
+            menu.style.display = "none";
+            dropDownButton.style.backgroundColor = "white";
+        }
+    })
+}
+
+const joinClassButton = document.getElementById("join-class");
+if (joinClassButton) {
+    joinClassButton.addEventListener('click', () => {
+        document.getElementById("join-class-popup").style.visibility = "visible";
+    })
+}
+
+const closeJoinButton = document.getElementById("close-join");
+if (closeJoinButton) {
+    document.getElementById("close-join").addEventListener('click', () => {
+        document.getElementById("join-class-popup").style.visibility = "hidden";
+    })
+}
+
+const createClassButton = document.getElementById("create-class");
+if (createClassButton) {
+    createClassButton.addEventListener('click', () => {
+        document.getElementById("create-class-popup").style.visibility = "visible";
+    })
+}
+
+const closeCreateButton = document.getElementById("close");
+if (closeCreateButton) {
+    closeCreateButton.addEventListener('click', () => {
+        document.getElementById("create-class-popup").style.visibility = "hidden";
+    })
+}
+
+const burgerIcon = document.getElementById("burger-icon");
+if (burgerIcon) {
+    const sidebarContainer = document.getElementById("sidebar-container");
+    const sidebarStyle = document.getElementById("sidebar-style");
+    burgerIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showSidebar(sidebarContainer, sidebarStyle);
+    });
+    document.addEventListener('click', () => {
+        if (sidebarContainer.style.display === "block")
+            hideSidebar(sidebarContainer, sidebarStyle);
+    });
+}
+
+function showSidebar(sidebarContainer, sidebarStyle) {
+    sidebarContainer.style.display = "block";
+    sidebarStyle.style.transform = "translateX(0)";
+    // TODO: Animation
+}
+
+function hideSidebar(sidebarContainer, sidebarStyle) {
+    sidebarContainer.style.display = "none";
+    sidebarStyle.style.transform = "translateX(-100%)";
+    // TODO: Animation
+}
+
+//==============
+
+const inviteButton = document.getElementById("invite-button");
+if (inviteButton) {
+    inviteButton.addEventListener('click', () => {
+        document.getElementById("invite-popup-container").style.visibility = "visible";
+    })
+}
+
+const inviteClose = document.getElementById("invite-close-button");
+if (inviteClose) {
+    inviteClose.addEventListener('click', () => {
+        document.getElementById("invite-popup-container").style.visibility = "hidden";
+    })
+}
+
+// Stream Page
+const dropDownAdditionalInfo = document.getElementById("show-additional-info");
+if (dropDownAdditionalInfo) {
+    dropDownAdditionalInfo.addEventListener('click', () => {
+        const itemToShow = document.getElementById("additional-info-wrapper")
+        if (itemToShow.style.display !== "block") {
+            document.getElementById("additional-info-wrapper").style.display = "block";
+            const image = document.getElementById("title-image");
+            image.style.borderBottomLeftRadius = "0";
+            image.style.borderBottomRightRadius = "0";
+            // TODO - Change SVG
+        } else {
+            const dropDown = document.getElementById("additional-info-wrapper")
+            dropDown.style.display = "none";
+            const image = document.getElementById("title-image");
+            image.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
+            dropDown.style.boxShadow = "0 0 11px rgba(33, 33, 33, .2)";
+            image.style.borderBottomLeftRadius = "10px";
+            image.style.borderBottomRightRadius = "10px";
+            // TODO - Change SVG
+        }
+    })
+}
+//==============
