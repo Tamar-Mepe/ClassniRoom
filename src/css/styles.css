@@ -715,6 +715,7 @@ header ul:last-child {
     border: none;
     background-color: white;
     font-family: 'Open Sans', serif;
+    margin-bottom: 20px;
 }
 
 .view-your-work-button:hover {
@@ -747,6 +748,11 @@ header ul:last-child {
     font-family: Roboto, Arial, sans-serif;
 }
 
+.assignment-bar-style-pressed {
+    box-shadow: 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    border-radius: 10px;
+}
+
 .assignment-bar-style .post-comments-button {
     margin-bottom: 0px;
 }
@@ -755,8 +761,18 @@ header ul:last-child {
     display: flex;
     justify-content: space-between;
     padding: 15px 40px 15px 20px;
-    border-bottom: 1px solid lightgray;
     align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.assignment-bar-pressed {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 15px 20px;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .assignment-bar:hover {
@@ -771,6 +787,7 @@ header ul:last-child {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
 }
 
 .assignment-logo svg {
@@ -791,6 +808,7 @@ header ul:last-child {
 
 .assignment-name-style {
     margin-right: 10px;
+    pointer-events: none;
 }
 
 .assignment-comments {
@@ -812,6 +830,7 @@ header ul:last-child {
     font-size: 14px;
     color: gray;
     font-weight: bold;
+    pointer-events: none;
 }
 
 .assignment-content-container {
@@ -822,18 +841,19 @@ header ul:last-child {
     overflow: auto;
     max-height: 500px;
     padding: 15px 30px;
-    border: 1px solid lightgray;
+    border-top: 1px solid rgba(220, 220, 220);
+    border-bottom: 1px solid rgba(220, 220, 220);
 }
 
 .assignment-post-date {
     color: gray;
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
 .assignment-content-main {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .assignment-bar-container button {
@@ -842,9 +862,6 @@ header ul:last-child {
 
 .view-assignment-style {
     padding: 15px 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px solid lightgray;
 }
 
 .view-assignment-style button {
