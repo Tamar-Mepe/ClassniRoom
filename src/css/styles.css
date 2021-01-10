@@ -741,7 +741,14 @@ header ul:last-child {
 
 .assignment-bar-container {
     margin-top: 15px;
+}
+
+.assignment-bar-style {
     font-family: Roboto, Arial, sans-serif;
+}
+
+.assignment-bar-style .post-comments-button {
+    margin-bottom: 0px;
 }
 
 .assignment-bar {
@@ -756,6 +763,7 @@ header ul:last-child {
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
     border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 .assignment-bar-left {
@@ -804,6 +812,10 @@ header ul:last-child {
     font-size: 14px;
     color: gray;
     font-weight: bold;
+}
+
+.assignment-content-container {
+    display: none;
 }
 
 .assignment-content {
@@ -1127,7 +1139,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 400px) {
     .burger-icon {
         display: none;
     }
