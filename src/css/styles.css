@@ -631,6 +631,7 @@ header ul:last-child {
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .post-comments-button:hover {
@@ -773,6 +774,7 @@ header ul:last-child {
     background-color: rgb(240, 240, 240);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    cursor: pointer;
 }
 
 .assignment-bar:hover {
@@ -867,6 +869,7 @@ header ul:last-child {
 .view-assignment-style button {
     color: black;
     font-size: 14px;
+    cursor: pointer;
 }
 
 /* ============================== */
@@ -926,11 +929,12 @@ header ul:last-child {
     flex-basis: 30%;
 }
 
-.your-work-assignments .assignment-status {
+.assignment-status {
     margin-left: auto;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    pointer-events: none;
 }
 
 /* ============================== */
