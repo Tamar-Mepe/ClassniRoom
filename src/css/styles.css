@@ -897,6 +897,42 @@ header ul:last-child {
     font-weight: bold;
 }
 
+.your-work-assignments {
+    margin-top: 20px;
+}
+
+.your-work-assignments .assignment-bar {
+    padding: 21px 28px;
+    justify-content: flex-start;
+}
+
+.your-work-assignments .assignment-bar-pressed {
+    padding: 21px 28px;
+    justify-content: flex-start;
+}
+
+.your-work-assignments .assignment-content-main {
+    margin: 5px 0px;
+    font-size: 13px;
+}
+
+.your-work-assignments .assignment-bar-left {
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.your-work-assignments .due-date-style {
+    justify-content: flex-start;
+    flex-basis: 30%;
+}
+
+.your-work-assignments .assignment-status {
+    margin-left: auto;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
 /* ============================== */
 
 /* STUDENTS PAGE STYLING */
