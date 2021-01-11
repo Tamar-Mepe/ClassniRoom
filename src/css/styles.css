@@ -1402,10 +1402,10 @@ tr:last-of-type {
         font-size: 14px;
     }
     .assignment-bar {
-        padding: 10px 10px;
+        padding: 10px;
     }
     .assignment-bar-pressed {
-        padding: 10px 10px;
+        padding: 10px;
     }
     .assignment-logo {
         margin-right: 8px;
@@ -1450,5 +1450,82 @@ tr:last-of-type {
     .assignment-post-date {
         margin-bottom: 20px;
         font-size: 11px;
+    }
+}
+
+/* MEDIA QUERIES FOR YOUR WORK */
+
+@media only screen and (max-width: 1600px) {
+    .your-work-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .your-work-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .your-work-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .your-work-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .your-work-container .due-date-style {
+        display: none;
+    }
+    .student-info span {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .your-work-container .assignment-status {
+        font-size: 13px;
+    }
+    .your-work-container .assignment-bar {
+        padding: 18px;
+    }
+    .your-work-container .assignment-bar-pressed {
+        padding: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .student-info img {
+        width: 50px;
+        height: 50px;
+    }
+    .student-info {
+        padding-bottom: 10px;
+    }
+    .your-work-assignments {
+        margin-top: 5px;
+    }
+    .student-info span {
+        font-size: 18px;
+        margin-left: 13px;
+    }
+    .your-work-container .assignment-content {
+        font-size: 12px;
+        padding: 5px 18px;
+    }
+    .your-work-container .view-assignment-style {
+        padding: 3px 18px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .your-work-container .assignment-status {
+        display: none;
     }
 }
