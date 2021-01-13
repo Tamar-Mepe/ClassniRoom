@@ -24,7 +24,7 @@ if (joinClassButton) {
 
 const closeJoinButton = document.getElementById('close-join');
 if (closeJoinButton) {
-    document.getElementById('close-join').addEventListener('click', () => {
+    closeJoinButton.addEventListener('click', () => {
         document.getElementById('join-class-popup').style.visibility = 'hidden';
     })
 }

@@ -503,7 +503,6 @@ header ul:last-child {
 .stream-main {
     margin-top: 20px;
     display: flex;
-    width: 100%;
 }
 
 .left-part-container {
@@ -536,7 +535,6 @@ header ul:last-child {
 .right-part-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
     font-family: 'Open Sans', serif;
     margin-bottom: 40px;
 }
@@ -616,7 +614,7 @@ header ul:last-child {
 }
 
 .post-comments {
-    padding: 10px 30px 25px 30px;
+    padding: 10px 30px 5px 30px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -642,6 +640,7 @@ header ul:last-child {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .single-comment {
@@ -670,6 +669,10 @@ header ul:last-child {
     border-radius: 20px;
     padding: 10px 20px;
     width: 100%;
+}
+
+.comment-input-field input:focus {
+    border: 1px solid black;
 }
 
 .assignment-announcement-logo {
@@ -1178,6 +1181,68 @@ tr:last-of-type {
 
 .popup-container button:hover {
     background-color: rgb(245, 245, 245);
+}
+
+/* ================================================== */
+
+/* SINGLE ASSIGNMENT PAGE STYLING */
+
+.single-assignment-container {
+    width: 55%;
+    margin: 0 auto;
+    font-family: 'Open Sans', serif;
+    display: flex;
+}
+
+.single-assignment-container svg {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.single-button {
+    margin-left: -10px;
+    padding: 10px;
+    color: black;
+    font-family: 'Open Sans', serif;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.single-assignment-name-style {
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.author-and-date {
+    color: #80868b;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.points-due-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.single-assignment-left {
+    padding: 0px 40px;
+}
+
+.single-assignment-upper-part {
+    border-bottom: 1px solid lightgray;
+}
+
+.single-assignment-content {
+    padding: 20px 0px;
+    border-bottom: 1px solid lightgray;
+    font-size: 14px;
 }
 
 /* ================================================== */
