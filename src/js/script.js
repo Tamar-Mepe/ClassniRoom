@@ -49,24 +49,12 @@ if (burgerIcon) {
     const sidebarStyle = document.getElementById('sidebar-style');
     burgerIcon.addEventListener('click', (e) => {
         e.stopPropagation();
-        showSidebar(sidebarContainer, sidebarStyle);
+        sidebarContainer.classList.add('show');
     });
     document.addEventListener('click', () => {
-        if (sidebarContainer.style.display === 'block')
-            hideSidebar(sidebarContainer, sidebarStyle);
+        if (sidebarContainer.classList.contains('show'))
+            sidebarContainer.classList.remove('show');
     });
-}
-
-function showSidebar(sidebarContainer, sidebarStyle) {
-    sidebarContainer.style.display = 'block';
-    sidebarStyle.style.transform = 'translateX(0)';
-    // TODO: Animation
-}
-
-function hideSidebar(sidebarContainer, sidebarStyle) {
-    sidebarContainer.style.display = 'none';
-    sidebarStyle.style.transform = 'translateX(-100%)';
-    // TODO: Animation
 }
 
 //==============

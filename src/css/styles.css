@@ -168,11 +168,16 @@ header ul:last-child {
 
 .sidebar-container {
     top: 0px;
+    left: -300px;
     position: fixed;
-    width: 100%;
+    width: 300px;
     height: 100%;
     z-index: 999999;
-    display: none;
+    transition: all 0.3s;
+}
+
+.sidebar-container.show {
+    transform: translateX(+300px);
 }
 
 .sidebar-style {
@@ -513,7 +518,7 @@ header ul:last-child {
     font-family: 'Open Sans', serif;
     margin-right: 20px;
     flex-shrink: 0;
-    max-height: 150px;
+    height: 100%;
 }
 
 .left-part-button {
@@ -1232,7 +1237,7 @@ tr:last-of-type {
 }
 
 .single-assignment-left {
-    padding: 0px 40px;
+    margin: 0px 50px 0px 0px;
 }
 
 .single-assignment-upper-part {
@@ -1242,6 +1247,61 @@ tr:last-of-type {
 .single-assignment-content {
     padding: 20px 0px;
     border-bottom: 1px solid lightgray;
+    font-size: 14px;
+}
+
+.single-assignment-right {
+    flex-shrink: 0;
+    height: 100%;
+    box-shadow: 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.single-assignment-right button {
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.single-assignment-right-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.single-right-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-right-buttons button:first-child:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.single-right-buttons button:last-child {
+    background-color: black;
+    color: white;
+}
+
+.single-right-buttons button:last-child:hover {
+    color: rgb(210, 210, 210);
+}
+
+.your-work-label-style {
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+.assignment-curr-status {
+    margin-left: 30px;
     font-size: 14px;
 }
 
