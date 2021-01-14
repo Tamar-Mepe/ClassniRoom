@@ -134,3 +134,32 @@ function changeStyling(aBar) {
     aBar.parentElement.classList.toggle('assignment-bar-style-pressed');
 }
 //==============
+
+// Requests for Courses Page (Temporary)
+
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) === 'courses.html') {
+    const request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const data = JSON.parse(this.responseText).data;
+            const courseRow = document.getElementById('course-row');
+            const sidebarComponent = document.getElementById('sidebar-component');
+            const courseCardTemplate = document.getElementById('course-card-template');
+            const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
+            data.forEach(function (currCourse) {
+                const tmpClone = courseCardTemplate.content.cloneNode(true);
+                const tmpClone2 = sidebarCourseTemplate.content.cloneNode(true);
+                tmpClone.querySelector('img').src = currCourse.image;
+                tmpClone.querySelector('.class-label').textContent = currCourse.name;
+                tmpClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
+                const courseName = currCourse.name;
+                tmpClone2.querySelector('.classroom-icon').textContent = courseName[0];
+                tmpClone2.getElementById('course-name-label').textContent = courseName;
+                courseRow.appendChild(tmpClone);
+                sidebarComponent.appendChild(tmpClone2);
+            });
+        }
+    };
+    request.open("GET", "http://localhost:5000/api/courses");
+    request.send();
+}
