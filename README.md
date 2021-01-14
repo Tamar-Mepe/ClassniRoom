@@ -8,7 +8,7 @@
 * [კურსის მასალების გვერდი](#Classwork)
 * [სტუდენტის დავალებების ჩამონათვალი](#Your-Work)
 * [სტუდენტების ჩამონათვალი](#Students)
-* [ნიშნების გვერდი (ლექტორებისთვის)](#Marks)
+* [პოსტის გვერდი](#Assignment)
 
 ---
 
@@ -63,7 +63,7 @@
 
 ---
 
-<a name="Marks"></a>
-### ნიშნების გვერდი (ლექტორებისთვის)
+<a name="Assignment"></a>
+### პოსტის გვერდი
 
-*[marks.html](src/html/marks.html)*
+*[assignment.html](src/html/assignment.html)*
