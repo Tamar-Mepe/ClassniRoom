@@ -599,7 +599,7 @@ header ul:last-child {
 }
 
 .class-post-upper {
-    padding: 25px 0px 0px 30px;
+    padding: 25px 10px 0px 30px;
     display: flex;
     align-items: center;
 }
@@ -1559,6 +1559,131 @@ tr:last-of-type {
         border-radius: 20px;
         padding: 8px 12px;
         border: 0.6mm solid gray;
+    }
+}
+
+/* MEDIA QUERIES FOR STREAM */
+
+@media only screen and (max-width: 1100px) {
+    .classroom-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .left-part-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .post-class-main-text {
+        font-size: 12px;
+    }
+    .post-owner {
+        font-size: 12px;
+    }
+    .date-style {
+        font-size: 11px;
+    }
+    .post-comments-button {
+        font-size: 12px;
+    }
+    .comment-styling {
+        font-size: 12px;
+    }
+    .classroom-title {
+        font-size: 25px;
+    }
+    .announce-container {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .show-additional-info {
+        display: none;
+    }
+    .announce-container {
+        padding: 10px 20px;
+    }
+    .class-post-upper {
+        padding: 20px 10px 0px 20px;
+    }
+    .post-class-main-text {
+        padding: 0px 20px 25px 20px;
+    }
+    .class-post-container {
+        margin-top: 20px;
+    }
+    .post-comments {
+        padding: 10px 20px 5px 20px;
+    }
+    .comment-input-field {
+        padding: 15px 20px;
+    }
+    .comment-input-field input {
+        padding: 11px 45px 11px 15px;
+    }
+    .comment-input-field button {
+        right: 25px;
+    }
+    .post-comments-button {
+        margin-bottom: 10px;
+    }
+    .post-comment {
+        margin-bottom: 15px;
+    }
+    .assignment-announcement-comments {
+        padding: 10px 0px 10px 20px;
+        color: #333;
+        font-size: 12px;
+    }
+    .right-part-container svg {
+        margin-right: 10px;
+    }
+    .assignment-announcement-logo {
+        margin-right: 10px;
+    }
+    .assignment-announcement-logo svg {
+        margin-right: 0px;
+    }
+    .assignment-announcement .class-post-upper {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .assignment-announcement-logo {
+        display: none;
+    }
+    .classroom-title {
+        padding: 13px;
+    }
+    .classroom-title {
+        font-size: 23px;
+    }
+    .announce-container {
+        justify-content: center;
+        padding: 10px;
+    }
+    .announce-container svg {
+        display: none;
+    }
+    .comment-input-field input::placeholder {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .comment-input-field input::placeholder {
+        color: transparent;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    .upper-part-image {
+        display: none;
     }
 }
 

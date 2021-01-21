@@ -83,7 +83,6 @@ if (dropDownAdditionalInfo) {
             const image = document.getElementById('title-image');
             image.style.borderBottomLeftRadius = '0';
             image.style.borderBottomRightRadius = '0';
-            // TODO - Change SVG
         } else {
             const dropDown = document.getElementById('additional-info-wrapper')
             dropDown.style.display = 'none';
@@ -92,7 +91,6 @@ if (dropDownAdditionalInfo) {
             dropDown.style.boxShadow = '0 0 11px rgba(33, 33, 33, .2)';
             image.style.borderBottomLeftRadius = '10px';
             image.style.borderBottomRightRadius = '10px';
-            // TODO - Change SVG
         }
     })
 }
