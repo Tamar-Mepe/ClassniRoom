@@ -87,9 +87,15 @@
     </div>
 
     <main>
-        <div class="courses-main">
+        <div class="courses-main" id="courses-main">
+            <template id="empty-class-list">
+                <div class="empty-class-list">
+                    <img src="../images/noclasses.png">
+                    <div class="not-enrolled-label">You are not enrolled in any classes</div>
+                </div>
+            </template>
             <div class="row" id="course-row">
-                <template id='course-card-template'>
+                <template id="course-card-template">
                     <div class="column">
                         <img src="" class="col-img">
                         <a href="classroom.html" class="class-label"></a>

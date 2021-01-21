@@ -142,6 +142,13 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
     request.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             const data = JSON.parse(this.responseText).data;
+            if (!data.length) {
+                const emptyListWindow = document.getElementById('empty-class-list');
+                const windowClone = emptyListWindow.content.cloneNode(true);
+                const coursesMain = document.getElementById('courses-main');
+                coursesMain.appendChild(windowClone);
+                return;
+            }
             const courseRow = document.getElementById('course-row');
             const sidebarComponent = document.getElementById('sidebar-component');
             const courseCardTemplate = document.getElementById('course-card-template');

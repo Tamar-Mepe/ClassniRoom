@@ -1028,6 +1028,26 @@ tr:last-of-type {
 
 /* COURSES PAGE STYLING */
 
+.empty-class-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.empty-class-list img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.not-enrolled-label {
+    font-size: 15px;
+    color: rgb(60, 60, 60);
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -1382,6 +1402,20 @@ tr:last-of-type {
 }
 
 /* MEDIA QUERIES FOR COURSES PAGE */
+
+@media only screen and (max-width: 840px) {
+    .empty-class-list {
+        margin-top: 100px;
+    }
+    .empty-class-list img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+    .not-enrolled-label {
+        font-size: 13px;
+    }
+}
 
 @media only screen and (max-width: 840px) {
     .row {
