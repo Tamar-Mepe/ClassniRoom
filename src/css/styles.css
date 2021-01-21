@@ -1263,6 +1263,7 @@ tr:last-of-type {
     margin: 0 auto;
     font-family: 'Open Sans', serif;
     display: flex;
+    margin-bottom: 40px;
 }
 
 .single-assignment-container svg {
@@ -1303,7 +1304,7 @@ tr:last-of-type {
 }
 
 .single-assignment-left {
-    margin: 0px 50px 0px 0px;
+    margin-right: 50px;
 }
 
 .single-assignment-upper-part {
@@ -1591,16 +1592,16 @@ tr:last-of-type {
     .post-class-main-text {
         font-size: 12px;
     }
-    .post-owner {
+    .right-part-container .post-owner {
         font-size: 12px;
     }
-    .date-style {
+    .right-part-container .date-style {
         font-size: 11px;
     }
-    .post-comments-button {
+    .right-part-container .post-comments-button {
         font-size: 12px;
     }
-    .comment-styling {
+    .right-part-container .comment-styling {
         font-size: 12px;
     }
     .classroom-title {
@@ -1627,7 +1628,7 @@ tr:last-of-type {
     .class-post-container {
         margin-top: 20px;
     }
-    .post-comments {
+    .right-part-container .post-comments {
         padding: 10px 20px 5px 20px;
     }
     .comment-input-field {
@@ -1857,5 +1858,115 @@ tr:last-of-type {
 @media only screen and (max-width: 250px) {
     .your-work-container .assignment-status {
         display: none;
+    }
+}
+
+/* MEDIA QUERIES FOR SINGLE ASSIGNMENT PAGE */
+
+@media only screen and (max-width: 1550px) {
+    .single-assignment-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .single-assignment-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .single-assignment-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .single-assignment-container {
+        flex-direction: column-reverse;
+        width: 70%;
+    }
+    .single-assignment-right {
+        margin-bottom: 40px;
+        align-self: center;
+        width: 100%;
+    }
+    .single-assignment-left {
+        margin-right: 0px;
+    }
+    .single-assignment-container .post-comments {
+        padding: 5px;
+    }
+    .single-assignment-container .comment-input-field button {
+        right: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .single-assignment-right {
+        margin-bottom: 30px;
+    }
+    .single-assignment-container {
+        width: 80%;
+    }
+    .single-assignment-container .comment-input-field button {
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .your-work-label-style {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .assignment-curr-status {
+        margin-left: 10px;
+    }
+    .single-assignment-name-style {
+        font-size: 26px;
+    }
+    .points-due-date {
+        font-size: 12px;
+    }
+    .author-and-date {
+        font-size: 12px;
+    }
+    .single-assignment-right {
+        padding: 15px;
+    }
+    .single-assignment-right-upper {
+        margin-bottom: 10px;
+    }
+    .single-assignment-right button {
+        margin-bottom: 10px;
+    }
+    .single-assignment-content {
+        padding: 10px 0px;
+        font-size: 13px;
+    }
+    .points-due-date {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .single-button {
+        margin-bottom: 5px;
+    }
+    .single-assignment-container .comment-styling {
+        font-size: 12px;
+    }
+    .single-assignment-container .post-owner {
+        font-size: 13px;
+    }
+    .single-assignment-container .date-style {
+        font-size: 12px;
+    }
+    .single-assignment-container .comment-input-field {
+        padding: 15px 0px;
+    }
+    .single-assignment-container .comment-input-field button {
+        right: 10px;
+    }
+    .single-assignment-right {
+        margin-bottom: 15px;
     }
 }
