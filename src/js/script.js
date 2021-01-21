@@ -46,7 +46,6 @@ if (closeCreateButton) {
 const burgerIcon = document.getElementById('burger-icon');
 if (burgerIcon) {
     const sidebarContainer = document.getElementById('sidebar-container');
-    const sidebarStyle = document.getElementById('sidebar-style');
     burgerIcon.addEventListener('click', (e) => {
         e.stopPropagation();
         sidebarContainer.classList.add('show');
@@ -107,18 +106,22 @@ if (assignmentBar) {
             aBar.addEventListener('click', function (event) {
                 const elemIndex = assignmentBarsArr.indexOf(event.target);
                 const assignmentContent = aBar.parentElement.lastElementChild;
-                if (assignmentContent.style.display !== 'block') {
-                    assignmentContent.style.display = 'block';
+                const [firstChild, secondChild] = assignmentContent.children;
+                if (firstChild.classList.contains('show')) {
+                    firstChild.classList.remove('show');
+                    secondChild.classList.remove('show');
+                    currentlyDisplayed.pop();
+                } else {
+                    firstChild.classList.add('show');
+                    secondChild.classList.add('show');
                     if (currentlyDisplayed.length) {
                         const toHideIndex = currentlyDisplayed.pop();
                         const elemToHide = assignmentBarsArr[toHideIndex];
                         changeStyling(elemToHide);
-                        elemToHide.parentElement.lastElementChild.style.display = 'none';
+                        elemToHide.parentElement.lastElementChild.children[0].classList.remove('show');
+                        elemToHide.parentElement.lastElementChild.children[1].classList.remove('show');
                     }
                     currentlyDisplayed.push(elemIndex);
-                } else {
-                    assignmentContent.style.display = 'none';
-                    currentlyDisplayed.pop();
                 }
                 changeStyling(aBar);
             });

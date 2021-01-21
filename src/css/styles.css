@@ -43,16 +43,13 @@ header .logo {
 
 header nav {
     display: flex;
-    height: 70px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -118,6 +115,7 @@ header ul:last-child {
 
 .middle-text {
     margin-right: 100px;
+    flex: wrap;
 }
 
 .right-stuff {
@@ -805,7 +803,6 @@ header ul:last-child {
     justify-content: space-between;
     padding: 15px 40px 15px 20px;
     align-items: center;
-    border-bottom: 1px solid lightgray;
 }
 
 .assignment-bar-pressed {
@@ -877,16 +874,20 @@ header ul:last-child {
     pointer-events: none;
 }
 
-.assignment-content-container {
-    display: none;
-}
-
 .assignment-content {
     overflow: auto;
-    max-height: 500px;
-    padding: 15px 30px;
+    max-height: 0px;
+    padding: 0px 30px;
+    transition: all 0.3s linear;
+}
+
+.assignment-content-container {
     border-top: 1px solid rgba(220, 220, 220);
-    border-bottom: 1px solid rgba(220, 220, 220);
+}
+
+.assignment-content.show {
+    max-height: 300px;
+    padding: 15px 30px;
 }
 
 .assignment-post-date {
@@ -905,7 +906,13 @@ header ul:last-child {
 }
 
 .view-assignment-style {
+    display: none;
     padding: 15px 30px;
+    border-top: 1px solid rgba(220, 220, 220);
+}
+
+.view-assignment-style.show {
+    display: block;
 }
 
 .view-assignment-style button {
@@ -949,6 +956,10 @@ header ul:last-child {
 .your-work-assignments .assignment-bar {
     padding: 21px 28px;
     justify-content: flex-start;
+}
+
+.your-work-assignments .assignment-content {
+    transition: all 0.1s ease-in-out;
 }
 
 .your-work-assignments .assignment-bar-pressed {
