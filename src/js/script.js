@@ -95,8 +95,23 @@ if (dropDownAdditionalInfo) {
 }
 //==============
 
-// Classwork Page
+function route(path) {
+    const basePath = 'http://localhost:5000/';
+    return basePath + path;
+}
+// Post Wrapper
+function post(url, body, callback) {
+    const postRequest = new XMLHttpRequest();
+    postRequest.open('POST', url);
+    postRequest.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    postRequest.send(JSON.stringify(body));
+    postRequest.onreadystatechange = function () {
+        if (postRequest.readyState === 4)
+            callback(postRequest.response);
+    }
+}
 
+// Classwork Page
 const assignmentBar = document.querySelectorAll('.assignment-bar');
 if (assignmentBar) {
     const assignmentBarsArr = Array.from(assignmentBar);
@@ -137,7 +152,6 @@ function changeStyling(aBar) {
 //==============
 
 // Requests for Courses Page (Temporary)
-
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) === 'courses.html') {
     const request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -170,7 +184,7 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
             });
         }
     };
-    request.open("GET", "http://localhost:5000/api/courses");
+    request.open('GET', route('api/courses'));
     request.send();
 }
 
@@ -181,27 +195,37 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
         const emailField = document.getElementById('email').value;
         const passwordField = document.getElementById('password').value;
         event.preventDefault();
+        const url = route('api/auth/login');
         const userData = {
             email: emailField,
             password: passwordField
         };
-        const options = {
-            method: 'POST',
-            body: JSON.stringify(userData),
-            headers: {
-                'Content-Type': 'application/json'
+        post(url, userData, function (res) {
+            res = JSON.parse(res)
+            if (res.message === 'Ok') {
+                window.location.href = 'courses.html';
+            } else {
+                const errorMessage = document.getElementById('wrong-credentials');
+                errorMessage.style.display = 'block';
             }
-        }
-        fetch('http://localhost:5000/api/auth/login', options)
-            .then(res => res.json())
-            .then(function (res) {
-                if (res.message === 'Ok') {
-                    window.location.href = 'courses.html';
-                } else {
-                    const errorMessage = document.getElementById('wrong-credentials');
-                    errorMessage.style.display = 'block';
-                }
-            })
-            .catch(err => console.error("AAAA"));
+        })
     });
+
 }
+
+// Requests for Login Page (Temporary)
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classroom.html')) {
+    const queryStr = window.location.search;
+    const urlParameters = new URLSearchParams(queryStr);
+    const classID = urlParameters.get('id');
+    const request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            // TODO
+        }
+    }
+    request.open('GET', route('api/courses/' + classID));
+    request.send();
+}
+
+
