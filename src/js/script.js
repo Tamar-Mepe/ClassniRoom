@@ -160,9 +160,11 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
                 tmpClone.querySelector('img').src = currCourse.image;
                 tmpClone.querySelector('.class-label').textContent = currCourse.name;
                 tmpClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
+                tmpClone.querySelector('.class-label').href += ('?id=' + currCourse.id);
                 const courseName = currCourse.name;
                 tmpClone2.querySelector('.classroom-icon').textContent = courseName[0];
                 tmpClone2.getElementById('course-name-label').textContent = courseName;
+                tmpClone2.querySelector('.sidebar-item').href += ('?id=' + currCourse.id);
                 courseRow.appendChild(tmpClone);
                 sidebarComponent.appendChild(tmpClone2);
             });
@@ -170,4 +172,36 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
     };
     request.open("GET", "http://localhost:5000/api/courses");
     request.send();
+}
+
+// Requests for Login Page (Temporary)
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('login.html')) {
+    const logInButton = document.getElementById('button-lr');
+    logInButton.addEventListener('click', function (event) {
+        const emailField = document.getElementById('email').value;
+        const passwordField = document.getElementById('password').value;
+        event.preventDefault();
+        const userData = {
+            email: emailField,
+            password: passwordField
+        };
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(userData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+        fetch('http://localhost:5000/api/auth/login', options)
+            .then(res => res.json())
+            .then(function (res) {
+                if (res.message === 'Ok') {
+                    window.location.href = 'courses.html';
+                } else {
+                    const errorMessage = document.getElementById('wrong-credentials');
+                    errorMessage.style.display = 'block';
+                }
+            })
+            .catch(err => console.error("AAAA"));
+    });
 }

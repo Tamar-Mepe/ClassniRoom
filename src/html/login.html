@@ -7,6 +7,7 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../js/script.js"></script>
 </head>
 
 <body>
@@ -15,11 +16,14 @@
             <div class="content-style">
                 <div class="sign-in-label">Sign in</div>
                 <div class="use-google-label">Use your Google Account</div>
-                <div class="forms">
-                    <input type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                </div>
-                <button type="submit" class="button-lr">Log In</button>
+                <form id="login-form">
+                    <div class="forms">
+                        <input type="text" placeholder="Email" id="email">
+                        <input type="password" placeholder="Password" id="password" required>
+                    </div>
+                    <div class="wrong-credentials" id="wrong-credentials">Incorrect Email/Password</div>
+                    <button class="button-lr" id="button-lr">Log In</button>
+                </form>
                 <div class="or-label">OR</div>
                 <div>
                     <button type="submit" class="google-button">

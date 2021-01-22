@@ -367,6 +367,10 @@ header ul:last-child {
     border: 2px solid;
 }
 
+.auth-wrapper input:hover {
+    cursor: pointer;
+}
+
 .auth-wrapper input:focus {
     border: 2px solid rgb(48, 163, 245);
 }
@@ -380,6 +384,13 @@ header ul:last-child {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-style: none
+}
+
+.wrong-credentials {
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    display: none;
 }
 
 .or-label {
@@ -416,12 +427,12 @@ header ul:last-child {
 }
 
 .google-button:hover {
-    /* background-color: rgb(231, 243, 251); */
     border-color: #377bf0;
 }
 
 .button-lr:hover {
     background-color: #377bf0;
+    cursor: pointer;
 }
 
 /* ============================== */
@@ -516,7 +527,7 @@ header ul:last-child {
     border-radius: 5px;
     font-family: 'Open Sans', serif;
     margin-right: 20px;
-    flex-shrink: 0;
+    flex: 0 0 250px;
     height: 100%;
 }
 
@@ -1318,7 +1329,8 @@ tr:last-of-type {
 }
 
 .single-assignment-right {
-    flex-shrink: 0;
+    flex: 0 0 300px;
+    /* TODO - Responsive */
     height: 100%;
     box-shadow: 0 2px 6px 2px rgba(60, 64, 67, 0.149);
     border-radius: 10px;
@@ -1571,6 +1583,9 @@ tr:last-of-type {
         border-radius: 20px;
         padding: 8px 12px;
         border: 0.6mm solid gray;
+    }
+    .wrong-credentials {
+        font-size: 13px;
     }
 }
 
