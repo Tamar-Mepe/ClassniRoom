@@ -213,19 +213,77 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 
 }
 
-// Requests for Login Page (Temporary)
+// Requests for Stream Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classroom.html')) {
     const queryStr = window.location.search;
     const urlParameters = new URLSearchParams(queryStr);
     const classID = urlParameters.get('id');
-    const request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
+    const mainRequest = new XMLHttpRequest();
+    const displayPostsRequest = new XMLHttpRequest();
+    displayPostsRequest.onreadystatechange = function () {
+
         if (this.readyState == 4 && this.status == 200) {
-            // TODO
+            const data = JSON.parse(this.responseText).data;
+            const rightPartContainer = document.getElementById('right-part-container');
+            const postContainerTemplate = document.getElementById('class-post-template');
+            const assignmentAnnouncementTemplate = document.getElementById('assignment-announcement-template');
+
+            // Iterate over posts
+            data.forEach(function (currPost) {
+                const commentsForPost = currPost.comments;
+                const typeOfPost = currPost.type;
+                if (typeOfPost == 0) {
+                    // Displaying regular post
+                    const postContainerClone = postContainerTemplate.content.cloneNode(true);
+                    updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
+                    postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
+                    const commentsContainer = postContainerClone.getElementById('post-comments');
+                    postContainerClone.getElementById('post-comments-button').textContent = commentLabel(commentsForPost);
+                    if (!commentsForPost.length) commentsContainer.style.display = 'none';
+                    rightPartContainer.appendChild(postContainerClone);
+
+                    // Iterate over comments
+                    commentsForPost.forEach(function (currComment) {
+                        const commentsTemplate = document.getElementById('post-comment-template')
+                        const commentsClone = commentsTemplate.content.cloneNode(true);
+                        commentsClone.getElementById('comment-owner').textContent =
+                            currComment.user.firstName + ' ' + currComment.user.lastName;
+                        commentsClone.getElementById('comment-posted').textContent = currComment.date;
+                        commentsClone.getElementById('comment-text').textContent = currComment.description;
+                        commentsContainer.appendChild(commentsClone);
+                    });
+                } else {
+                    // Displaying assignment posted by the teacher
+                    const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
+                    updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
+                        'assignment-announced-date', typeOfPost);
+                    const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
+                    commentsElem.textContent = commentLabel(commentsForPost);
+                    if (!commentsForPost.length) commentsElem.style.display = 'none';
+                    rightPartContainer.appendChild(assignmentAnnouncementClone);
+                }
+            });
         }
     }
-    request.open('GET', route('api/courses/' + classID));
-    request.send();
+    mainRequest.open('GET', route('api/courses/' + classID));
+    mainRequest.send();
+    displayPostsRequest.open('GET', route('api/courses/' + classID + '/posts'));
+    displayPostsRequest.send();
 }
 
+//Updates the owner name, date posted and main text
+function updateUpperLabeling(currPost, clone, author, date, type) {
+    const textToEdit = clone.getElementById(author);
+    textToEdit.textContent = currPost.user.firstName + ' ' + currPost.user.lastName;
+    if (type > 0) textToEdit.textContent += ' posted a new ';
+    if (type == 1) textToEdit.textContent += 'assignment: ' + currPost.assignment_name;
+    if (type == 2) textToEdit.textContent += 'material: ' + currPost.assignment_name;
+    clone.getElementById(date).textContent = currPost.date;
+}
 
+function commentLabel(commentsForPost) {
+    let commentsForPostLen = commentsForPost.length;
+    let stringToDisplay = commentsForPostLen + ' class comment';
+    if (commentsForPostLen.length > 1) stringToDisplay += 's';
+    return stringToDisplay;
+}
