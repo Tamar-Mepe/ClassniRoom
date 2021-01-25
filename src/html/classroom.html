@@ -93,8 +93,8 @@
         <div class="classroom-container">
             <div>
                 <div class="upper-part-image">
-                    <img src="../images/covers/img_code.jpg" class="title-image" id="title-image">
-                    <div class="classroom-title">Programming</div>
+                    <img src="" class="title-image" id="title-image">
+                    <div class="classroom-title" id="classroom-title"></div>
                     <button class="show-additional-info" id="show-additional-info">
                         <svg>
                             <path d="M12 16.41l-6.71-6.7 1.42-1.42 5.29 5.3 5.29-5.3 1.42 1.42z"></path>
@@ -103,13 +103,13 @@
                 </div>
                 <div class="additional-info-wrapper" id="additional-info-wrapper">
                     <div class="additional-info">
-                        <div class="upper-part-label">
+                        <div class="upper-part-label" id="subject-label">
                             <span class="upper-part-bold-label">Subject</span>
-                            <span>OOP</span>
+                            <span id="classroom-subject"></span>
                         </div>
-                        <div class="upper-part-label">
+                        <div class="upper-part-label" id="room-label">
                             <span class="upper-part-bold-label">Room</span>
-                            <span>420</span>
+                            <span id="classroom-room"></span>
                         </div>
                     </div>
                 </div>
@@ -138,29 +138,13 @@
                                         d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z" />
                                 </svg>
                                 <div class="post-upper-labels">
-                                    <div class="post-owner" id="post-owner">Tamar Davitaia</div>
-                                    <div class="date-style" id="date-style">Dec 13</div>
+                                    <div class="post-owner" id="post-owner"></div>
+                                    <div class="date-style" id="date-style"></div>
                                 </div>
                             </div>
-                            <div class="post-class-main-text" id="post-class-main-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dolor justo, semper
-                                vitae ex maximus, gravida rhoncus lacus. Integer ex lacus, posuere sit amet sodales in,
-                                tincidunt vitae lacus. Vestibulum nec lobortis velit, id fringilla tellus. Praesent
-                                pretium magna eget sagittis facilisis. Sed mattis non orci lacinia aliquam. Integer sit
-                                amet ligula eu ante efficitur sollicitudin placerat et nulla. Curabitur nec dictum nisi.
-                                Donec eu suscipit nunc. Nunc a ipsum vel nibh vehicula sodales vitae a dui. Phasellus
-                                mollis accumsan luctus.<br><br>
-                                Quisque tellus tellus, tincidunt non lectus nec, aliquam faucibus ante. Integer molestie
-                                nulla et sapien vulputate pretium quis vitae purus. In porttitor pulvinar augue vitae
-                                tristique. Vivamus posuere erat a euismod semper. Sed ultricies rutrum rhoncus. Aliquam
-                                placerat vitae massa ac pulvinar. In maximus elit quis enim venenatis, non egestas arcu
-                                commodo. Phasellus rutrum pretium sem a sollicitudin. Nam eu est eu tortor varius
-                                maximus. Nulla ac molestie neque. Nunc ac malesuada nunc, eget imperdiet nisi. In hac
-                                habitasse platea dictumst.
-                            </div>
+                            <div class="post-class-main-text" id="post-class-main-text"></div>
                             <div class="post-comments" id="post-comments">
-                                <button class="post-comments-button" id="post-comments-button">13 class
-                                    comments</button>
+                                <button class="post-comments-button" id="post-comments-button"></button>
                                 <template id="post-comment-template">
                                     <div class="post-comment">
                                         <div>
@@ -170,21 +154,9 @@
                                             </svg>
                                         </div>
                                         <div class="single-comment">
-                                            <span class="post-owner" id="comment-owner">Tamar Davitaia</span>
-                                            <span class="date-style" id="comment-posted">Dec 14</span>
-                                            <div class="comment-styling" id="comment-text"> Quisque tellus tellus,
-                                                tincidunt non lectus
-                                                nec,
-                                                aliquam
-                                                faucibus ante. Integer molestie
-                                                nulla et sapien vulputate pretium quis vitae purus. In porttitor
-                                                pulvinar
-                                                augue
-                                                vitae
-                                                tristique. Vivamus posuere erat a euismod semper. Sed ultricies rutrum
-                                                rhoncus.
-                                                Aliquam
-                                                placerat vitae massa ac pulvinar.</div>
+                                            <span class="post-owner" id="comment-owner"></span>
+                                            <span class="date-style" id="comment-posted"></span>
+                                            <div class="comment-styling" id="comment-text"></div>
                                         </div>
                                     </div>
                                 </template>
@@ -221,14 +193,12 @@
                                             </svg>
                                         </div>
                                         <div class="post-upper-labels">
-                                            <div class="post-owner" id="assignment-announcement-owner">Laila Oconnell
-                                                posted a new assignment: Midterm
-                                            </div>
-                                            <div class="date-style" id="assignment-announced-date">Dec 24</div>
+                                            <div class="post-owner" id="assignment-announcement-owner"></div>
+                                            <div class="date-style" id="assignment-announced-date"></div>
                                         </div>
                                     </div>
                                     <div class="assignment-announcement-comments" id="assignment-announcement-comments">
-                                        <div>2 class comments</div>
+                                        <div id="assignment-comment-num"></div>
                                     </div>
                                 </div>
                             </a>

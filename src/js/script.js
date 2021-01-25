@@ -218,10 +218,37 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
     const queryStr = window.location.search;
     const urlParameters = new URLSearchParams(queryStr);
     const classID = urlParameters.get('id');
+    displayUpperPart(classID);
+    displayPosts(classID);
+}
+
+function displayUpperPart(classID) {
     const mainRequest = new XMLHttpRequest();
+    mainRequest.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const data = JSON.parse(this.responseText).data;
+            const classroomTitle = document.getElementById('classroom-title');
+            const classroomSubject = document.getElementById('classroom-subject');
+            const classroomRoom = document.getElementById('classroom-room');
+            const classroomImage = document.getElementById('title-image');
+            const subjectLabel = document.getElementById('subject-label');
+            const roomLabel = document.getElementById('room-label');
+            classroomTitle.textContent = data.name;
+            classroomSubject.textContent = data.subject;
+            classroomRoom.textContent = data.room;
+            classroomImage.src = data.image
+            if (!data.subject) subjectLabel.style.display = 'none';
+            if (!data.room) roomLabel.style.display = 'none';
+            if (!data.subject && !data.room) document.getElementById('show-additional-info').style.display = 'none'
+        }
+    }
+    mainRequest.open('GET', route('api/courses/' + classID));
+    mainRequest.send();
+}
+
+function displayPosts(classID) {
     const displayPostsRequest = new XMLHttpRequest();
     displayPostsRequest.onreadystatechange = function () {
-
         if (this.readyState == 4 && this.status == 200) {
             const data = JSON.parse(this.responseText).data;
             const rightPartContainer = document.getElementById('right-part-container');
@@ -238,7 +265,7 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
                     updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
                     postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
                     const commentsContainer = postContainerClone.getElementById('post-comments');
-                    postContainerClone.getElementById('post-comments-button').textContent = commentLabel(commentsForPost);
+                    postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
                     if (!commentsForPost.length) commentsContainer.style.display = 'none';
                     rightPartContainer.appendChild(postContainerClone);
 
@@ -258,20 +285,18 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
                     updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
                         'assignment-announced-date', typeOfPost);
                     const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
-                    commentsElem.textContent = commentLabel(commentsForPost);
+                    assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
                     if (!commentsForPost.length) commentsElem.style.display = 'none';
                     rightPartContainer.appendChild(assignmentAnnouncementClone);
                 }
             });
         }
     }
-    mainRequest.open('GET', route('api/courses/' + classID));
-    mainRequest.send();
     displayPostsRequest.open('GET', route('api/courses/' + classID + '/posts'));
     displayPostsRequest.send();
 }
 
-//Updates the owner name, date posted and main text
+//Updates the owner name and date posted by assignment type
 function updateUpperLabeling(currPost, clone, author, date, type) {
     const textToEdit = clone.getElementById(author);
     textToEdit.textContent = currPost.user.firstName + ' ' + currPost.user.lastName;
@@ -281,9 +306,9 @@ function updateUpperLabeling(currPost, clone, author, date, type) {
     clone.getElementById(date).textContent = currPost.date;
 }
 
-function commentLabel(commentsForPost) {
+function classCommentsButton(commentsForPost) {
     let commentsForPostLen = commentsForPost.length;
     let stringToDisplay = commentsForPostLen + ' class comment';
-    if (commentsForPostLen.length > 1) stringToDisplay += 's';
+    if (commentsForPostLen > 1) stringToDisplay += 's';
     return stringToDisplay;
 }
