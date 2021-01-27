@@ -2027,3 +2027,45 @@ tr:last-of-type {
         margin-bottom: 15px;
     }
 }
+
+/* MEDIA QUERIES FOR POPUP */
+
+@media only screen and (max-width: 560px) {
+    .popup-container input {
+        width: auto;
+    }
+    .popup-container .invite-field {
+        width: 320px;
+    }
+    .popup {
+        margin: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .popup {
+        padding: 15px 20px;
+    }
+    .popup-container input {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+    .popup-main-label {
+        font-size: 13px;
+    }
+    .popup-small-text {
+        font-size: 11px;
+    }
+    .popup-container button {
+        font-size: 12px;
+    }
+    .popup-container .invite-field {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .popup-container .invite-field {
+        width: auto;
+    }
+}
