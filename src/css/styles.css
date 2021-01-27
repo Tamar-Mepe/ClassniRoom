@@ -1628,11 +1628,7 @@ tr:last-of-type {
         padding: 10px 18px;
     }
     .google-button {
-        margin-top: 15px;
-        background-color: #ffffff;
-        border-radius: 20px;
         padding: 8px 12px;
-        border: 0.6mm solid gray;
     }
     .wrong-credentials {
         font-size: 13px;
@@ -1713,20 +1709,19 @@ tr:last-of-type {
     }
     .assignment-announcement-comments {
         padding: 10px 0px 10px 20px;
-        color: #333;
         font-size: 12px;
     }
     .right-part-container svg {
         margin-right: 10px;
     }
     .assignment-announcement-logo {
-        margin-right: 10px;
+        display: none;
     }
     .assignment-announcement-logo svg {
-        margin-right: 0px;
+        display: none;
     }
     .assignment-announcement .class-post-upper {
-        padding-bottom: 10px;
+        padding: 10px 20px;
     }
 }
 
