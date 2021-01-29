@@ -1,0 +1,35 @@
+{
+    "course": {
+        "id": 2,
+        "name": "Arts",
+        "image": "/src/images/covers/img_arts.jpg",
+        "subject": "Painting",
+        "room": null,
+        "lecturer": "Lilian Oneal"
+    },
+    "data": [
+        {
+            "id": 2,
+            "course_id": 2,
+            "date": "2020-07-02T18:25",
+            "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "2021-01-02T12:34",
+                    "description": "Some random comment",
+                    "user": {
+                        "image": null,
+                        "firstName": "Shola",
+                        "lastName": "Lugo"
+                    }
+                }
+            ],
+            "user": {
+                "image": "http://localhost:5000/images/users/tdavi.png",
+                "firstName": "Tamar",
+                "lastName": "Davitaia"
+            }
+        }
+    ]
+}

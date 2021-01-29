@@ -1,0 +1,140 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Programming",
+            "image": "/src/images/covers/img_code.jpg",
+            "subject": "OOP",
+            "room": 420,
+            "lecturer": "Klaudia Huff"
+        },
+        {
+            "id": 2,
+            "name": "Arts",
+            "image": "/src/images/covers/img_arts.jpg",
+            "subject": "Painting",
+            "room": null,
+            "lecturer": "Lilian Oneal"
+        },
+        {
+            "id": 3,
+            "name": "Chemistry",
+            "image": "/src/images/covers/Chemistry.jpg",
+            "subject": null,
+            "room": 207,
+            "lecturer": "Zeenat Levy"
+        },
+        {
+            "id": 4,
+            "name": "Literature",
+            "image": "/src/images/covers/Honors.jpg",
+            "subject": null,
+            "room": 301,
+            "lecturer": "Jo Paterson"
+        },
+        {
+            "id": 5,
+            "name": "Geography",
+            "image": "/src/images/covers/img_backtoschool.jpg",
+            "subject": null,
+            "room": 103,
+            "lecturer": "Ishaq Wheatley"
+        },
+        {
+            "id": 6,
+            "name": "Book Club",
+            "image": "/src/images/covers/img_bookclub.jpg",
+            "subject": "Reading",
+            "room": 202,
+            "lecturer": "Clarice Norman"
+        },
+        {
+            "id": 7,
+            "name": "Drama Club",
+            "image": "/src/images/covers/img_cinema.jpg",
+            "subject": null,
+            "room": 403,
+            "lecturer": "Dexter Ho"
+        },
+        {
+            "id": 8,
+            "name": "Freeuni Reunion",
+            "image": "/src/images/covers/img_graduation.jpg",
+            "subject": "Graduation",
+            "room": 200,
+            "lecturer": "Norman Slater"
+        },
+        {
+            "id": 9,
+            "name": "Culinary Class",
+            "image": "/src/images/covers/img_backtoschool.jpg",
+            "subject": "Culinary",
+            "room": 409,
+            "lecturer": "Adil Nieves"
+        },
+        {
+            "id": 10,
+            "name": "Spanish Language II",
+            "image": "/src/images/covers/img_learnlanguage.jpg",
+            "subject": "Spanish",
+            "room": 412,
+            "lecturer": "Marjorie Ryder"
+        },
+        {
+            "id": 11,
+            "name": "Journalism",
+            "image": "/src/images/covers/img_reachout.jpg",
+            "subject": null,
+            "room": null,
+            "lecturer": "Cherise Snider"
+        },
+        {
+            "id": 12,
+            "name": "Georgian History",
+            "image": "/src/images/covers/img_read.jpg",
+            "subject": "History",
+            "room": 122,
+            "lecturer": "Lea Hoover"
+        },
+        {
+            "id": 13,
+            "name": "World Studies",
+            "image": "/src/images/covers/WorldStudies.jpg",
+            "subject": null,
+            "room": 205,
+            "lecturer": "Jillian Pacheco"
+        },
+        {
+            "id": 14,
+            "name": "Mathematics",
+            "image": "/src/images/covers/Math.jpg",
+            "subject": "Maths",
+            "room": 317,
+            "lecturer": "Fardeen Kerr"
+        },
+        {
+            "id": 15,
+            "name": "Architecture",
+            "image": "/src/images/covers/Design.jpg",
+            "subject": null,
+            "room": null,
+            "lecturer": "Imaad Miller"
+        },
+        {
+            "id": 16,
+            "name": "Gaming",
+            "image": "/src/images/covers/img_videogaming.jpg",
+            "subject": "Live Streaming",
+            "room": 103,
+            "lecturer": "Cameron Rios"
+        },
+        {
+            "id": 17,
+            "name": "Chess Club",
+            "image": "/src/images/covers/img_gamenight.jpg",
+            "subject": "Chess",
+            "room": 315,
+            "lecturer": "Patryk Pitt"
+        }
+    ]
+}

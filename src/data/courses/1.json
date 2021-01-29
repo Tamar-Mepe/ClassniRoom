@@ -1,0 +1,71 @@
+{
+    "course": {
+        "id": 1,
+        "name": "Programming",
+        "image": "http://localhost:5000/images/covers/img_code.jpg",
+        "subject": "OOP",
+        "room": 420,
+        "lecturer": "Klaudia Huff"
+    },
+    "data": [
+        {
+            "id": 1,
+            "course_id": 1,
+            "date": "2020-08-23T18:25",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "2020-08-23T18:25",
+                    "description": "First comment",
+                    "user": {
+                        "email": "iwall18@freeuni.edu.ge",
+                        "password": "iwall18",
+                        "image": null,
+                        "firstName": "Ivy",
+                        "lastName": "Wall"
+                    }
+                },
+                {
+                    "date": "2020-08-23T19:26",
+                    "description": "Second comment",
+                    "user": {
+                        "email": "iwall18@freeuni.edu.ge",
+                        "password": "iwall18",
+                        "image": null,
+                        "firstName": "Ivy",
+                        "lastName": "Wall"
+                    }
+                },
+                {
+                    "date": "2020-08-23T19:27",
+                    "description": "Third comment",
+                    "user": {
+                        "email": "iwall18@freeuni.edu.ge",
+                        "password": "iwall18",
+                        "image": null,
+                        "firstName": "Ivy",
+                        "lastName": "Wall"
+                    }
+                }
+            ],
+            "user": {
+                "email": "jdoe20@freeuni.edu.ge",
+                "password": "jdoe20",
+                "image": "/src/images/users/jdoe.jpg",
+                "firstName": "John",
+                "lastName": "Doe"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Ivy Wall"
+        },
+        {
+            "image": "/src/images/users/jdoe.jpg",
+            "displayName": "John Doe"
+        }
+    ]
+}

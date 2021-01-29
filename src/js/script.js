@@ -96,9 +96,9 @@ if (dropDownAdditionalInfo) {
 //==============
 
 function route(path) {
-    const basePath = 'http://localhost:5000/';
-    return basePath + path;
+    return path;
 }
+
 // Post Wrapper
 function post(url, body, callback) {
     const postRequest = new XMLHttpRequest();
@@ -109,6 +109,18 @@ function post(url, body, callback) {
         if (postRequest.readyState === 4)
             callback(postRequest.response);
     }
+}
+
+// Get Wrapper
+function get(url, callback) {
+    const displayPostsRequest = new XMLHttpRequest();
+    displayPostsRequest.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            callback(JSON.parse(this.responseText))
+        }
+    }
+    displayPostsRequest.open('GET', route(url));
+    displayPostsRequest.send();
 }
 
 // Classwork Page
@@ -153,39 +165,34 @@ function changeStyling(aBar) {
 
 // Requests for Courses Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) === 'courses.html') {
-    const request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            const data = JSON.parse(this.responseText).data;
-            if (!data.length) {
-                const emptyListWindow = document.getElementById('empty-class-list');
-                const windowClone = emptyListWindow.content.cloneNode(true);
-                const coursesMain = document.getElementById('courses-main');
-                coursesMain.appendChild(windowClone);
-                return;
-            }
-            const courseRow = document.getElementById('course-row');
-            const sidebarComponent = document.getElementById('sidebar-component');
-            const courseCardTemplate = document.getElementById('course-card-template');
-            const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
-            data.forEach(function (currCourse) {
-                const tmpClone = courseCardTemplate.content.cloneNode(true);
-                const tmpClone2 = sidebarCourseTemplate.content.cloneNode(true);
-                tmpClone.querySelector('img').src = currCourse.image;
-                tmpClone.querySelector('.class-label').textContent = currCourse.name;
-                tmpClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
-                tmpClone.querySelector('.class-label').href += ('?id=' + currCourse.id);
-                const courseName = currCourse.name;
-                tmpClone2.querySelector('.classroom-icon').textContent = courseName[0];
-                tmpClone2.getElementById('course-name-label').textContent = courseName;
-                tmpClone2.querySelector('.sidebar-item').href += ('?id=' + currCourse.id);
-                courseRow.appendChild(tmpClone);
-                sidebarComponent.appendChild(tmpClone2);
-            });
+    get(route('/src/data/courses.json'), function (data) {
+        data = data.data
+        if (!data.length) {
+            const emptyListWindow = document.getElementById('empty-class-list');
+            const windowClone = emptyListWindow.content.cloneNode(true);
+            const coursesMain = document.getElementById('courses-main');
+            coursesMain.appendChild(windowClone);
+            return;
         }
-    };
-    request.open('GET', route('api/courses'));
-    request.send();
+        const courseRow = document.getElementById('course-row');
+        const sidebarComponent = document.getElementById('sidebar-component');
+        const courseCardTemplate = document.getElementById('course-card-template');
+        const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
+        data.forEach(function (currCourse) {
+            const tmpClone = courseCardTemplate.content.cloneNode(true);
+            const tmpClone2 = sidebarCourseTemplate.content.cloneNode(true);
+            tmpClone.querySelector('img').src = currCourse.image;
+            tmpClone.querySelector('.class-label').textContent = currCourse.name;
+            tmpClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
+            tmpClone.querySelector('.class-label').href += ('?id=' + currCourse.id);
+            const courseName = currCourse.name;
+            tmpClone2.querySelector('.classroom-icon').textContent = courseName[0];
+            tmpClone2.getElementById('course-name-label').textContent = courseName;
+            tmpClone2.querySelector('.sidebar-item').href += ('?id=' + currCourse.id);
+            courseRow.appendChild(tmpClone);
+            sidebarComponent.appendChild(tmpClone2);
+        });
+    })
 }
 
 // Requests for Login Page (Temporary)
@@ -223,77 +230,66 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 }
 
 function displayUpperPart(classID) {
-    const mainRequest = new XMLHttpRequest();
-    mainRequest.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            const data = JSON.parse(this.responseText).data;
-            const classroomTitle = document.getElementById('classroom-title');
-            const classroomSubject = document.getElementById('classroom-subject');
-            const classroomRoom = document.getElementById('classroom-room');
-            const classroomImage = document.getElementById('title-image');
-            const subjectLabel = document.getElementById('subject-label');
-            const roomLabel = document.getElementById('room-label');
-            classroomTitle.textContent = data.name;
-            classroomSubject.textContent = data.subject;
-            classroomRoom.textContent = data.room;
-            classroomImage.src = data.image
-            if (!data.subject) subjectLabel.style.display = 'none';
-            if (!data.room) roomLabel.style.display = 'none';
-            if (!data.subject && !data.room) document.getElementById('show-additional-info').style.display = 'none'
-        }
-    }
-    mainRequest.open('GET', route('api/courses/' + classID));
-    mainRequest.send();
+    get(route('/src/data/courses/' + classID + '.json'), function (data) {
+        const classroomTitle = document.getElementById('classroom-title');
+        const classroomSubject = document.getElementById('classroom-subject');
+        const classroomRoom = document.getElementById('classroom-room');
+        const classroomImage = document.getElementById('title-image');
+        const subjectLabel = document.getElementById('subject-label');
+        const roomLabel = document.getElementById('room-label');
+        classroomTitle.textContent = data.course.name;
+        classroomSubject.textContent = data.course.subject;
+        classroomRoom.textContent = data.course.room;
+        classroomImage.src = data.course.image
+        if (!data.course.subject) subjectLabel.style.display = 'none';
+        if (!data.course.room) roomLabel.style.display = 'none';
+        if (!data.course.subject && !data.course.room) document.getElementById('show-additional-info').style.display = 'none'
+    })
 }
 
 function displayPosts(classID) {
-    const displayPostsRequest = new XMLHttpRequest();
-    displayPostsRequest.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            const data = JSON.parse(this.responseText).data;
-            const rightPartContainer = document.getElementById('right-part-container');
-            const postContainerTemplate = document.getElementById('class-post-template');
-            const assignmentAnnouncementTemplate = document.getElementById('assignment-announcement-template');
+    get(route('/src/data/courses/' + classID + '.json'), function (data) {
+        data = data.data
+        const rightPartContainer = document.getElementById('right-part-container');
+        const postContainerTemplate = document.getElementById('class-post-template');
+        const assignmentAnnouncementTemplate = document.getElementById('assignment-announcement-template');
 
-            // Iterate over posts
-            data.forEach(function (currPost) {
-                const commentsForPost = currPost.comments;
-                const typeOfPost = currPost.type;
-                if (typeOfPost == 0) {
-                    // Displaying regular post
-                    const postContainerClone = postContainerTemplate.content.cloneNode(true);
-                    updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
-                    postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
-                    const commentsContainer = postContainerClone.getElementById('post-comments');
-                    postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
-                    if (!commentsForPost.length) commentsContainer.style.display = 'none';
-                    rightPartContainer.appendChild(postContainerClone);
+        // Iterate over posts
+        data.forEach(function (currPost) {
+            const commentsForPost = currPost.comments;
+            const typeOfPost = currPost.type;
+            if (typeOfPost == 0) {
+                // Displaying regular post
+                const postContainerClone = postContainerTemplate.content.cloneNode(true);
+                updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
+                postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
+                const commentsContainer = postContainerClone.getElementById('post-comments');
+                postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
+                if (!commentsForPost.length) commentsContainer.style.display = 'none';
+                rightPartContainer.appendChild(postContainerClone);
 
-                    // Iterate over comments
-                    commentsForPost.forEach(function (currComment) {
-                        const commentsTemplate = document.getElementById('post-comment-template')
-                        const commentsClone = commentsTemplate.content.cloneNode(true);
-                        commentsClone.getElementById('comment-owner').textContent =
-                            currComment.user.firstName + ' ' + currComment.user.lastName;
-                        commentsClone.getElementById('comment-posted').textContent = currComment.date;
-                        commentsClone.getElementById('comment-text').textContent = currComment.description;
-                        commentsContainer.appendChild(commentsClone);
-                    });
-                } else {
-                    // Displaying assignment posted by the teacher
-                    const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
-                    updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
-                        'assignment-announced-date', typeOfPost);
-                    const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
-                    assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
-                    if (!commentsForPost.length) commentsElem.style.display = 'none';
-                    rightPartContainer.appendChild(assignmentAnnouncementClone);
-                }
-            });
-        }
-    }
-    displayPostsRequest.open('GET', route('api/courses/' + classID + '/posts'));
-    displayPostsRequest.send();
+                // Iterate over comments
+                commentsForPost.forEach(function (currComment) {
+                    const commentsTemplate = document.getElementById('post-comment-template')
+                    const commentsClone = commentsTemplate.content.cloneNode(true);
+                    commentsClone.getElementById('comment-owner').textContent =
+                        currComment.user.firstName + ' ' + currComment.user.lastName;
+                    commentsClone.getElementById('comment-posted').textContent = currComment.date;
+                    commentsClone.getElementById('comment-text').textContent = currComment.description;
+                    commentsContainer.appendChild(commentsClone);
+                });
+            } else {
+                // Displaying assignment posted by the teacher
+                const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
+                updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
+                    'assignment-announced-date', typeOfPost);
+                const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
+                assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
+                if (!commentsForPost.length) commentsElem.style.display = 'none';
+                rightPartContainer.appendChild(assignmentAnnouncementClone);
+            }
+        });
+    })
 }
 
 //Updates the owner name and date posted by assignment type
