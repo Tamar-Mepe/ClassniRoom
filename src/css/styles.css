@@ -552,6 +552,7 @@ header ul:last-child {
     flex-direction: column;
     font-family: 'Open Sans', serif;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .upcoming-label {
@@ -1739,11 +1740,14 @@ tr:last-of-type {
         justify-content: center;
         padding: 10px;
     }
-    .announce-container svg {
-        display: none;
-    }
     .comment-input-field input::placeholder {
         font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .announce-container svg {
+        display: none;
     }
 }
 

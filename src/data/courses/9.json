@@ -1,0 +1,213 @@
+{
+    "course": {
+        "id": 9,
+        "name": "Culinary Class",
+        "image": "/src/images/covers/img_breakfast.jpg",
+        "subject": "Culinary",
+        "room": 409,
+        "lecturer": "Adil Nieves"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Dec 25",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Dec 28",
+                    "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Omar Sweet"
+                    }
+                },
+                {
+                    "date": "Dec 28",
+                    "description": "Sed vehicula dui vitae quam interdum vestibulum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Adil Nieves"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Nellie Burch"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Jan 5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 1,
+            "assignment_name": "Assignment 2",
+            "comments": [
+                {
+                    "date": "Jan 5",
+                    "description": "Suspendisse in diam sit amet lacus luctus pharetra",
+                    "user": {
+                        "image": null,
+                        "displayName": "Nellie Burch"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
+                    "user": {
+                        "image": null,
+                        "displayName": "Arham Friedman"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Phasellus nec eros vitae orci laoreet gravida",
+                    "user": {
+                        "image": null,
+                        "displayName": "Nellie Burch"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Adil Nieves"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Jan 4",
+            "description": "Phasellus nec eros vitae orci laoreet gravida",
+            "type": 0,
+            "assignment_name": "Additional Materials",
+            "comments": [
+                {
+                    "date": "Jan 5",
+                    "description": "Suspendisse in diam sit amet lacus luctus pharetra",
+                    "user": {
+                        "image": null,
+                        "displayName": "Arham Friedman"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Aenean tempus quam et arcu mollis, vitae aliquet quam consectetur",
+                    "user": {
+                        "image": null,
+                        "displayName": "Sakina Whittle"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Vestibulum nec metus feugiat, porttitor ex et, rhoncus dolor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Nellie Burch"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Zoha Felix"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Jan 4",
+            "description": "Suspendisse at fringilla mauris. In tortor enim, sodales quis lectus in, luctus ornare ante. Proin porta consectetur orci et maximus. Nulla tincidunt augue et odio posuere congue. Vivamus vel dui sapien. Mauris id urna velit. Nam sodales cursus nulla et interdum. Etiam imperdiet ultricies nisl tincidunt euismod. Curabitur porta eget sapien a laoreet. Curabitur et nunc in quam pellentesque vestibulum. Nunc consequat quam non finibus egestas.",
+            "type": 1,
+            "assignment_name": "Assignment 1",
+            "comments": [
+                {
+                    "date": "Jan 5",
+                    "description": "Suspendisse in diam sit amet lacus luctus pharetra",
+                    "user": {
+                        "image": null,
+                        "displayName": "Olly Solomon"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
+                    "user": {
+                        "image": null,
+                        "displayName": "Abby Sharma"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Phasellus nec eros vitae orci laoreet gravida",
+                    "user": {
+                        "image": null,
+                        "displayName": "Olly Solomon"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Adil Nieves"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Kasim Zamora"
+        },
+        {
+            "image": null,
+            "displayName": "Alessandro Golden"
+        },
+        {
+            "image": null,
+            "displayName": "Zoha Felix"
+        },
+        {
+            "image": null,
+            "displayName": "Nellie Burch"
+        },
+        {
+            "image": null,
+            "displayName": "Amar Bradley"
+        },
+        {
+            "image": null,
+            "displayName": "Sakina Whittle"
+        },
+        {
+            "image": null,
+            "displayName": "Teagan Mueller"
+        },
+        {
+            "image": null,
+            "displayName": "Guy Frame"
+        },
+        {
+            "image": null,
+            "displayName": "Clement Mcmillan"
+        },
+        {
+            "image": null,
+            "displayName": "Olly Solomon"
+        },
+        {
+            "image": null,
+            "displayName": "Arham Friedman"
+        },
+        {
+            "image": null,
+            "displayName": "Abby Sharma"
+        },
+        {
+            "image": null,
+            "displayName": "Joyce Parry"
+        },
+        {
+            "image": null,
+            "displayName": "Kelly Clay"
+        },
+        {
+            "image": null,
+            "displayName": "Omar Sweet"
+        }
+    ]
+}

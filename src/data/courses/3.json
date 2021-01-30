@@ -1,0 +1,139 @@
+{
+    "course": {
+        "id": 3,
+        "name": "Chemistry",
+        "image": "/src/images/covers/Chemistry.jpg",
+        "subject": null,
+        "room": 207,
+        "lecturer": "Zeenat Levy"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "May 9",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 1,
+            "assignment_name": "Midterm",
+            "comments": [
+                {
+                    "date": "May 9",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Honey Hooper"
+                    }
+                },
+                {
+                    "date": "May 9",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Rojin Franks"
+                    }
+                },
+                {
+                    "date": "May 10",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Max Trevino"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Zeenat Levy"
+            }
+        },
+        {
+            "id": 2,
+            "date": "March 29",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "March 29",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Barry Couch"
+                    }
+                },
+                {
+                    "date": "March 29",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Gordon Mann"
+                    }
+                },
+                {
+                    "date": "March 30",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Barry Couch"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Gordon Mann"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Lorcan Castro"
+        },
+        {
+            "image": null,
+            "displayName": "Byron Bruce"
+        },
+        {
+            "image": null,
+            "displayName": "Yu Andrews"
+        },
+        {
+            "image": null,
+            "displayName": "Tracy Yates"
+        },
+        {
+            "image": null,
+            "displayName": "Barry Couch"
+        },
+        {
+            "image": null,
+            "displayName": "Honey Hooper"
+        },
+        {
+            "image": null,
+            "displayName": "Holli Mccarty"
+        },
+        {
+            "image": null,
+            "displayName": "Haider Archer"
+        },
+        {
+            "image": null,
+            "displayName": "Sulayman Hale"
+        },
+        {
+            "image": null,
+            "displayName": "Max Trevino"
+        },
+        {
+            "image": null,
+            "displayName": "Gordon Mann"
+        },
+        {
+            "image": null,
+            "displayName": "Carson Terrell"
+        },
+        {
+            "image": null,
+            "displayName": "Rojin Franks"
+        }
+    ]
+}

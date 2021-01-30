@@ -1,11 +1,11 @@
 {
     "course": {
-        "id": 2,
-        "name": "Arts",
-        "image": "/src/images/covers/img_arts.jpg",
-        "subject": "Painting",
-        "room": null,
-        "lecturer": "Lilian Oneal"
+        "id": 7,
+        "name": "Drama Club",
+        "image": "/src/images/covers/img_cinema.jpg",
+        "subject": null,
+        "room": 403,
+        "lecturer": "Dexter Ho"
     },
     "data": [
         {
@@ -16,16 +16,16 @@
             "comments": [
                 {
                     "date": "June 2",
-                    "description": "Some random comment",
+                    "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
                         "image": null,
-                        "displayName": "Shola Lugo"
+                        "displayName": "Roan Boone"
                     }
                 }
             ],
             "user": {
                 "image": null,
-                "displayName": "Lilian Oneal"
+                "displayName": "Ciaran Stephenson"
             }
         },
         {
@@ -40,7 +40,7 @@
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
                         "image": null,
-                        "displayName": "Tanya Burnett"
+                        "displayName": "Roan Boone"
                     }
                 },
                 {
@@ -48,13 +48,13 @@
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
                         "image": null,
-                        "displayName": "Eden Klein"
+                        "displayName": "Ciaran Stephenson"
                     }
                 }
             ],
             "user": {
                 "image": null,
-                "displayName": "Lilian Oneal"
+                "displayName": "Dexter Ho"
             }
         },
         {
@@ -68,7 +68,7 @@
                     "description": "Nullam vitae nulla sed est aliquet tincidunt quis vitae sapien",
                     "user": {
                         "image": null,
-                        "displayName": "Barbara Russell"
+                        "displayName": "Ciaran Stephenson"
                     }
                 },
                 {
@@ -76,7 +76,7 @@
                     "description": "Aliquam nec dolor quis velit egestas iaculis sit amet nec erat",
                     "user": {
                         "image": null,
-                        "displayName": "Deon Little"
+                        "displayName": "Roan Boone"
                     }
                 },
                 {
@@ -84,7 +84,7 @@
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
                         "image": null,
-                        "displayName": "Barbara Russell"
+                        "displayName": "Maude Mata"
                     }
                 },
                 {
@@ -98,19 +98,11 @@
             ],
             "user": {
                 "image": null,
-                "displayName": "Deon Little"
+                "displayName": "Barbara Russell"
             }
         }
     ],
     "students": [
-        {
-            "image": null,
-            "displayName": "Shola Lugo"
-        },
-        {
-            "image": null,
-            "displayName": "Arielle Mcculloch"
-        },
         {
             "image": null,
             "displayName": "Deon Little"
@@ -118,10 +110,6 @@
         {
             "image": null,
             "displayName": "Barbara Russell"
-        },
-        {
-            "image": null,
-            "displayName": "Isobel Kline"
         },
         {
             "image": null,
@@ -253,46 +241,6 @@
         },
         {
             "image": null,
-            "displayName": "Asim Krueger"
-        },
-        {
-            "image": null,
-            "displayName": "Shereen Pruitt"
-        },
-        {
-            "image": null,
-            "displayName": "Falak Wilcox"
-        },
-        {
-            "image": null,
-            "displayName": "Presley Regan"
-        },
-        {
-            "image": null,
-            "displayName": "Jodie Bowers"
-        },
-        {
-            "image": null,
-            "displayName": "Christina Guthrie"
-        },
-        {
-            "image": null,
-            "displayName": "Ines Nelson"
-        },
-        {
-            "image": null,
-            "displayName": "Euan Sheridan"
-        },
-        {
-            "image": null,
-            "displayName": "Elspeth Horne"
-        },
-        {
-            "image": null,
-            "displayName": "Todd Salt"
-        },
-        {
-            "image": null,
             "displayName": "Johanna Needham"
         },
         {
@@ -330,18 +278,6 @@
         {
             "image": null,
             "displayName": "Indiana Singh"
-        },
-        {
-            "image": null,
-            "displayName": "Eman Swanson"
-        },
-        {
-            "image": null,
-            "displayName": "Jason Mcgrath"
-        },
-        {
-            "image": null,
-            "displayName": "Maysa Ruiz"
         }
     ]
 }

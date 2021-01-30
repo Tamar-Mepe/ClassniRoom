@@ -1,0 +1,178 @@
+{
+    "course": {
+        "id": 4,
+        "name": "Literature",
+        "image": "/src/images/covers/Honors.jpg",
+        "subject": null,
+        "room": 301,
+        "lecturer": "Jo Paterson"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "May 11",
+            "description": "Etiam a felis odio. Nunc ullamcorper nisi pretium, varius quam nec, porta nulla. Aliquam erat volutpat. Vivamus dapibus sem mauris, ac aliquam nisi lobortis quis. Nullam fermentum ipsum vel auctor molestie. Nunc felis arcu, tincidunt ac ex non, volutpat dignissim erat. Maecenas commodo diam quis hendrerit tristique. Suspendisse sodales mollis suscipit.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "May 11",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Angel Hastings"
+                    }
+                },
+                {
+                    "date": "May 12",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ravi Wright"
+                    }
+                },
+                {
+                    "date": "May 12",
+                    "description": "Aliquam eu ipsum vel enim commodo condimentum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Robin Shields"
+                    }
+                },
+                {
+                    "date": "May 12",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Maddie Mcdonald"
+                    }
+                },
+                {
+                    "date": "May 12",
+                    "description": "Cras rhoncus ligula vel gravida facilisis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Robin Shields"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Jo Paterson"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Feb 2",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Feb 3",
+                    "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Maddie Mcdonald"
+                    }
+                },
+                {
+                    "date": "Feb 4",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Aisling Cash"
+                    }
+                },
+                {
+                    "date": "Feb 5",
+                    "description": "Nullam at mauris eget ipsum semper scelerisque",
+                    "user": {
+                        "image": null,
+                        "displayName": "Robin Shields"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Maddie Mcdonald"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Feb 1",
+            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "type": 1,
+            "assignment_name": "Assignment 5",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Jo Paterson"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Jan 31",
+            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Jan 31",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Carmel Whyte"
+                    }
+                },
+                {
+                    "date": "Jan 31",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Maddie Mcdonald"
+                    }
+                },
+                {
+                    "date": "Feb 2",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Carmel Whyte"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Aisling Cash"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Robin Shields"
+        },
+        {
+            "image": null,
+            "displayName": "Angel Hastings"
+        },
+        {
+            "image": null,
+            "displayName": "Carmel Whyte"
+        },
+        {
+            "image": null,
+            "displayName": "Halimah Fuentes"
+        },
+        {
+            "image": null,
+            "displayName": "Aisling Cash"
+        },
+        {
+            "image": null,
+            "displayName": "Ravi Wright"
+        },
+        {
+            "image": null,
+            "displayName": "Maddie Mcdonald"
+        }
+    ]
+}

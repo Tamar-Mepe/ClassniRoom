@@ -10,51 +10,71 @@
     "data": [
         {
             "id": 1,
-            "course_id": 1,
-            "date": "2020-08-23T18:25",
+            "date": "Oct 8",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
-            "type": 0,
+            "type": 1,
+            "assignment_name": "Assignment 1",
             "comments": [
                 {
-                    "date": "2020-08-23T18:25",
-                    "description": "First comment",
+                    "date": "Oct 8",
+                    "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "email": "iwall18@freeuni.edu.ge",
-                        "password": "iwall18",
                         "image": null,
-                        "firstName": "Ivy",
-                        "lastName": "Wall"
-                    }
-                },
-                {
-                    "date": "2020-08-23T19:26",
-                    "description": "Second comment",
-                    "user": {
-                        "email": "iwall18@freeuni.edu.ge",
-                        "password": "iwall18",
-                        "image": null,
-                        "firstName": "Ivy",
-                        "lastName": "Wall"
-                    }
-                },
-                {
-                    "date": "2020-08-23T19:27",
-                    "description": "Third comment",
-                    "user": {
-                        "email": "iwall18@freeuni.edu.ge",
-                        "password": "iwall18",
-                        "image": null,
-                        "firstName": "Ivy",
-                        "lastName": "Wall"
+                        "displayName": "Ivy Wall"
                     }
                 }
             ],
             "user": {
-                "email": "jdoe20@freeuni.edu.ge",
-                "password": "jdoe20",
-                "image": "/src/images/users/jdoe.jpg",
-                "firstName": "John",
-                "lastName": "Doe"
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Jan 5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Jan 5",
+                    "description": "First comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Second comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                },
+                {
+                    "date": "Jan 5",
+                    "description": "Third comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "John Doe"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Jan 4",
+            "description": "Phasellus nec eros vitae orci laoreet gravida",
+            "type": 2,
+            "assignment_name": "Additional Materials",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
             }
         }
     ],
@@ -64,8 +84,224 @@
             "displayName": "Ivy Wall"
         },
         {
-            "image": "/src/images/users/jdoe.jpg",
+            "image": null,
             "displayName": "John Doe"
+        },
+        {
+            "image": null,
+            "displayName": "Yousef Buckner"
+        },
+        {
+            "image": null,
+            "displayName": "Ignacy Escobar"
+        },
+        {
+            "image": null,
+            "displayName": "Henrietta Patrick"
+        },
+        {
+            "image": null,
+            "displayName": "Shanay Walls"
+        },
+        {
+            "image": null,
+            "displayName": "Sahib Gilbert"
+        },
+        {
+            "image": null,
+            "displayName": "Malachy Mcbride"
+        },
+        {
+            "image": null,
+            "displayName": "Denny Harper"
+        },
+        {
+            "image": null,
+            "displayName": "Haydon Hyde"
+        },
+        {
+            "image": null,
+            "displayName": "Simra Carter"
+        },
+        {
+            "image": null,
+            "displayName": "Raife Garrett"
+        },
+        {
+            "image": null,
+            "displayName": "Pheobe Galvan"
+        },
+        {
+            "image": null,
+            "displayName": "Allison Welch"
+        },
+        {
+            "image": null,
+            "displayName": "Kristopher Whitehouse"
+        },
+        {
+            "image": null,
+            "displayName": "Reema Mahoney"
+        },
+        {
+            "image": null,
+            "displayName": "Norah Bolton"
+        },
+        {
+            "image": null,
+            "displayName": "Tobias Craft"
+        },
+        {
+            "image": null,
+            "displayName": "Lylah Murphy"
+        },
+        {
+            "image": null,
+            "displayName": "Zane Page"
+        },
+        {
+            "image": null,
+            "displayName": "Viktoria Medina"
+        },
+        {
+            "image": null,
+            "displayName": "Freddie Oneill"
+        },
+        {
+            "image": null,
+            "displayName": "Hywel Chan"
+        },
+        {
+            "image": null,
+            "displayName": "Leon Ireland"
+        },
+        {
+            "image": null,
+            "displayName": "Honor Carrillo"
+        },
+        {
+            "image": null,
+            "displayName": "Adela Fole"
+        },
+        {
+            "image": null,
+            "displayName": "Macie Buxton"
+        },
+        {
+            "image": null,
+            "displayName": "Ammaar Pace"
+        },
+        {
+            "image": null,
+            "displayName": "Nicky Hampton"
+        },
+        {
+            "image": null,
+            "displayName": "Walid Navarro"
+        },
+        {
+            "image": null,
+            "displayName": "Adrianna Ayers"
+        },
+        {
+            "image": null,
+            "displayName": "Aayat Matthams"
+        },
+        {
+            "image": null,
+            "displayName": "Rajveer Harding"
+        },
+        {
+            "image": null,
+            "displayName": "Iyla Mccray"
+        },
+        {
+            "image": null,
+            "displayName": "Kim Whitney"
+        },
+        {
+            "image": null,
+            "displayName": "Claire Michael"
+        },
+        {
+            "image": null,
+            "displayName": "Naveed Blake"
+        },
+        {
+            "image": null,
+            "displayName": "Margie Mahoney"
+        },
+        {
+            "image": null,
+            "displayName": "Jimmie Lugo"
+        },
+        {
+            "image": null,
+            "displayName": "Shelby Houghton"
+        },
+        {
+            "image": null,
+            "displayName": "Andre Jensen"
+        },
+        {
+            "image": null,
+            "displayName": "Natan Lutz"
+        },
+        {
+            "image": null,
+            "displayName": "Alice Slater"
+        },
+        {
+            "image": null,
+            "displayName": "Kierran Farley"
+        },
+        {
+            "image": null,
+            "displayName": "Ella-Rose Sparks"
+        },
+        {
+            "image": null,
+            "displayName": "Zakk Elliott"
+        },
+        {
+            "image": null,
+            "displayName": "Brooklyn Hays"
+        },
+        {
+            "image": null,
+            "displayName": "Patrycja Britt"
+        },
+        {
+            "image": null,
+            "displayName": "Nimra England"
+        },
+        {
+            "image": null,
+            "displayName": "Korban Rocha"
+        },
+        {
+            "image": null,
+            "displayName": "Shelley Hogan"
+        },
+        {
+            "image": null,
+            "displayName": "Jannat Kline"
+        },
+        {
+            "image": null,
+            "displayName": "Lucien Jefferson"
+        },
+        {
+            "image": null,
+            "displayName": "Isobel Fleming"
+        },
+        {
+            "image": null,
+            "displayName": "Saoirse Mcphee"
+        },
+        {
+            "image": null,
+            "displayName": "Cassia Beaumont"
         }
     ]
 }
