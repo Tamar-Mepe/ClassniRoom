@@ -275,8 +275,7 @@ function displayPosts(data) {
             commentsForPost.forEach(function (currComment) {
                 const commentsTemplate = document.getElementById('post-comment-template')
                 const commentsClone = commentsTemplate.content.cloneNode(true);
-                commentsClone.getElementById('comment-owner').textContent =
-                    currComment.user.firstName + ' ' + currComment.user.lastName;
+                commentsClone.getElementById('comment-owner').textContent = currComment.user.displayName;
                 commentsClone.getElementById('comment-posted').textContent = currComment.date;
                 commentsClone.getElementById('comment-text').textContent = currComment.description;
                 commentsContainer.appendChild(commentsClone);
@@ -296,7 +295,7 @@ function displayPosts(data) {
 
 function updateUpperLabeling(currPost, clone, author, date, type) {
     const textToEdit = clone.getElementById(author);
-    textToEdit.textContent = currPost.user.firstName + ' ' + currPost.user.lastName;
+    textToEdit.textContent = currPost.user.displayName;
     if (type > 0) textToEdit.textContent += ' posted a new ';
     if (type == 1) textToEdit.textContent += 'assignment: ' + currPost.assignment_name;
     if (type == 2) textToEdit.textContent += 'material: ' + currPost.assignment_name;

@@ -30,13 +30,13 @@
         },
         {
             "id": 2,
-            "date": "March 8",
+            "date": "Mar 8",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 1,
             "assignment_name": "First Assignment",
             "comments": [
                 {
-                    "date": "March 9",
+                    "date": "Mar 9",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
                         "image": null,
@@ -44,7 +44,7 @@
                     }
                 },
                 {
-                    "date": "March 23",
+                    "date": "Mar 23",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
                         "image": null,

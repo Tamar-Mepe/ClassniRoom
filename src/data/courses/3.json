@@ -47,12 +47,12 @@
         },
         {
             "id": 2,
-            "date": "March 29",
+            "date": "Mar 29",
             "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
             "type": 0,
             "comments": [
                 {
-                    "date": "March 29",
+                    "date": "Mar 29",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
                         "image": null,
@@ -60,7 +60,7 @@
                     }
                 },
                 {
-                    "date": "March 29",
+                    "date": "Mar 29",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
                         "image": null,
@@ -68,7 +68,7 @@
                     }
                 },
                 {
-                    "date": "March 30",
+                    "date": "Mar 30",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
                         "image": null,

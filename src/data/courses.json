@@ -103,38 +103,6 @@
             "subject": null,
             "room": 205,
             "lecturer": "Jillian Pacheco"
-        },
-        {
-            "id": 14,
-            "name": "Mathematics",
-            "image": "/src/images/covers/Math.jpg",
-            "subject": "Maths",
-            "room": 317,
-            "lecturer": "Fardeen Kerr"
-        },
-        {
-            "id": 15,
-            "name": "Architecture",
-            "image": "/src/images/covers/Design.jpg",
-            "subject": null,
-            "room": null,
-            "lecturer": "Imaad Miller"
-        },
-        {
-            "id": 16,
-            "name": "Gaming",
-            "image": "/src/images/covers/img_videogaming.jpg",
-            "subject": "Live Streaming",
-            "room": 103,
-            "lecturer": "Cameron Rios"
-        },
-        {
-            "id": 17,
-            "name": "Chess Club",
-            "image": "/src/images/covers/img_gamenight.jpg",
-            "subject": "Chess",
-            "room": 315,
-            "lecturer": "Patryk Pitt"
         }
     ]
 }
