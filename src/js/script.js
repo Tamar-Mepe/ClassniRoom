@@ -225,74 +225,75 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
     const queryStr = window.location.search;
     const urlParameters = new URLSearchParams(queryStr);
     const classID = urlParameters.get('id');
-    displayUpperPart(classID);
-    displayPosts(classID);
+    displayVisuals(classID);
 }
 
-function displayUpperPart(classID) {
+function displayVisuals(classID) {
     get(route('/src/data/courses/' + classID + '.json'), function (data) {
-        const classroomTitle = document.getElementById('classroom-title');
-        const classroomSubject = document.getElementById('classroom-subject');
-        const classroomRoom = document.getElementById('classroom-room');
-        const classroomImage = document.getElementById('title-image');
-        const subjectLabel = document.getElementById('subject-label');
-        const roomLabel = document.getElementById('room-label');
-        classroomTitle.textContent = data.course.name;
-        classroomSubject.textContent = data.course.subject;
-        classroomRoom.textContent = data.course.room;
-        classroomImage.src = data.course.image
-        if (!data.course.subject) subjectLabel.style.display = 'none';
-        if (!data.course.room) roomLabel.style.display = 'none';
-        if (!data.course.subject && !data.course.room) document.getElementById('show-additional-info').style.display = 'none'
-    })
+        displayUpperPart(data);
+        displayPosts(data);
+    });
 }
 
-function displayPosts(classID) {
-    get(route('/src/data/courses/' + classID + '.json'), function (data) {
-        data = data.data
-        const rightPartContainer = document.getElementById('right-part-container');
-        const postContainerTemplate = document.getElementById('class-post-template');
-        const assignmentAnnouncementTemplate = document.getElementById('assignment-announcement-template');
 
-        // Iterate over posts
-        data.forEach(function (currPost) {
-            const commentsForPost = currPost.comments;
-            const typeOfPost = currPost.type;
-            if (typeOfPost == 0) {
-                // Displaying regular post
-                const postContainerClone = postContainerTemplate.content.cloneNode(true);
-                updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
-                postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
-                const commentsContainer = postContainerClone.getElementById('post-comments');
-                postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
-                if (!commentsForPost.length) commentsContainer.style.display = 'none';
-                rightPartContainer.appendChild(postContainerClone);
+function displayUpperPart(data) {
+    document.title = data.course.name;
 
-                // Iterate over comments
-                commentsForPost.forEach(function (currComment) {
-                    const commentsTemplate = document.getElementById('post-comment-template')
-                    const commentsClone = commentsTemplate.content.cloneNode(true);
-                    commentsClone.getElementById('comment-owner').textContent =
-                        currComment.user.firstName + ' ' + currComment.user.lastName;
-                    commentsClone.getElementById('comment-posted').textContent = currComment.date;
-                    commentsClone.getElementById('comment-text').textContent = currComment.description;
-                    commentsContainer.appendChild(commentsClone);
-                });
-            } else {
-                // Displaying assignment posted by the teacher
-                const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
-                updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
-                    'assignment-announced-date', typeOfPost);
-                const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
-                assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
-                if (!commentsForPost.length) commentsElem.style.display = 'none';
-                rightPartContainer.appendChild(assignmentAnnouncementClone);
-            }
-        });
-    })
+    document.getElementById('classroom-title').textContent = data.course.name;
+    document.getElementById('classroom-subject').textContent = data.course.subject;
+    document.getElementById('classroom-room').textContent = data.course.room;
+    document.getElementById('title-image').src = data.course.image;
+
+    const subjectLabel = document.getElementById('subject-label');
+    const roomLabel = document.getElementById('room-label');
+    if (!data.course.subject) subjectLabel.style.display = 'none';
+    if (!data.course.room) roomLabel.style.display = 'none';
+    if (!data.course.subject && !data.course.room) document.getElementById('show-additional-info').style.display = 'none';
 }
 
-//Updates the owner name and date posted by assignment type
+function displayPosts(data) {
+    const postData = data.data
+    const rightPartContainer = document.getElementById('right-part-container');
+    const postContainerTemplate = document.getElementById('class-post-template');
+    const assignmentAnnouncementTemplate = document.getElementById('assignment-announcement-template');
+
+    // Iterate over posts
+    postData.forEach(function (currPost) {
+        const commentsForPost = currPost.comments;
+        const typeOfPost = currPost.type;
+        if (!typeOfPost) {
+            // Displaying regular post
+            const postContainerClone = postContainerTemplate.content.cloneNode(true);
+            updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
+            postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
+            const commentsContainer = postContainerClone.getElementById('post-comments');
+            postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
+            if (!commentsForPost.length) commentsContainer.style.display = 'none';
+            rightPartContainer.appendChild(postContainerClone);
+
+            // Iterate over comments
+            commentsForPost.forEach(function (currComment) {
+                const commentsTemplate = document.getElementById('post-comment-template')
+                const commentsClone = commentsTemplate.content.cloneNode(true);
+                commentsClone.getElementById('comment-owner').textContent =
+                    currComment.user.firstName + ' ' + currComment.user.lastName;
+                commentsClone.getElementById('comment-posted').textContent = currComment.date;
+                commentsClone.getElementById('comment-text').textContent = currComment.description;
+                commentsContainer.appendChild(commentsClone);
+            });
+        } else {
+            // Displaying assignment posted by the teacher
+            const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
+            updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
+                'assignment-announced-date', typeOfPost);
+            const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
+            assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
+            if (!commentsForPost.length) commentsElem.style.display = 'none';
+            rightPartContainer.appendChild(assignmentAnnouncementClone);
+        }
+    });
+}
+
 function updateUpperLabeling(currPost, clone, author, date, type) {
     const textToEdit = clone.getElementById(author);
     textToEdit.textContent = currPost.user.firstName + ' ' + currPost.user.lastName;

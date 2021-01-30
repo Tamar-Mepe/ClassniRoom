@@ -26,7 +26,7 @@
                 }
             ],
             "user": {
-                "image": "http://localhost:5000/images/users/tdavi.png",
+                "image": "/src/images/users/tdavi.png",
                 "firstName": "Tamar",
                 "lastName": "Davitaia"
             }
