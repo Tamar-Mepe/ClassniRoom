@@ -647,7 +647,7 @@ header ul:last-child {
 .post-comments-button {
     margin-left: -10px;
     padding: 10px;
-    color: #5f6368;
+    color: black;
     font-family: 'Open Sans', serif;
     border: none;
     background-color: transparent;
@@ -655,11 +655,15 @@ header ul:last-child {
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 14px;
-    cursor: pointer;
 }
 
-.post-comments-button:hover {
+.button-hover {
+    color: #5f6368;
+}
+
+.button-hover:hover {
     background-color: #f9f9f9;
+    cursor: pointer;
 }
 
 .post-comment {
@@ -676,6 +680,7 @@ header ul:last-child {
 .comment-styling {
     margin-top: 5px;
     font-size: 14px;
+    word-break: break-word;
 }
 
 .comment-input-field {

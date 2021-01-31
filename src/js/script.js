@@ -3,6 +3,7 @@
 // Courses Page
 const dropDownButton = document.querySelector('.plus-button');
 const menu = document.querySelector('.menu-content');
+const currLoggedIn = 'John Doe';
 if (dropDownButton) {
     dropDownButton.addEventListener('click', () => {
         if (menu.style.display !== 'block') {
@@ -267,29 +268,97 @@ function displayPosts(data) {
             updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
             postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
             const commentsContainer = postContainerClone.getElementById('post-comments');
-            postContainerClone.getElementById('post-comments-button').textContent = classCommentsButton(commentsForPost);
-            if (!commentsForPost.length) commentsContainer.style.display = 'none';
+            const postCommentsButton = commentsContainer.children[0];
+            postCommentsButton.textContent = classCommentsButton(commentsForPost.length, postCommentsButton);
             rightPartContainer.appendChild(postContainerClone);
 
             // Iterate over comments
+            const commentsTemplate = document.getElementById('post-comment-template');
             commentsForPost.forEach(function (currComment) {
-                const commentsTemplate = document.getElementById('post-comment-template')
-                const commentsClone = commentsTemplate.content.cloneNode(true);
-                commentsClone.getElementById('comment-owner').textContent = currComment.user.displayName;
-                commentsClone.getElementById('comment-posted').textContent = currComment.date;
-                commentsClone.getElementById('comment-text').textContent = currComment.description;
-                commentsContainer.appendChild(commentsClone);
+                displayComment(commentsContainer, commentsTemplate, currComment.user.displayName, currComment.date, currComment.description);
             });
+
+            // Hide all comments but last
+            let commentsAreHidden = false;
+            if (!commentsForPost.length) commentsContainer.style.display = 'none';
+            else if (commentsForPost.length > 1) {
+                const currPostComments = Array.from(commentsContainer.querySelectorAll('.post-comment'));
+                changeStylingOfComments(currPostComments, 'none');
+                commentsAreHidden = true;
+            }
+            handleCommentsButtonClick(commentsContainer, postCommentsButton, commentsAreHidden);
+            handleCommentAdding(commentsContainer, commentsContainer.parentElement.lastElementChild,
+                commentsTemplate, postCommentsButton, commentsForPost.length);
+
         } else {
             // Displaying assignment posted by the teacher
             const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
             updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
                 'assignment-announced-date', typeOfPost);
             const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
-            assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost);
+            assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost.length, null);
             if (!commentsForPost.length) commentsElem.style.display = 'none';
             rightPartContainer.appendChild(assignmentAnnouncementClone);
         }
+    });
+}
+
+function displayComment(commentsContainer, commentsTemplate, displayName, postedDate, commentDesc) {
+    const commentsClone = commentsTemplate.content.cloneNode(true);
+    commentsClone.getElementById('comment-owner').textContent = displayName;
+    commentsClone.getElementById('comment-posted').textContent = postedDate;
+    commentsClone.getElementById('comment-text').textContent = commentDesc;
+    commentsContainer.appendChild(commentsClone);
+}
+
+function handleCommentAdding(commentsContainer, commentInputField, commentsTemplate, postCommentsButton, commentsForPostLen) {
+    let commentQuantity = commentsForPostLen;
+    const addCommentButton = commentInputField.querySelector('.comment-input-field button');
+    const textField = commentInputField.querySelector('input');
+    postOnEnter(commentInputField, addCommentButton);
+    addCommentButton.addEventListener('click', function () {
+        let currTime = new Date();
+        let currTimeHours = currTime.getHours();
+        currTimeHours = (currTimeHours < 10) ? '0' + currTimeHours : currTimeHours;
+        let currTimeMinutes = currTime.getMinutes();
+        currTimeMinutes = (currTimeMinutes < 10) ? '0' + currTimeMinutes : currTimeMinutes;
+        const textFieldText = textField.value;
+        if (textFieldText) {
+            displayComment(commentsContainer, commentsTemplate, currLoggedIn, currTimeHours + ":" + currTimeMinutes, textField.value);
+            commentQuantity++;
+            textField.value = "";
+            changeButtonStyling(commentsContainer, commentQuantity, postCommentsButton);
+        }
+    });
+}
+
+function changeButtonStyling(commentsContainer, commentQuantity, postCommentsButton) {
+    postCommentsButton.textContent = classCommentsButton(commentQuantity, postCommentsButton);
+    if (commentsContainer.style.display === 'none') {
+        commentsContainer.style.display = 'block';
+    } else if (postCommentsButton.textContent[0] === '2') {
+        postCommentsButton.classList.add('button-hover');
+        postCommentsButton.style.pointerEvents = 'auto';
+    }
+}
+
+function postOnEnter(inputField, buttonToClick) {
+    inputField.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            buttonToClick.click();
+        }
+    });
+}
+
+function changeStylingOfComments(currPostComments, displayType) {
+    for (let i = 0; i < currPostComments.length - 1; i++) currPostComments[i].style.display = displayType;
+}
+
+function handleCommentsButtonClick(commentsContainer, commentsButton, commentsAreHidden) {
+    commentsButton.addEventListener('click', function () {
+        const currPostComments = Array.from(commentsContainer.querySelectorAll('.post-comment'));
+        changeStylingOfComments(currPostComments, commentsAreHidden ? 'flex' : 'none');
+        commentsAreHidden = !commentsAreHidden;
     });
 }
 
@@ -302,9 +371,14 @@ function updateUpperLabeling(currPost, clone, author, date, type) {
     clone.getElementById(date).textContent = currPost.date;
 }
 
-function classCommentsButton(commentsForPost) {
-    let commentsForPostLen = commentsForPost.length;
+function classCommentsButton(commentsForPostLen, postCommentsButton) {
     let stringToDisplay = commentsForPostLen + ' class comment';
+    if (commentsForPostLen == 1) {
+        if (postCommentsButton) {
+            postCommentsButton.classList.remove('button-hover');
+            postCommentsButton.style.pointerEvents = 'none';
+        }
+    }
     if (commentsForPostLen > 1) stringToDisplay += 's';
     return stringToDisplay;
 }
