@@ -10,12 +10,12 @@
     "data": [
         {
             "id": 1,
-            "date": "June 2",
+            "date": "Jun 2",
             "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
             "type": 0,
             "comments": [
                 {
-                    "date": "June 2",
+                    "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
                         "image": null,
