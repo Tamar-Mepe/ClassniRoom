@@ -382,3 +382,28 @@ function classCommentsButton(commentsForPostLen, postCommentsButton) {
     if (commentsForPostLen > 1) stringToDisplay += 's';
     return stringToDisplay;
 }
+
+// Requests for Students Page (Temporary)
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('students.html')) {
+    const queryStr = window.location.search;
+    const urlParameters = new URLSearchParams(queryStr);
+    const classID = urlParameters.get('id');
+    displayStudents(classID);
+}
+
+function displayStudents(classID) {
+    get(route('/src/data/courses/' + classID + '.json'), function (data) {
+        const studentsList = data.students;
+        const lecturerLabel = data.course.lecturer;
+        const studLabelStyling = document.querySelector('.stud-label-styling');
+        studLabelStyling.textContent = studentsList.length + ' students';
+        const tableTemplate = document.getElementById('table-template');
+        const tableContainer = document.querySelector('.table-container table');
+        document.getElementById('lecturer-label').textContent = lecturerLabel;
+        studentsList.forEach(function (student) {
+            const studClone = tableTemplate.content.cloneNode(true);
+            studClone.getElementById('student-label').textContent = student.displayName;
+            tableContainer.appendChild(studClone);
+        });
+    });
+}

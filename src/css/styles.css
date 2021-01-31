@@ -1015,6 +1015,7 @@ header ul:last-child {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     width: 800px;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -1070,8 +1071,7 @@ td:nth-child(3)>svg {
 
 td {
     vertical-align: middle;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 }
 
 tr {
@@ -1431,9 +1431,9 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 0px;
         padding: 0px 0px 10px 10px;
     }
@@ -1441,7 +1441,7 @@ tr:last-of-type {
         font-size: 12px;
     }
     .title-container {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 10px 0px 10px 10px;
         margin: 0px;
     }
@@ -1449,10 +1449,13 @@ tr:last-of-type {
         margin-left: 10px;
     }
     td:nth-child(1) {
-        width: 50px;
+        width: 55px;
     }
-    td:nth-child(3)>svg {
-        margin-right: 10px;
+    td:nth-child(2) {
+        font-size: 15px;
+    }
+    td {
+        padding: 0.8em 0;
     }
 }
 
