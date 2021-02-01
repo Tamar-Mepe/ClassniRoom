@@ -339,7 +339,7 @@ header ul:last-child {
 }
 
 .go-button-style:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
     cursor: pointer;
 }
 
@@ -663,6 +663,45 @@ textarea:focus {
 }
 
 .announcement-post-buttons button:hover {
+    cursor: pointer;
+}
+
+.search-stream-bar {
+    margin-top: 30px;
+    box-shadow: 0 0px 11px rgba(33, 33, 33, .2);
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.search-stream-bar input {
+    width: calc(100% - 60px);
+    border: none;
+    font-size: 13px;
+    font-family: 'Open Sans', serif;
+    padding: 20px 30px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.search-stream-bar input:hover {
+    cursor: pointer;
+}
+
+.reset-search-btn {
+    background-color: #4285F4;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Open Sans', serif;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: none;
+    width: 100%;
+}
+
+.reset-search-btn:hover {
     cursor: pointer;
 }
 

@@ -1,9 +1,12 @@
 'use strict'
 
+const currLoggedIn = 'John Doe';
+const approvedEmail = 'test@test';
+const approvedPassword = 'test';
+
 // Courses Page
 const dropDownButton = document.querySelector('.plus-button');
 const menu = document.querySelector('.menu-content');
-const currLoggedIn = 'John Doe';
 if (dropDownButton) {
     dropDownButton.addEventListener('click', () => {
         if (menu.style.display !== 'block') {
@@ -110,10 +113,6 @@ if (dropDownAdditionalInfo) {
 }
 //==============
 
-function route(path) {
-    return path;
-}
-
 // Post Wrapper
 function post(url, body, callback) {
     const postRequest = new XMLHttpRequest();
@@ -134,7 +133,7 @@ function get(url, callback) {
             callback(JSON.parse(this.responseText))
         }
     }
-    displayPostsRequest.open('GET', route(url));
+    displayPostsRequest.open('GET', url);
     displayPostsRequest.send();
 }
 
@@ -180,7 +179,7 @@ function changeStyling(aBar) {
 
 // Requests for Courses Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) === 'courses.html') {
-    get(route('/src/data/courses.json'), function (data) {
+    get('/src/data/courses.json', function (data) {
         data = data.data
         if (!data.length) {
             const emptyListWindow = document.getElementById('empty-class-list');
@@ -212,27 +211,17 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
 
 // Requests for Login Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('login.html')) {
+    alert('In order to login, please use:\nEmail: test@test\nPassword: test');
     const logInButton = document.getElementById('button-lr');
     logInButton.addEventListener('click', function (event) {
         const emailField = document.getElementById('email').value;
         const passwordField = document.getElementById('password').value;
         event.preventDefault();
-        const url = route('api/auth/login');
-        const userData = {
-            email: emailField,
-            password: passwordField
-        };
-        post(url, userData, function (res) {
-            res = JSON.parse(res)
-            if (res.message === 'Ok') {
-                window.location.href = 'courses.html';
-            } else {
-                const errorMessage = document.getElementById('wrong-credentials');
-                errorMessage.style.display = 'block';
-            }
-        })
+        if (emailField.toLowerCase() === approvedEmail && passwordField === approvedPassword)
+            window.location.href = 'courses.html';
+        else
+            document.getElementById('wrong-credentials').style.display = 'block';
     });
-
 }
 
 // Requests for Stream Page (Temporary)
@@ -244,10 +233,65 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 }
 
 function displayVisuals(classID) {
-    get(route('/src/data/courses/' + classID + '.json'), function (data) {
+    get('/src/data/courses/' + classID + '.json', function (data) {
         displayUpperPart(data);
         announceContainer();
         displayPosts(data);
+        searchBar();
+    });
+}
+
+function searchBar() {
+    const searchBarInput = document.getElementById('search-stream-bar-id');
+    searchBarInput.addEventListener(('keyup'), function (event) {
+        if (event.keyCode === 13) {
+            const searchFor = searchBarInput.value;
+            if (searchFor !== "") {
+                searchForInput(searchFor);
+                searchBarInput.value = "";
+            }
+        }
+    });
+}
+
+function searchForInput(searchFor) {
+    const resetButton = document.getElementById('reset-search-btn')
+    const rightPartContainer = document.getElementById('right-part-container');
+    const searchStreamBar = document.querySelector('.search-stream-bar');
+    const childrenComponents = Array.from(rightPartContainer.children);
+    childrenComponents.forEach(function (currChild) {
+        if (currChild.className === 'assignment-announcement' || currChild.className === 'class-post-container') {
+            let maintextLabeling = "";
+            const upperLabeling = currChild.querySelector('.post-owner').textContent;
+            const mainText = currChild.querySelector('.post-class-main-text');
+            if (mainText) maintextLabeling = mainText.textContent;
+            if (upperLabeling.toLowerCase().includes(searchFor.toLowerCase())
+                || maintextLabeling.toLowerCase().includes(searchFor.toLowerCase())) {
+                changeStyling(currChild, '#4285F4');
+            } else currChild.style.display = 'none';
+        }
+    });
+    resetButton.style.display = 'block';
+    searchStreamBar.style.display = 'none';
+    resetButton.addEventListener('click', function () {
+        revertToStartingPoint();
+        resetButton.style.display = 'none';
+        searchStreamBar.style.display = 'block';
+    });
+}
+
+function changeStyling(currChild, borderColor) {
+    let classPostContainer = currChild;
+    if (currChild.className === 'assignment-announcement') classPostContainer = currChild.querySelector('.class-post-container');
+    classPostContainer.style.borderColor = borderColor;
+}
+
+function revertToStartingPoint() {
+    const rightPartContainer = document.getElementById('right-part-container');
+    const childrenComponents = Array.from(rightPartContainer.children);
+    childrenComponents.forEach(function (currChild) {
+        changeStyling(currChild, 'lightgray');
+        currChild.style.display = 'block';
     });
 }
 
@@ -272,10 +316,12 @@ function announceContainer() {
     const cancelButton = document.getElementById('cancel-button-post');
     const postButton = document.getElementById('post-button-post');
     const textArea = document.getElementById('announce-textarea');
+    const resetButton = document.getElementById('reset-search-btn');
     firstTypeContainer.addEventListener('click', function () {
         firstTypeContainer.style.display = 'none';
         secondTypeContainer.style.display = 'block';
         textArea.select();
+        resetButton.click();
     });
     cancelButton.addEventListener('click', function () {
         firstTypeContainer.style.display = 'flex';
@@ -291,7 +337,7 @@ function announceContainer() {
 
 function addPost(textArea) {
     const postContainerTemplate = document.getElementById('class-post-template');
-    const announceContainers = document.querySelector('.announce-containers');
+    const searchStreamBar = document.querySelector('.search-stream-bar-container');
     const postContainerClone = postContainerTemplate.content.cloneNode(true);
 
     postContainerClone.getElementById('post-owner').textContent = currLoggedIn;
@@ -308,7 +354,7 @@ function addPost(textArea) {
     handleCommentsButtonClick(commentsContainer, postCommentsButton, false);
     handleCommentAdding(commentsContainer, commentsContainer.parentElement.lastElementChild,
         commentsTemplate, postCommentsButton, 0);
-    announceContainers.parentNode.insertBefore(postContainerClone, announceContainers.nextSibling);
+    searchStreamBar.parentNode.insertBefore(postContainerClone, searchStreamBar.nextSibling);
 }
 
 function displayPosts(data) {
@@ -406,7 +452,7 @@ function changeButtonStyling(commentsContainer, commentQuantity, postCommentsBut
 }
 
 function postOnEnter(inputField, buttonToClick) {
-    inputField.addEventListener("keyup", function (event) {
+    inputField.addEventListener('keyup', function (event) {
         if (event.keyCode === 13) {
             buttonToClick.click();
         }
@@ -455,7 +501,7 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 }
 
 function displayStudents(classID) {
-    get(route('/src/data/courses/' + classID + '.json'), function (data) {
+    get('/src/data/courses/' + classID + '.json', function (data) {
         const studentsList = data.students;
         const lecturerLabel = data.course.lecturer;
         const studLabelStyling = document.querySelector('.stud-label-styling');
@@ -471,19 +517,23 @@ function displayStudents(classID) {
     });
 }
 
+
+
 // Make welcome page dynamic
 
-const personNames = ['Pam', 'Kim', 'Tom'];
-const personColors = ['#00a3bd', '#f4b400', '#cc1470'];
-const labels = ['informative', 'inspiring', 'helpful'];
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('index.html')) {
+    const personNames = ['Pam', 'Kim', 'Tom'];
+    const personColors = ['#00a3bd', '#f4b400', '#cc1470'];
+    const labels = ['informative', 'inspiring', 'helpful'];
 
-const typeOutText = document.getElementById('type-out-line-text');
-const typeOutLine = document.querySelector('.type-out-line');
-const typeOutLineLabel = document.getElementById('type-out-line-label');
+    const typeOutText = document.getElementById('type-out-line-text');
+    const typeOutLine = document.querySelector('.type-out-line');
+    const typeOutLineLabel = document.getElementById('type-out-line-label');
 
-typeWriter(labels, typeOutText, typeOutLine, typeOutLineLabel);
+    typeWriter(personNames, personColors, labels, typeOutText, typeOutLine, typeOutLineLabel);
+}
 
-async function typeWriter(labels, typeOutText, typeOutLine, typeOutLineLabel) {
+async function typeWriter(personNames, personColors, labels, typeOutText, typeOutLine, typeOutLineLabel) {
     while (true) {
         for (let i = 0; i < labels.length; i++) {
             typeOutLine.style.borderColor = personColors[i];
@@ -494,6 +544,7 @@ async function typeWriter(labels, typeOutText, typeOutLine, typeOutLineLabel) {
                 await sleep(100);
             }
             await sleep(2000);
+            console.log('sleeping');
             typeOutText.textContent = "";
         }
     }
