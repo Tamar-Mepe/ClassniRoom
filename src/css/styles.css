@@ -260,6 +260,32 @@ header ul:last-child {
 
 /* WELCOME PAGE STYLING */
 
+.welcome-img-style {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.type-out-line {
+    border-right: 4px solid;
+    position: relative;
+    margin-right: 5px;
+}
+
+.type-out-line-label {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 12px;
+    top: -50px;
+    left: calc(100% - 10px);
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
 .welcome-container {
     position: fixed;
     width: 100%;
@@ -267,7 +293,6 @@ header ul:last-child {
 }
 
 .welcome-content-style {
-    max-width: 850px;
     display: flex;
     align-items: center;
     margin: auto;
@@ -275,6 +300,7 @@ header ul:last-child {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    width: 90%;
 }
 
 .welcome-heading-style {
@@ -284,36 +310,37 @@ header ul:last-child {
     font-size: 52px;
     font-weight: lighter;
     margin-bottom: 40px;
-    width: 90%;
+    color: white;
 }
 
 .welcome-small-text {
     font-family: "Roboto";
     font-size: 18px;
-    font-weight: 100;
+    max-width: 700px;
     letter-spacing: .1px;
     line-height: 28px;
-    color: #999b9e;
+    color: lightgray;
     width: 90%;
 }
 
 .go-button-style {
     margin: 40px 0px;
-    color: #1a73e8;
+    color: black;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: .5px;
-    background-color: #fff;
-    border-color: #dadce0;
+    background-color: white;
     border-radius: 5px;
     min-height: 48px;
     min-width: 96px;
     padding: 2px 24px;
+    font-family: "Roboto";
+    border: none;
 }
 
 .go-button-style:hover {
-    background-color: #f2f8ff;
-    border-color: #1a73e8;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
 }
 
 /* ============================== */
@@ -1633,40 +1660,26 @@ tr:last-of-type {
 
 /* MEDIA QUERIES FOR WELCOME */
 
-@media only screen and (max-width: 1250px) {
-    .welcome-img-style {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
     .welcome-heading-style {
-        font-size: 45px;
-        margin-bottom: 20px;
-        line-height: 45px;
+        line-height: 38px;
+        font-size: 38px;
+        margin-bottom: 30px;
     }
     .welcome-small-text {
         font-size: 15px;
-        width: 70%;
         line-height: 25px;
     }
-}
-
-@media only screen and (max-width: 735px) {
-    .welcome-heading-style {
-        font-size: 35px;
-        line-height: 35px;
+    .type-out-line-label {
+        font-size: 23px;
+        top: -35px;
+        left: calc(100% - 10px);
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .welcome-heading-style {
-        font-size: 30px;
-    }
-    .go-button-style {
-        margin: 30px 0px 40px 0px;
-        padding: 2px 18px;
-        font-size: 13px;
+    .welcome-content-style {
+        width: 75%;
     }
 }
 

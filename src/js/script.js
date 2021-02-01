@@ -37,6 +37,13 @@ if (createClassButton) {
     })
 }
 
+const createClassBtn = document.getElementById('create-button');
+if (createClassBtn) {
+    createClassBtn.addEventListener('click', () => {
+        document.getElementById('create-class-popup').style.visibility = 'hidden';
+    })
+}
+
 const closeCreateButton = document.getElementById('close');
 if (closeCreateButton) {
     closeCreateButton.addEventListener('click', () => {
@@ -69,6 +76,13 @@ if (inviteButton) {
 const inviteClose = document.getElementById('invite-close-button');
 if (inviteClose) {
     inviteClose.addEventListener('click', () => {
+        document.getElementById('invite-popup-container').style.visibility = 'hidden';
+    })
+}
+
+const iniviteBtn = document.getElementById('inv-button');
+if (iniviteBtn) {
+    iniviteBtn.addEventListener('click', () => {
         document.getElementById('invite-popup-container').style.visibility = 'hidden';
     })
 }
@@ -455,4 +469,36 @@ function displayStudents(classID) {
             tableContainer.appendChild(studClone);
         });
     });
+}
+
+// Make welcome page dynamic
+
+const personNames = ['Pam', 'Kim', 'Tom'];
+const personColors = ['#00a3bd', '#f4b400', '#cc1470'];
+const labels = ['informative', 'inspiring', 'helpful'];
+
+const typeOutText = document.getElementById('type-out-line-text');
+const typeOutLine = document.querySelector('.type-out-line');
+const typeOutLineLabel = document.getElementById('type-out-line-label');
+
+typeWriter(labels, typeOutText, typeOutLine, typeOutLineLabel);
+
+async function typeWriter(labels, typeOutText, typeOutLine, typeOutLineLabel) {
+    while (true) {
+        for (let i = 0; i < labels.length; i++) {
+            typeOutLine.style.borderColor = personColors[i];
+            typeOutLineLabel.textContent = personNames[i];
+            typeOutLineLabel.style.backgroundColor = personColors[i];
+            for (let j = 0; j < labels[i].length; j++) {
+                typeOutText.textContent += labels[i][j];
+                await sleep(100);
+            }
+            await sleep(2000);
+            typeOutText.textContent = "";
+        }
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
