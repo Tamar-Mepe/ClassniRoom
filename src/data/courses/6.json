@@ -13,7 +13,9 @@
             "date": "Oct 23",
             "description": "Donec at justo pretium nibh porttitor condimentum. Pellentesque sit amet eleifend sapien. Aenean elit sem, bibendum et arcu rhoncus, tempor efficitur enim. In id purus justo. Aliquam vitae lectus at ex ornare consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies turpis ac nisi tristique scelerisque. In porta placerat urna, ac aliquam urna sollicitudin nec. Aliquam scelerisque gravida elit eget tempor.",
             "type": 1,
-            "assignment_name": "Assignment 3",
+            "assignment_name": "First assignment",
+            "assignment_status": "Turned in late",
+            "due_date": "Oct 30",
             "comments": [
                 {
                     "date": "Oct 23",

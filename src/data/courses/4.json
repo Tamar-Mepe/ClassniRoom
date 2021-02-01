@@ -101,7 +101,10 @@
             "date": "Feb 1",
             "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
             "type": 1,
-            "assignment_name": "Assignment 5",
+            "assignment_name": "Assignment - Bonus",
+            "assignment_status": "Graded",
+            "score": "7/7",
+            "due_date": "Feb 8",
             "comments": [],
             "user": {
                 "image": null,

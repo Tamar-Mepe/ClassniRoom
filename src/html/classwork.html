@@ -42,7 +42,7 @@
         </div>
     </div>
     <main>
-        <div class="assignments-container">
+        <div class="assignments-container" id="assignments-container">
             <button class="view-your-work-button">
                 <a href="yourwork.html">
                     <svg>
@@ -56,216 +56,44 @@
                     <span>View your work</span>
                 </a>
             </button>
-
-            <div class="assignment-bar-style">
-                <div class="assignment-bar">
-                    <div class="assignment-bar-left">
-                        <div class="assignment-logo">
-                            <svg>
-                                <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
-                                <path
-                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z">
-                                </path>
-                            </svg>
+            <template id="assignment-bar-style-id">
+                <div class="assignment-bar-style">
+                    <div class="assignment-bar">
+                        <div class="assignment-bar-left">
+                            <div class="assignment-logo">
+                                <svg>
+                                    <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
+                                    <path
+                                        d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="assignment-name-style" id="assignment-name-id"></div>
+                            <div class="assignment-comments" id="assignment-comments-id">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM4 16V4h16v12H4z">
+                                    </path>
+                                    <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path>
+                                </svg>
+                            </div>
+                            <div class="comments-num-style" id="number-of-comments"></div>
                         </div>
-                        <div class="assignment-name-style">მეორე დავალება</div>
-                        <div class="assignment-comments">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM4 16V4h16v12H4z">
-                                </path>
-                                <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path>
-                            </svg>
-                        </div>
-                        <div class="comments-num-style">6</div>
+                        <div class="due-date-style" id="assignment-due-date"></div>
                     </div>
-                    <div class="due-date-style">Due Jan 13</div>
-                </div>
-                <div class="assignment-content-container">
-                    <div class="assignment-content">
-                        <div class="assignment-post-date">
-                            Posted Dec 25, 2020
+                    <div class="assignment-content-container">
+                        <div class="assignment-content">
+                            <div class="assignment-post-date" id="assignment-posted-date">
+                            </div>
+                            <div class="assignment-content-main" id="assignment-content-main">
+                            </div>
                         </div>
-                        <div class="assignment-content-main">
-                            Maecenas nisl lectus, tincidunt a tempor id, lacinia et nisi. Ut maximus massa a dapibus
-                            bibendum.
-                            Vestibulum at arcu at nisi maximus gravida quis sit amet enim. Nam bibendum gravida
-                            velit eu
-                            feugiat. Curabitur vestibulum aliquet dictum. Donec porttitor eu odio rutrum euismod.
-                            Sed
-                            viverra,
-                            mauris vel pharetra consectetur, sapien lectus bibendum magna, iaculis pulvinar libero
-                            lacus
-                            in
-                            quam. Suspendisse hendrerit scelerisque turpis, at volutpat mi ultrices in. Donec elit
-                            ante,
-                            molestie maximus leo sed, facilisis placerat enim. Cras hendrerit pulvinar felis, id
-                            aliquam
-                            dui
-                            tempor non. Vestibulum dictum vehicula dolor quis vestibulum.
+                        <div class="view-assignment-style">
+                            <button class="post-comments-button" id="view-assignment-button"></button>
                         </div>
-                        <button class="post-comments-button">6 class comments</button>
-                    </div>
-                    <div class="view-assignment-style">
-                        <button class="post-comments-button">View assignment</button>
                     </div>
                 </div>
-            </div>
-
-            <div class="assignment-bar-style">
-                <div class="assignment-bar">
-                    <div class="assignment-bar-left">
-                        <div class="assignment-logo">
-                            <svg>
-                                <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
-                                <path
-                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="assignment-name-style">პირველი დავალება</div>
-                        <div class="assignment-comments">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM4 16V4h16v12H4z">
-                                </path>
-                                <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path>
-                            </svg>
-                        </div>
-                        <div class="comments-num-style">9</div>
-                    </div>
-                    <div class="due-date-style">Due Jan 1</div>
-                </div>
-                <div class="assignment-content-container">
-                    <div class="assignment-content">
-                        <div class="assignment-post-date">
-                            Posted Dec 23, 2020
-                        </div>
-                        <div class="assignment-content-main">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum leo at sagittis
-                            ultricies.
-                            Phasellus semper ante felis, nec rutrum libero bibendum nec. Aliquam erat ante, mattis
-                            ut
-                            est
-                            at,
-                            malesuada blandit massa. Duis a iaculis felis. Fusce lobortis ex at est pellentesque,
-                            sed
-                            ornare
-                            velit volutpat. Ut in sollicitudin lacus. Mauris tempor ultrices lectus nec accumsan.
-                            <br><br>
-                            Duis a justo posuere, efficitur augue ac, mollis lorem. Vestibulum consectetur fermentum
-                            sem,
-                            laoreet venenatis nibh posuere ut. Fusce eget ultricies mauris. Aenean accumsan in nulla
-                            sed
-                            molestie. Pellentesque molestie, dolor ut faucibus efficitur, urna metus cursus tortor,
-                            a
-                            gravida
-                            nulla arcu eget diam. Nulla quis tortor ipsum. Suspendisse potenti.<br><br>
-                            Ut eu varius massa. Nam facilisis ipsum quis finibus malesuada. Maecenas quam massa,
-                            sagittis ut
-                            mi
-                            nec, commodo venenatis purus. Vestibulum varius dui ac nunc hendrerit placerat. Nullam
-                            convallis,
-                            nunc vel maximus viverra, velit nisl tempus risus, id porttitor erat lectus vel dui.
-                            Etiam a
-                            nibh
-                            enim. Aenean sit amet ex nulla. Quisque maximus, lorem non ornare pharetra, justo nibh
-                            ultricies
-                            odio, et dapibus risus tortor in tellus.<br><br>
-                            Pellentesque consectetur, orci et lacinia congue, odio dui egestas ante, non placerat
-                            eros
-                            tortor
-                            blandit enim. Praesent vitae hendrerit purus. Donec et gravida augue. Orci varius
-                            natoque
-                            penatibus
-                            et magnis dis parturient montes, nascetur ridiculus mus. Donec pharetra quam facilisis
-                            mauris
-                            pulvinar accumsan ut bibendum velit. Suspendisse tincidunt ligula lectus, et aliquet ex
-                            rutrum
-                            nec.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Nulla
-                            lobortis
-                            condimentum diam, nec feugiat mauris. Nam facilisis vel lacus non varius.<br><br>
-                            Maecenas nisl lectus, tincidunt a tempor id, lacinia et nisi. Ut maximus massa a dapibus
-                            bibendum.
-                            Vestibulum at arcu at nisi maximus gravida quis sit amet enim. Nam bibendum gravida
-                            velit eu
-                            feugiat. Curabitur vestibulum aliquet dictum. Donec porttitor eu odio rutrum euismod.
-                            Sed
-                            viverra,
-                            mauris vel pharetra consectetur, sapien lectus bibendum magna, iaculis pulvinar libero
-                            lacus
-                            in
-                            quam. Suspendisse hendrerit scelerisque turpis, at volutpat mi ultrices in. Donec elit
-                            ante,
-                            molestie maximus leo sed, facilisis placerat enim. Cras hendrerit pulvinar felis, id
-                            aliquam
-                            dui
-                            tempor non. Vestibulum dictum vehicula dolor quis vestibulum.
-                        </div>
-                        <button class="post-comments-button">9 class comments</button>
-                    </div>
-
-                    <div class="view-assignment-style">
-                        <button class="post-comments-button">View assignment</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="assignment-bar-style">
-                <div class="assignment-bar">
-                    <div class="assignment-bar-left">
-                        <div class="assignment-logo">
-                            <svg>
-                                <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
-                                <path
-                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="assignment-name-style">კლასის შესახებ</div>
-                        <div class="assignment-comments">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM4 16V4h16v12H4z">
-                                </path>
-                                <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path>
-                            </svg>
-                        </div>
-                        <div class="comments-num-style">2</div>
-                    </div>
-                    <div class="due-date-style">Posted Dec 21, 2020</div>
-                </div>
-                <div class="assignment-content-container">
-                    <div class="assignment-content">
-                        <div class="assignment-post-date">
-                            Posted Dec 25, 2020
-                        </div>
-                        <div class="assignment-content-main">
-                            Maecenas nisl lectus, tincidunt a tempor id, lacinia et nisi. Ut maximus massa a dapibus
-                            bibendum.
-                            Vestibulum at arcu at nisi maximus gravida quis sit amet enim. Nam bibendum gravida
-                            velit eu
-                            feugiat. Curabitur vestibulum aliquet dictum. Donec porttitor eu odio rutrum euismod.
-                            Sed
-                            viverra,
-                            mauris vel pharetra consectetur, sapien lectus bibendum magna, iaculis pulvinar libero
-                            lacus
-                            in
-                            quam. Suspendisse hendrerit scelerisque turpis, at volutpat mi ultrices in. Donec elit
-                            ante,
-                            molestie maximus leo sed, facilisis placerat enim. Cras hendrerit pulvinar felis, id
-                            aliquam
-                            dui
-                            tempor non. Vestibulum dictum vehicula dolor quis vestibulum.
-                        </div>
-                        <button class="post-comments-button">2 class comments</button>
-                    </div>
-                    <div class="view-assignment-style">
-                        <button class="post-comments-button">View material</button>
-                    </div>
-                </div>
-            </div>
+            </template>
         </div>
     </main>
 </body>

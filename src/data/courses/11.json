@@ -24,8 +24,8 @@
             "id": 2,
             "date": "Mar 3",
             "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
-            "type": 0,
-            "assignment_name": "Exercises",
+            "type": 2,
+            "assignment_name": "Exercises: Part 2",
             "comments": [
                 {
                     "date": "Mar 9",
@@ -53,7 +53,7 @@
             "id": 3,
             "date": "Feb 29",
             "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
-            "type": 1,
+            "type": 2,
             "assignment_name": "Exercises",
             "comments": [],
             "user": {
@@ -67,6 +67,9 @@
             "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
             "type": 1,
             "assignment_name": "Preparation for Finals",
+            "assignment_status": "Graded",
+            "score": "5/5",
+            "due_date": "Mar 19",
             "comments": [
                 {
                     "date": "Feb 29",

@@ -14,6 +14,8 @@
             "description": "Donec at justo pretium nibh porttitor condimentum. Pellentesque sit amet eleifend sapien. Aenean elit sem, bibendum et arcu rhoncus, tempor efficitur enim. In id purus justo. Aliquam vitae lectus at ex ornare consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies turpis ac nisi tristique scelerisque. In porta placerat urna, ac aliquam urna sollicitudin nec. Aliquam scelerisque gravida elit eget tempor.",
             "type": 1,
             "assignment_name": "Final Project",
+            "assignment_status": "Assigned",
+            "due_date": "Sep 15",
             "comments": [
                 {
                     "date": "Aug 23",
@@ -63,6 +65,9 @@
             "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
             "type": 1,
             "assignment_name": "Assignment",
+            "assignment_status": "Graded",
+            "score": "35/35",
+            "due_date": "Feb 18",
             "comments": [
                 {
                     "date": "Feb 5",

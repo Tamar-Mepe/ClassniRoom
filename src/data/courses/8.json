@@ -13,6 +13,18 @@
             "date": "Nov 11",
             "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
             "type": 2,
+            "assignment_name": "Bank Account Number",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Norman Slater"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Nov 11",
+            "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
+            "type": 2,
             "assignment_name": "Coordinates for party",
             "comments": [
                 {

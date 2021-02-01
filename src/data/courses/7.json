@@ -34,6 +34,9 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 1,
             "assignment_name": "First Assignment",
+            "assignment_status": "Graded",
+            "score": "15/15",
+            "due_date": "Mar 30",
             "comments": [
                 {
                     "date": "Mar 9",

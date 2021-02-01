@@ -12,8 +12,8 @@
             "id": 1,
             "date": "Dec 29",
             "description": "Vivamus ipsum massa, volutpat et enim quis, consectetur egestas quam. Nullam vel mollis lacus. Vivamus sed enim id orci elementum accumsan nec sit amet lorem. Proin orci magna, dapibus non tincidunt congue, convallis sit amet leo. Aliquam nec rhoncus augue. Ut cursus enim ut felis maximus pretium. Vestibulum aliquam velit non est accumsan, at finibus mauris tempor. Proin sit amet efficitur nunc. Integer et rutrum est, a pharetra est. Nulla elementum mi quis nunc faucibus, in semper augue pretium. Curabitur quis luctus justo, eu tempus velit.",
-            "type": 0,
-            "assignment_name": "Materials 2",
+            "type": 2,
+            "assignment_name": "Materials 4",
             "comments": [
                 {
                     "date": "Dec 29",

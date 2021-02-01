@@ -137,44 +137,12 @@ function get(url, callback) {
     displayPostsRequest.send();
 }
 
-// Classwork Page
-const assignmentBar = document.querySelectorAll('.assignment-bar');
-if (assignmentBar) {
-    const assignmentBarsArr = Array.from(assignmentBar);
-    let currentlyDisplayed = [];
-    assignmentBar.forEach(
-        function (aBar) {
-            aBar.addEventListener('click', function (event) {
-                const elemIndex = assignmentBarsArr.indexOf(event.target);
-                const assignmentContent = aBar.parentElement.lastElementChild;
-                const [firstChild, secondChild] = assignmentContent.children;
-                if (firstChild.classList.contains('show')) {
-                    firstChild.classList.remove('show');
-                    secondChild.classList.remove('show');
-                    currentlyDisplayed.pop();
-                } else {
-                    firstChild.classList.add('show');
-                    secondChild.classList.add('show');
-                    if (currentlyDisplayed.length) {
-                        const toHideIndex = currentlyDisplayed.pop();
-                        const elemToHide = assignmentBarsArr[toHideIndex];
-                        changeStyling(elemToHide);
-                        elemToHide.parentElement.lastElementChild.children[0].classList.remove('show');
-                        elemToHide.parentElement.lastElementChild.children[1].classList.remove('show');
-                    }
-                    currentlyDisplayed.push(elemIndex);
-                }
-                changeStyling(aBar);
-            });
-        }
-    );
+function getClassID() {
+    const queryStr = window.location.search;
+    const urlParameters = new URLSearchParams(queryStr);
+    return urlParameters.get('id');
 }
 
-function changeStyling(aBar) {
-    aBar.classList.toggle('assignment-bar');
-    aBar.classList.toggle('assignment-bar-pressed');
-    aBar.parentElement.classList.toggle('assignment-bar-style-pressed');
-}
 //==============
 
 // Requests for Courses Page (Temporary)
@@ -226,10 +194,7 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 
 // Requests for Stream Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classroom.html')) {
-    const queryStr = window.location.search;
-    const urlParameters = new URLSearchParams(queryStr);
-    const classID = urlParameters.get('id');
-    displayVisuals(classID);
+    displayVisuals(getClassID());
 }
 
 function displayVisuals(classID) {
@@ -494,10 +459,7 @@ function classCommentsButton(commentsForPostLen, postCommentsButton) {
 
 // Requests for Students Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('students.html')) {
-    const queryStr = window.location.search;
-    const urlParameters = new URLSearchParams(queryStr);
-    const classID = urlParameters.get('id');
-    displayStudents(classID);
+    displayStudents(getClassID());
 }
 
 function displayStudents(classID) {
@@ -517,10 +479,64 @@ function displayStudents(classID) {
     });
 }
 
+// Reqests for Classwork Page (Temporary)
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classwork.html')) {
+    displayAssignments(getClassID());
+}
 
+function displayAssignments(classID) {
+    get('/src/data/courses/' + classID + '.json', function (data) {
+        const assignments = data.data.filter(currData => currData.type == 1 || currData.type == 2);
+        const assignmentBarTemplate = document.getElementById('assignment-bar-style-id');
+        const assignmentBarContainer = document.getElementById('assignments-container');
+        assignments.forEach(function (curr) {
+            const assignmentBarClone = assignmentBarTemplate.content.cloneNode(true);
+            assignmentBarClone.getElementById('assignment-name-id').textContent = curr.assignment_name;
+            assignmentBarClone.getElementById('number-of-comments').textContent = curr.comments.length ? curr.comments.length : "";
+            assignmentBarClone.getElementById('assignment-due-date').textContent = curr.type == 1 ? "Due " + curr.due_date : "Posted " + curr.date;
+            assignmentBarClone.getElementById('assignment-posted-date').textContent = "Posted " + curr.date;
+            assignmentBarClone.getElementById('assignment-content-main').textContent = curr.description;
+            assignmentBarClone.getElementById('view-assignment-button').textContent = curr.type == 1 ? "View assignment" : "View material";
+            if (!curr.comments.length) assignmentBarClone.getElementById('assignment-comments-id').style.display = 'none';
+            assignmentBarContainer.appendChild(assignmentBarClone);
+        });
+        handleClicksForAssignments();
+    });
+}
+
+function handleClicksForAssignments() {
+    const assignmentBar = document.querySelectorAll('.assignment-bar');
+    const assignmentBarsArr = Array.from(assignmentBar);
+    let currentlyDisplayed = [];
+    assignmentBar.forEach(function (aBar) {
+        aBar.addEventListener('click', function (event) {
+            const elemIndex = assignmentBarsArr.indexOf(event.target);
+            const assignmentContent = aBar.parentElement.lastElementChild;
+            const [firstChild, secondChild] = assignmentContent.children;
+            if (firstChild.classList.contains('show')) {
+                firstChild.classList.remove('show');
+                secondChild.classList.remove('show');
+                assignmentContent.parentElement.children[0].classList.remove('show');
+                currentlyDisplayed.pop();
+            } else {
+                firstChild.classList.add('show');
+                secondChild.classList.add('show');
+                assignmentContent.parentElement.children[0].classList.add('show');
+                if (currentlyDisplayed.length) {
+                    const toHideIndex = currentlyDisplayed.pop();
+                    const elemToHide = assignmentBarsArr[toHideIndex];
+                    const elemParentElement = elemToHide.parentElement;
+                    elemParentElement.children[0].classList.remove('show');
+                    elemParentElement.lastElementChild.children[0].classList.remove('show');
+                    elemParentElement.lastElementChild.children[1].classList.remove('show');
+                }
+                currentlyDisplayed.push(elemIndex);
+            }
+        });
+    });
+}
 
 // Make welcome page dynamic
-
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('index.html')) {
     const personNames = ['Pam', 'Kim', 'Tom'];
     const personColors = ['#00a3bd', '#f4b400', '#cc1470'];

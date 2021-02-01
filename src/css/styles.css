@@ -933,11 +933,6 @@ textarea:focus {
     font-family: Roboto, Arial, sans-serif;
 }
 
-.assignment-bar-style-pressed {
-    box-shadow: 0 2px 6px 2px rgba(60, 64, 67, 0.149);
-    border-radius: 10px;
-}
-
 .assignment-bar-style .post-comments-button {
     margin-bottom: 0px;
 }
@@ -949,21 +944,8 @@ textarea:focus {
     align-items: center;
 }
 
-.assignment-bar-pressed {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px 15px 20px;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    cursor: pointer;
-}
-
 .assignment-bar:hover {
     background-color: rgb(240, 240, 240);
-    border-radius: 10px;
-    border-bottom: 1px solid white;
     cursor: pointer;
 }
 
@@ -1022,6 +1004,8 @@ textarea:focus {
     overflow: auto;
     max-height: 0px;
     padding: 0px 30px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
     transition: all 0.3s linear;
 }
 
@@ -1052,11 +1036,20 @@ textarea:focus {
 .view-assignment-style {
     display: none;
     padding: 15px 30px;
-    border-top: 1px solid rgba(220, 220, 220);
+    border: 1px solid rgba(220, 220, 220);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .view-assignment-style.show {
     display: block;
+}
+
+.assignment-bar.show {
+    border: 1px solid lightgray;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .view-assignment-style button {
@@ -1104,11 +1097,6 @@ textarea:focus {
 
 .your-work-assignments .assignment-content {
     transition: all 0.1s ease-in-out;
-}
-
-.your-work-assignments .assignment-bar-pressed {
-    padding: 21px 28px;
-    justify-content: flex-start;
 }
 
 .your-work-assignments .assignment-content-main {
@@ -1936,9 +1924,6 @@ tr:last-of-type {
     .assignment-bar {
         padding: 10px;
     }
-    .assignment-bar-pressed {
-        padding: 10px;
-    }
     .assignment-logo {
         margin-right: 8px;
     }
@@ -1950,8 +1935,6 @@ tr:last-of-type {
     }
     .assignment-content {
         font-size: 15px;
-        padding: 10px 25px;
-        max-height: 200px;
     }
     .assignment-post-date {
         margin-bottom: 20px;
@@ -1972,16 +1955,11 @@ tr:last-of-type {
     .assignment-name-style {
         font-size: 13px;
     }
-    .assignment-content {
-        font-size: 13px;
-        padding: 7px 20px;
-    }
     .view-assignment-style {
         padding: 7px 20px;
     }
     .assignment-post-date {
         margin-bottom: 20px;
-        font-size: 11px;
     }
 }
 
@@ -2025,9 +2003,6 @@ tr:last-of-type {
         font-size: 13px;
     }
     .your-work-container .assignment-bar {
-        padding: 18px;
-    }
-    .your-work-container .assignment-bar-pressed {
         padding: 18px;
     }
 }
