@@ -232,10 +232,10 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 function displayVisuals(classID) {
     get(route('/src/data/courses/' + classID + '.json'), function (data) {
         displayUpperPart(data);
+        announceContainer();
         displayPosts(data);
     });
 }
-
 
 function displayUpperPart(data) {
     document.title = data.course.name;
@@ -250,6 +250,51 @@ function displayUpperPart(data) {
     if (!data.course.subject) subjectLabel.style.display = 'none';
     if (!data.course.room) roomLabel.style.display = 'none';
     if (!data.course.subject && !data.course.room) document.getElementById('show-additional-info').style.display = 'none';
+}
+
+function announceContainer() {
+    const firstTypeContainer = document.querySelector('.announce-container');
+    const secondTypeContainer = document.querySelector('.announce-container-2');
+    const cancelButton = document.getElementById('cancel-button-post');
+    const postButton = document.getElementById('post-button-post');
+    const textArea = document.getElementById('announce-textarea');
+    firstTypeContainer.addEventListener('click', function () {
+        firstTypeContainer.style.display = 'none';
+        secondTypeContainer.style.display = 'block';
+        textArea.select();
+    });
+    cancelButton.addEventListener('click', function () {
+        firstTypeContainer.style.display = 'flex';
+        secondTypeContainer.style.display = 'none';
+    });
+    postOnEnter(textArea, postButton);
+    postButton.addEventListener('click', function () {
+        secondTypeContainer.style.display = 'none';
+        firstTypeContainer.style.display = 'flex';
+        addPost(textArea, firstTypeContainer);
+    });
+}
+
+function addPost(textArea) {
+    const postContainerTemplate = document.getElementById('class-post-template');
+    const announceContainers = document.querySelector('.announce-containers');
+    const postContainerClone = postContainerTemplate.content.cloneNode(true);
+
+    postContainerClone.getElementById('post-owner').textContent = currLoggedIn;
+    postContainerClone.getElementById('date-style').textContent = getCurrHM();
+    postContainerClone.getElementById('post-class-main-text').textContent = textArea.value;
+
+    const commentsContainer = postContainerClone.getElementById('post-comments');
+    const postCommentsButton = commentsContainer.children[0];
+    commentsContainer.style.display = 'none';
+    textArea.value = "";
+    postCommentsButton.textContent = classCommentsButton(0, postCommentsButton);
+    const commentsTemplate = document.getElementById('post-comment-template');
+
+    handleCommentsButtonClick(commentsContainer, postCommentsButton, false);
+    handleCommentAdding(commentsContainer, commentsContainer.parentElement.lastElementChild,
+        commentsTemplate, postCommentsButton, 0);
+    announceContainers.parentNode.insertBefore(postContainerClone, announceContainers.nextSibling);
 }
 
 function displayPosts(data) {
@@ -317,19 +362,23 @@ function handleCommentAdding(commentsContainer, commentInputField, commentsTempl
     const textField = commentInputField.querySelector('input');
     postOnEnter(commentInputField, addCommentButton);
     addCommentButton.addEventListener('click', function () {
-        let currTime = new Date();
-        let currTimeHours = currTime.getHours();
-        currTimeHours = (currTimeHours < 10) ? '0' + currTimeHours : currTimeHours;
-        let currTimeMinutes = currTime.getMinutes();
-        currTimeMinutes = (currTimeMinutes < 10) ? '0' + currTimeMinutes : currTimeMinutes;
         const textFieldText = textField.value;
         if (textFieldText) {
-            displayComment(commentsContainer, commentsTemplate, currLoggedIn, currTimeHours + ":" + currTimeMinutes, textField.value);
+            displayComment(commentsContainer, commentsTemplate, currLoggedIn, getCurrHM(), textField.value);
             commentQuantity++;
             textField.value = "";
             changeButtonStyling(commentsContainer, commentQuantity, postCommentsButton);
         }
     });
+}
+
+function getCurrHM() {
+    let currTime = new Date();
+    let currTimeHours = currTime.getHours();
+    currTimeHours = (currTimeHours < 10) ? '0' + currTimeHours : currTimeHours;
+    let currTimeMinutes = currTime.getMinutes();
+    currTimeMinutes = (currTimeMinutes < 10) ? '0' + currTimeMinutes : currTimeMinutes;
+    return currTimeHours + ":" + currTimeMinutes;
 }
 
 function changeButtonStyling(commentsContainer, commentQuantity, postCommentsButton) {

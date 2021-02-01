@@ -19,6 +19,10 @@ main {
     margin-top: 100px;
 }
 
+textarea {
+    resize: none;
+}
+
 /* ============================== */
 
 /* HEADER */
@@ -577,6 +581,62 @@ header ul:last-child {
     border-radius: 10px;
     color: #5f6368;
     font-size: 13px;
+}
+
+.announce-container-2 {
+    display: none;
+    box-shadow: 0 0px 11px rgba(33, 33, 33, .2);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.announce-container-2 textarea {
+    width: calc(100% - 40px);
+    border: none;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    font-family: 'Open Sans', serif;
+    padding: 20px;
+    border-bottom: 2px solid lightgray;
+    font-weight: bold;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.announce-container-2 textarea:focus {
+    border-bottom: 2px solid black;
+}
+
+.announcement-post-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.announcement-post-buttons button {
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    color: gray;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', serif;
+}
+
+.announcement-post-buttons button:nth-of-type(1):hover {
+    background-color: #f8f9fa;
+}
+
+.announcement-post-buttons button:nth-of-type(2) {
+    background-color: black;
+    color: white;
+}
+
+.announcement-post-buttons button:hover {
+    cursor: pointer;
 }
 
 .right-part-container svg {
