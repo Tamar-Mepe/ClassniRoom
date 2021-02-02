@@ -16,6 +16,8 @@
             "assignment_name": "Final Project",
             "assignment_status": "Assigned",
             "due_date": "May 25",
+            "due_date_h": "10:00 PM",
+            "max_points": 100,
             "comments": [
                 {
                     "date": "Apr 23",
@@ -75,6 +77,8 @@
             "assignment_name": "Assignment",
             "assignment_status": "Turned in",
             "due_date": "Feb 15",
+            "due_date_h": "11:59 PM",
+            "max_points": 100,
             "comments": [
                 {
                     "date": "Feb 5",

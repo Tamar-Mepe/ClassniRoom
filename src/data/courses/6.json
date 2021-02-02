@@ -16,6 +16,8 @@
             "assignment_name": "First assignment",
             "assignment_status": "Turned in late",
             "due_date": "Oct 30",
+            "due_date_h": "11:59 PM",
+            "max_points": 100,
             "comments": [
                 {
                     "date": "Oct 23",

@@ -10,6 +10,40 @@
     "data": [
         {
             "id": 1,
+            "date": "Jun 8",
+            "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
+            "type": 1,
+            "assignment_name": "Second Assignment",
+            "assignment_status": "Graded",
+            "score": 28,
+            "due_date": "Jul 15",
+            "due_date_h": "11:59 PM",
+            "max_points": 30,
+            "comments": [
+                {
+                    "date": "Jul 15",
+                    "description": "Aenean porttitor ex eget ante tincidunt, quis condimentum dui lobortis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Cristian Nicholls"
+                    }
+                },
+                {
+                    "date": "Jul 15",
+                    "description": "Suspendisse sodales diam vel odio auctor, sed aliquet velit efficitur",
+                    "user": {
+                        "image": null,
+                        "displayName": "Eden Klein"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lilian Oneal"
+            }
+        },
+        {
+            "id": 2,
             "date": "Jun 2",
             "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
             "type": 0,
@@ -29,14 +63,16 @@
             }
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "Mar 8",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 1,
             "assignment_name": "First Assignment",
             "assignment_status": "Graded",
-            "score": "24/30",
+            "score": 24,
             "due_date": "Mar 29",
+            "due_date_h": "11:59 PM",
+            "max_points": 30,
             "comments": [
                 {
                     "date": "Mar 9",
@@ -61,7 +97,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "Jan 31",
             "description": "Curabitur pretium turpis eu nisl aliquet viverra",
             "type": 0,
@@ -105,7 +141,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "date": "Jan 2",
             "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
             "type": 0,
@@ -125,7 +161,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "date": "Jan 2",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 0,
@@ -169,7 +205,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 7,
             "date": "Jan 1",
             "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
             "type": 0,

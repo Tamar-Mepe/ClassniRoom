@@ -1041,6 +1041,10 @@ textarea:focus {
     border-bottom-right-radius: 10px;
 }
 
+.view-assignment-style button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
 .view-assignment-style.show {
     display: block;
 }
@@ -1498,7 +1502,8 @@ tr:last-of-type {
 }
 
 .assignment-curr-status {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /* ================================================== */

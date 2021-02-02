@@ -137,10 +137,10 @@ function get(url, callback) {
     displayPostsRequest.send();
 }
 
-function getClassID() {
+function getUrlParameter(urlParameter) {
     const queryStr = window.location.search;
     const urlParameters = new URLSearchParams(queryStr);
-    return urlParameters.get('id');
+    return urlParameters.get(urlParameter);
 }
 
 //==============
@@ -166,11 +166,11 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
             tmpClone.querySelector('img').src = currCourse.image;
             tmpClone.querySelector('.class-label').textContent = currCourse.name;
             tmpClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
-            tmpClone.querySelector('.class-label').href += ('?id=' + currCourse.id);
+            tmpClone.querySelector('.class-label').href += '?id=' + currCourse.id;
             const courseName = currCourse.name;
             tmpClone2.querySelector('.classroom-icon').textContent = courseName[0];
             tmpClone2.getElementById('course-name-label').textContent = courseName;
-            tmpClone2.querySelector('.sidebar-item').href += ('?id=' + currCourse.id);
+            tmpClone2.querySelector('.sidebar-item').href += '?id=' + currCourse.id;
             courseRow.appendChild(tmpClone);
             sidebarComponent.appendChild(tmpClone2);
         });
@@ -194,7 +194,7 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).st
 
 // Requests for Stream Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classroom.html')) {
-    displayVisuals(getClassID());
+    displayVisuals(getUrlParameter('id'));
 }
 
 function displayVisuals(classID) {
@@ -292,12 +292,12 @@ function announceContainer() {
         firstTypeContainer.style.display = 'flex';
         secondTypeContainer.style.display = 'none';
     });
-    postOnEnter(textArea, postButton);
     postButton.addEventListener('click', function () {
         secondTypeContainer.style.display = 'none';
         firstTypeContainer.style.display = 'flex';
         addPost(textArea, firstTypeContainer);
     });
+    postOnEnter(textArea, postButton);
 }
 
 function addPost(textArea) {
@@ -314,7 +314,7 @@ function addPost(textArea) {
     commentsContainer.style.display = 'none';
     textArea.value = "";
     postCommentsButton.textContent = classCommentsButton(0, postCommentsButton);
-    const commentsTemplate = document.getElementById('post-comment-template');
+    const commentsTemplate = postContainerClone.getElementById('post-comment-template');
 
     handleCommentsButtonClick(commentsContainer, postCommentsButton, false);
     handleCommentAdding(commentsContainer, commentsContainer.parentElement.lastElementChild,
@@ -367,6 +367,7 @@ function displayPosts(data) {
                 'assignment-announced-date', typeOfPost);
             const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
             assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost.length, null);
+            assignmentAnnouncementClone.getElementById('assignment-href').href += '?id=' + data.course.id + '&assignmentid=' + currPost.id;
             if (!commentsForPost.length) commentsElem.style.display = 'none';
             rightPartContainer.appendChild(assignmentAnnouncementClone);
         }
@@ -385,7 +386,6 @@ function handleCommentAdding(commentsContainer, commentInputField, commentsTempl
     let commentQuantity = commentsForPostLen;
     const addCommentButton = commentInputField.querySelector('.comment-input-field button');
     const textField = commentInputField.querySelector('input');
-    postOnEnter(commentInputField, addCommentButton);
     addCommentButton.addEventListener('click', function () {
         const textFieldText = textField.value;
         if (textFieldText) {
@@ -395,6 +395,7 @@ function handleCommentAdding(commentsContainer, commentInputField, commentsTempl
             changeButtonStyling(commentsContainer, commentQuantity, postCommentsButton);
         }
     });
+    postOnEnter(commentInputField, addCommentButton);
 }
 
 function getCurrHM() {
@@ -459,7 +460,7 @@ function classCommentsButton(commentsForPostLen, postCommentsButton) {
 
 // Requests for Students Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('students.html')) {
-    displayStudents(getClassID());
+    displayStudents(getUrlParameter('id'));
 }
 
 function displayStudents(classID) {
@@ -481,7 +482,7 @@ function displayStudents(classID) {
 
 // Reqests for Classwork Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('classwork.html')) {
-    displayAssignments(getClassID());
+    displayAssignments(getUrlParameter('id'));
 }
 
 function displayAssignments(classID) {
@@ -534,6 +535,88 @@ function handleClicksForAssignments() {
             }
         });
     });
+}
+
+// Display single assignment page (Temporary)
+if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('assignment.html')) {
+    const [classID, assignmentID] = [getUrlParameter('id'), getUrlParameter('assignmentid')];
+    get('/src/data/courses/' + classID + '.json', function (data) {
+        const currAssignment = data.data.filter(currPost => currPost.id == assignmentID)
+        displayCurrentAssignment(currAssignment[0]);
+    });
+}
+
+function displayCurrentAssignment(currAssignment) {
+    document.getElementById('assignment-name-id').textContent = currAssignment.assignment_name;
+    document.getElementById('author-id').textContent = currAssignment.user.displayName + ' •';
+    document.getElementById('posted-date-id').textContent = currAssignment.date;
+    document.getElementById('single-assignment-content').textContent = currAssignment.description;
+    if (currAssignment.type == 1) {
+        document.getElementById('points-id').textContent = currAssignment.max_points + " Points";
+        document.getElementById('due-date-id').textContent = currAssignment.due_date + ", " + currAssignment.due_date_h;
+        const assignmentStatus = document.getElementById('assignment-curr-status');
+        const currAssignmentStatus = currAssignment.assignment_status;
+        assignmentStatus.textContent = currAssignmentStatus;
+        if (currAssignmentStatus == "Assigned")
+            assignmentStatus.style.color = "#2e7d32";
+        else {
+            document.getElementById('mark-as-done').style.display = 'none';
+            if (currAssignmentStatus == "Turned in late") assignmentStatus.style.color = "red";
+        }
+    } else {
+        document.getElementById('type-1-bar-id').style.display = 'none';
+        document.getElementById('single-assignment-right').style.display = 'none';
+    }
+    displaySingleAssignmentComments(currAssignment.comments);
+}
+
+function displaySingleAssignmentComments(currAssignmentComments) {
+    const assignmentCommentsContainer = document.getElementById('post-comments-container');
+    const assignmentCommentsTemplate = document.getElementById('single-assignment-comments-template');
+    const singleCommentsBtn = document.getElementById('single-comments-btn');
+    const currAssignmentComLen = currAssignmentComments.length;
+    let stringToDisplay = currAssignmentComLen + " class comment";
+    if (currAssignmentComLen) {
+        if (currAssignmentComLen > 1) stringToDisplay += 's';
+        singleCommentsBtn.textContent = stringToDisplay;
+        currAssignmentComments.forEach(function (currComment) {
+            displayCommentForAssignment(assignmentCommentsTemplate, assignmentCommentsContainer, currComment, true);
+        });
+    } else assignmentCommentsContainer.style.display = 'none';
+    assignmentPageCommentAdding(currAssignmentComLen, singleCommentsBtn, assignmentCommentsTemplate, assignmentCommentsContainer);
+}
+
+function displayCommentForAssignment(assignmentCommentsTemplate, assignmentCommentsContainer, currComment, isPrevComment) {
+    const assignmentCommentsClone = assignmentCommentsTemplate.content.cloneNode(true);
+    if (isPrevComment) {
+        assignmentCommentsClone.getElementById('comm-owner-id').textContent = currComment.user.displayName;
+        assignmentCommentsClone.getElementById('comm-date-id').textContent = currComment.date;
+        assignmentCommentsClone.getElementById('comm-main-content').textContent = currComment.description;
+    } else {
+        assignmentCommentsClone.getElementById('comm-owner-id').textContent = currLoggedIn;
+        assignmentCommentsClone.getElementById('comm-date-id').textContent = getCurrHM();
+        assignmentCommentsClone.getElementById('comm-main-content').textContent = currComment;
+    }
+    assignmentCommentsContainer.appendChild(assignmentCommentsClone);
+}
+
+function assignmentPageCommentAdding(currAssignmentComLen, singleCommentsBtn, assignmentCommentsTemplate, assignmentCommentsContainer) {
+    let commentQuantity = currAssignmentComLen;
+    const commentInputField = document.querySelector('.comment-input-field');
+    const commentInputFieldText = commentInputField.querySelector('input');
+    singleCommentsBtn.addEventListener('click', function () {
+        assignmentCommentsContainer.style.display = 'block';
+        const textFieldText = commentInputFieldText.value;
+        if (textFieldText) {
+            displayCommentForAssignment(assignmentCommentsTemplate, assignmentCommentsContainer, textFieldText, false);
+            commentQuantity++;
+            commentInputFieldText.value = "";
+            let stringToDisplay = commentQuantity + " class comment";
+            if (commentQuantity > 1) stringToDisplay += 's';
+            singleCommentsBtn.textContent = stringToDisplay;
+        }
+    });
+    postOnEnter(commentInputField, singleCommentsBtn);
 }
 
 // Make welcome page dynamic

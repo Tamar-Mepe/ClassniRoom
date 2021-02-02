@@ -63,6 +63,8 @@
             "assignment_name": "Assignment 1",
             "assignment_status": "Turned in",
             "due_date": "Feb 27",
+            "due_date_h": "11:59 PM",
+            "max_points": 70,
             "comments": [
                 {
                     "date": "Feb 3",
@@ -97,7 +99,7 @@
         {
             "id": 4,
             "date": "Jan 31",
-            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
             "type": 2,
             "assignment_name": "Additional Materials",
             "comments": [],
@@ -109,7 +111,7 @@
         {
             "id": 5,
             "date": "Jan 3",
-            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "description": "Integer imperdiet feugiat ex, ut consectetur felis sollicitudin vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ornare ipsum, ac imperdiet dolor convallis quis. Duis fermentum ex massa, eget accumsan ligula ornare vitae. Nulla enim augue, gravida id porttitor sit amet, posuere ut ipsum. Vivamus tincidunt nibh id sem lacinia eleifend. Duis mi neque, maximus id mauris vel, mollis ornare ante. Integer sit amet dolor a sapien convallis tristique. Integer vel sapien vitae sem tincidunt facilisis aliquet sed dolor. Nam nec erat lectus. Etiam est sapien, mattis molestie ante eu, mattis vestibulum ex. In a eros turpis. Sed euismod porttitor augue vel euismod. Praesent posuere mi a accumsan facilisis.",
             "type": 2,
             "assignment_name": "Materials",
             "comments": [

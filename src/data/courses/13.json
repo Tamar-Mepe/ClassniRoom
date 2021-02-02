@@ -16,6 +16,8 @@
             "assignment_name": "Final Project",
             "assignment_status": "Assigned",
             "due_date": "Sep 15",
+            "due_date_h": "11:59 PM",
+            "max_points": 50,
             "comments": [
                 {
                     "date": "Aug 23",
@@ -66,8 +68,10 @@
             "type": 1,
             "assignment_name": "Assignment",
             "assignment_status": "Graded",
-            "score": "35/35",
+            "score": 35,
             "due_date": "Feb 18",
+            "due_date_h": "11:59 PM",
+            "max_points": 35,
             "comments": [
                 {
                     "date": "Feb 5",

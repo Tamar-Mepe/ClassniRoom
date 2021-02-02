@@ -99,12 +99,14 @@
         {
             "id": 3,
             "date": "Feb 1",
-            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "description": "Integer imperdiet feugiat ex, ut consectetur felis sollicitudin vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ornare ipsum, ac imperdiet dolor convallis quis. Duis fermentum ex massa, eget accumsan ligula ornare vitae. Nulla enim augue, gravida id porttitor sit amet, posuere ut ipsum. Vivamus tincidunt nibh id sem lacinia eleifend. Duis mi neque, maximus id mauris vel, mollis ornare ante. Integer sit amet dolor a sapien convallis tristique. Integer vel sapien vitae sem tincidunt facilisis aliquet sed dolor. Nam nec erat lectus. Etiam est sapien, mattis molestie ante eu, mattis vestibulum ex. In a eros turpis. Sed euismod porttitor augue vel euismod. Praesent posuere mi a accumsan facilisis.",
             "type": 1,
             "assignment_name": "Assignment - Bonus",
             "assignment_status": "Graded",
-            "score": "7/7",
+            "score": 7,
             "due_date": "Feb 8",
+            "due_date_h": "10:00 PM",
+            "max_points": 7,
             "comments": [],
             "user": {
                 "image": null,
@@ -145,6 +147,32 @@
             "user": {
                 "image": null,
                 "displayName": "Aisling Cash"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Dec 5, 2020",
+            "description": "Cras ligula lacus, suscipit nec sodales non, congue eget quam. Nam finibus, sem vel fringilla pulvinar, turpis metus imperdiet mi, pellentesque ultricies odio lorem sit amet arcu. Sed porta sagittis leo sit amet dapibus. Mauris quis lorem quis ex luctus auctor. Praesent est dolor, luctus nec pharetra a, semper aliquam magna. Nunc sollicitudin justo eget finibus gravida. Etiam eget vulputate nisl. Aenean aliquam ipsum dui, vel finibus purus faucibus imperdiet. Phasellus et ex massa. In sit amet libero sit amet lorem placerat pretium.",
+            "type": 1,
+            "assignment_name": "Assignment",
+            "assignment_status": "Graded",
+            "score": 6,
+            "due_date": "Dec 30, 2020",
+            "due_date_h": "11:59 PM",
+            "max_points": 15,
+            "comments": [
+                {
+                    "date": "Dec 29, 2020",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Carmel Whyte"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Jo Paterson"
             }
         }
     ],

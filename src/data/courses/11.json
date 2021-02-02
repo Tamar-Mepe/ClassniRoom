@@ -46,7 +46,7 @@
             ],
             "user": {
                 "image": null,
-                "displayName": "Clarice Norman"
+                "displayName": "Cherise Snider"
             }
         },
         {
@@ -58,7 +58,7 @@
             "comments": [],
             "user": {
                 "image": null,
-                "displayName": "Clarice Norman"
+                "displayName": "Cherise Snider"
             }
         },
         {
@@ -68,8 +68,10 @@
             "type": 1,
             "assignment_name": "Preparation for Finals",
             "assignment_status": "Graded",
-            "score": "5/5",
+            "score": 5,
             "due_date": "Mar 19",
+            "due_date_h": "11:59 PM",
+            "max_points": 5,
             "comments": [
                 {
                     "date": "Feb 29",
@@ -98,7 +100,7 @@
             ],
             "user": {
                 "image": null,
-                "displayName": "Clarice Norman"
+                "displayName": "Cherise Snider"
             }
         },
         {

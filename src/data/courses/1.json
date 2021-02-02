@@ -16,6 +16,8 @@
             "assignment_name": "Assignment 1",
             "assignment_status": "Turned in late",
             "due_date": "Dec 12",
+            "due_date_h": "11:00 PM",
+            "max_points": 50,
             "comments": [
                 {
                     "date": "Oct 8",
@@ -144,9 +146,11 @@
             "date": "Feb 3",
             "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
             "type": 1,
-            "assignment_name": "Assignment 0",
+            "assignment_name": "Assignment - Zero",
             "assignment_status": "Turned in",
             "due_date": "Mar 3",
+            "due_date_h": "10:00 PM",
+            "max_points": 30,
             "comments": [
                 {
                     "date": "Apr 14",

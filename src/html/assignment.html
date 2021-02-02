@@ -40,87 +40,34 @@
         <div class="single-assignment-container">
             <div class="single-assignment-left">
                 <div class="single-assignment-upper-part">
-                    <div class="single-assignment-name-style">Midterm</div>
+                    <div class="single-assignment-name-style" id="assignment-name-id"></div>
                     <div class="author-and-date">
-                        <span>Tamar Davitaia •</span>
-                        <span>Nov 25, 2020</span>
+                        <span id="author-id"></span>
+                        <span id="posted-date-id"></span>
                     </div>
-                    <div class="points-due-date">
-                        <span>50 Points</span>
-                        <span>Due Nov 25, 2020, 10:00 PM</span>
+                    <div class="points-due-date" id="type-1-bar-id">
+                        <span id="points-id"></span>
+                        <span id="due-date-id"></span>
                     </div>
                 </div>
-                <div class="single-assignment-content">
-                    Donec nec felis risus. Aliquam erat volutpat. In a blandit erat. Vestibulum fermentum, quam sed
-                    blandit
-                    posuere, libero nisi malesuada metus, sed rutrum tortor tortor in quam. In mattis ipsum erat, eget
-                    facilisis mi ullamcorper non. Integer quis lacinia lacus, at ultricies ex. Ut mattis tincidunt
-                    sollicitudin. Proin vestibulum id odio nec elementum. Aenean augue tortor, condimentum sed dictum
-                    vitae,
-                    semper consequat ex. Integer volutpat, nibh a congue placerat, diam nibh convallis lectus, non
-                    tincidunt
-                    lectus diam quis ligula. Quisque aliquet consectetur mi, id cursus risus viverra a.<br><br>
-                    Ut ultricies, dolor at suscipit iaculis, libero lacus interdum dui, a ultrices risus elit volutpat
-                    leo.
-                    Nullam eu magna in tellus ornare dapibus. Curabitur in eleifend augue. Aliquam sagittis, eros id
-                    condimentum suscipit, tellus ipsum congue mauris, eleifend suscipit mi orci ac tellus. Pellentesque
-                    tincidunt tincidunt nulla, eget tempor massa accumsan a. Ut bibendum libero vel sapien molestie,
-                    quis
-                    finibus ligula tempor. Cras nec imperdiet augue. Donec id est vitae turpis rhoncus pulvinar sed a
-                    lorem.
-                    Integer ac sapien nec nibh laoreet posuere. Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Curabitur finibus vehicula orci nec accumsan. Nulla gravida quis
-                    sapien
-                    ut dictum. Proin pharetra ligula urna, id blandit velit tincidunt vel.<br><br>
-                    Fusce suscipit leo nec interdum tincidunt. Vestibulum at varius nisl. Pellentesque eros leo,
-                    bibendum
-                    sed pellentesque eu, mattis sed erat. Nullam purus mauris, dictum vitae justo quis, eleifend
-                    suscipit
-                    lectus. Fusce pharetra, neque vitae sollicitudin elementum, nulla nisl porttitor justo, eget rutrum
-                    ipsum nisi eget nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                    cubilia
-                    curae; Ut cursus sem sed augue vehicula, iaculis lacinia nisi sagittis. Nulla facilisis nulla eget
-                    suscipit dapibus. Aenean et erat ullamcorper, bibendum augue ac, tincidunt sem. Pellentesque luctus
-                    luctus eros, eu luctus mauris bibendum in. Mauris ultricies lobortis mollis.
-                </div>
-                <div class="post-comments">
-                    <button class="single-button">2 class comments</button>
-                    <div class="post-comment">
-                        <div>
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z" />
-                            </svg>
-                        </div>
-                        <div class="single-comment">
-                            <span class="post-owner">Tamar Davitaia</span>
-                            <span class="date-style">Sep 13</span>
-                            <div class="comment-styling">Sed consequat ipsum libero, vitae luctus enim cursus
-                                ac. Pellentesque dictum vehicula lectus. Sed vehicula lorem vitae accumsan
-                                mollis. Nam bibendum auctor eleifend. Ut sed urna arcu. Duis sed tincidunt leo.
-                                Proin cursus in eros eget suscipit. Morbi ac est vel nisl interdum dictum ut non
-                                erat. In rhoncus pharetra iaculis. Fusce ac commodo metus, at scelerisque est.
+                <div class="single-assignment-content" id="single-assignment-content"></div>
+                <div class="post-comments" id="post-comments-container">
+                    <button class="single-button" id="single-comments-btn"></button>
+                    <template id="single-assignment-comments-template">
+                        <div class="post-comment">
+                            <div>
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z" />
+                                </svg>
+                            </div>
+                            <div class="single-comment">
+                                <span class="post-owner" id="comm-owner-id"></span>
+                                <span class="date-style" id="comm-date-id"></span>
+                                <div class="comment-styling" id="comm-main-content"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="post-comment">
-                        <div>
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z" />
-                            </svg>
-                        </div>
-                        <div class="single-comment">
-                            <span class="post-owner">Tamar Davitaia</span>
-                            <span class="date-style">Sep 13</span>
-                            <div class="comment-styling">Sed consequat ipsum libero, vitae luctus enim cursus
-                                ac. Pellentesque dictum vehicula lectus. Sed vehicula lorem vitae accumsan
-                                mollis. Nam bibendum auctor eleifend. Ut sed urna arcu. Duis sed tincidunt leo.
-                                Proin cursus in eros eget suscipit. Morbi ac est vel nisl interdum dictum ut non
-                                erat. In rhoncus pharetra iaculis. Fusce ac commodo metus, at scelerisque est.
-                            </div>
-                        </div>
-                    </div>
+                    </template>
                 </div>
                 <div class="comment-input-field">
                     <span>
@@ -139,14 +86,14 @@
                     </button>
                 </div>
             </div>
-            <div class="single-assignment-right">
+            <div class="single-assignment-right" id="single-assignment-right">
                 <div class="single-assignment-right-upper">
                     <div class="your-work-label-style">Your Work</div>
-                    <div class="assignment-curr-status">Turned in</div>
+                    <div class="assignment-curr-status" id="assignment-curr-status">Turned in</div>
                 </div>
                 <div class="single-right-buttons">
+                    <button id="mark-as-done">Mark as done</button>
                     <button>Add or create</button>
-                    <button>Mark as done</button>
                 </div>
             </div>
         </div>

@@ -43,6 +43,9 @@
             "type": 1,
             "assignment_name": "Assignment 2",
             "assignment_status": "Turned in",
+            "due_date": "Feb 5",
+            "due_date_h": "11:59 PM",
+            "max_points": 60,
             "comments": [
                 {
                     "date": "Jan 5",
@@ -77,7 +80,7 @@
         {
             "id": 3,
             "date": "Jan 4",
-            "description": "Phasellus nec eros vitae orci laoreet gravida",
+            "description": "Integer imperdiet feugiat ex, ut consectetur felis sollicitudin vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ornare ipsum, ac imperdiet dolor convallis quis. Duis fermentum ex massa, eget accumsan ligula ornare vitae. Nulla enim augue, gravida id porttitor sit amet, posuere ut ipsum. Vivamus tincidunt nibh id sem lacinia eleifend. Duis mi neque, maximus id mauris vel, mollis ornare ante. Integer sit amet dolor a sapien convallis tristique. Integer vel sapien vitae sem tincidunt facilisis aliquet sed dolor. Nam nec erat lectus. Etiam est sapien, mattis molestie ante eu, mattis vestibulum ex. In a eros turpis. Sed euismod porttitor augue vel euismod. Praesent posuere mi a accumsan facilisis.",
             "type": 2,
             "assignment_name": "Additional Materials",
             "comments": [
@@ -108,7 +111,7 @@
             ],
             "user": {
                 "image": null,
-                "displayName": "Zoha Felix"
+                "displayName": "Adil Nieves"
             }
         },
         {
@@ -118,8 +121,10 @@
             "type": 1,
             "assignment_name": "Assignment 1",
             "assignment_status": "Graded",
-            "score": "27/30",
+            "score": 27,
             "due_date": "Jan 31",
+            "due_date_h": "11:59 PM",
+            "max_points": 30,
             "comments": [
                 {
                     "date": "Jan 5",
