@@ -61,7 +61,7 @@
             "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
             "type": 1,
             "assignment_name": "Assignment 1",
-            "assignment_status": "Turned in",
+            "assignment_status": "Missing",
             "due_date": "Feb 27",
             "due_date_h": "11:59 PM",
             "max_points": 70,

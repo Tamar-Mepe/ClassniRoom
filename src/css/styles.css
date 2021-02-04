@@ -492,6 +492,26 @@ header ul:last-child {
     width: 100%;
 }
 
+.title-image.show {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.additional-info-wrapper {
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -5px;
+}
+
+.additional-info-wrapper.show {
+    display: block;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
 .upper-part-label {
     padding: 13px 0px;
     font-size: 17px;
@@ -503,15 +523,6 @@ header ul:last-child {
 .upper-part-image {
     position: relative;
     width: 100%;
-}
-
-.additional-info-wrapper {
-    display: none;
-    box-sizing: border-box;
-    border: 1px solid lightgray;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-top: -5px;
 }
 
 .additional-info {
@@ -1092,6 +1103,9 @@ textarea:focus {
 
 .your-work-assignments {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .your-work-assignments .assignment-bar {
@@ -1124,6 +1138,17 @@ textarea:focus {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     pointer-events: none;
+}
+
+.nothing-assigned {
+    font-family: 'Open Sans', serif;
+    width: 30%;
+    align-self: center;
+}
+
+.nothing-assigned>* {
+    margin-top: 30px;
+    text-align: center;
 }
 
 /* ============================== */
@@ -1992,6 +2017,9 @@ tr:last-of-type {
     .your-work-container {
         width: 90%;
     }
+    .nothing-assigned {
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -2029,7 +2057,6 @@ tr:last-of-type {
     }
     .your-work-container .assignment-content {
         font-size: 12px;
-        padding: 5px 18px;
     }
     .your-work-container .view-assignment-style {
         padding: 3px 18px;
