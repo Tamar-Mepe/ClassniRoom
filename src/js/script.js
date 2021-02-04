@@ -272,6 +272,18 @@ function displayUpperPart(data) {
     if (!data.course.subject) subjectLabel.style.display = 'none';
     if (!data.course.room) roomLabel.style.display = 'none';
     if (!data.course.subject && !data.course.room) document.getElementById('show-additional-info').style.display = 'none';
+
+    data.data.forEach(function (currAssignment) {
+        if (currAssignment.type == 1) {
+            if (currAssignment.assignment_status == "Assigned") {
+                const upcomingAssignmenthref = document.getElementById('upcoming-assignment-href');
+                document.getElementById('upcoming-assignment-text').style.display = 'none';
+                upcomingAssignmenthref.href = window.location.href.replace('classroom', 'assignment') + '&assignmentid=' + currAssignment.id;
+                upcomingAssignmenthref.textContent = currAssignment.assignment_name;
+                return;
+            }
+        }
+    });
 }
 
 function announceContainer() {

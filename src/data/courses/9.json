@@ -10,6 +10,22 @@
     "data": [
         {
             "id": 1,
+            "date": "Dec 26",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 1,
+            "assignment_name": "Assignment 3",
+            "assignment_status": "Assigned",
+            "due_date": "Dec 31",
+            "due_date_h": "11:59 PM",
+            "max_points": 10,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Adil Nieves"
+            }
+        },
+        {
+            "id": 2,
             "date": "Dec 25",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 0,
@@ -37,7 +53,7 @@
             }
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "Jan 5",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 1,
@@ -78,7 +94,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "Jan 4",
             "description": "Integer imperdiet feugiat ex, ut consectetur felis sollicitudin vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ornare ipsum, ac imperdiet dolor convallis quis. Duis fermentum ex massa, eget accumsan ligula ornare vitae. Nulla enim augue, gravida id porttitor sit amet, posuere ut ipsum. Vivamus tincidunt nibh id sem lacinia eleifend. Duis mi neque, maximus id mauris vel, mollis ornare ante. Integer sit amet dolor a sapien convallis tristique. Integer vel sapien vitae sem tincidunt facilisis aliquet sed dolor. Nam nec erat lectus. Etiam est sapien, mattis molestie ante eu, mattis vestibulum ex. In a eros turpis. Sed euismod porttitor augue vel euismod. Praesent posuere mi a accumsan facilisis.",
             "type": 2,
@@ -115,7 +131,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "date": "Jan 4",
             "description": "Suspendisse at fringilla mauris. In tortor enim, sodales quis lectus in, luctus ornare ante. Proin porta consectetur orci et maximus. Nulla tincidunt augue et odio posuere congue. Vivamus vel dui sapien. Mauris id urna velit. Nam sodales cursus nulla et interdum. Etiam imperdiet ultricies nisl tincidunt euismod. Curabitur porta eget sapien a laoreet. Curabitur et nunc in quam pellentesque vestibulum. Nunc consequat quam non finibus egestas.",
             "type": 1,

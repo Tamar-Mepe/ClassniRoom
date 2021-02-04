@@ -10,6 +10,39 @@
     "data": [
         {
             "id": 1,
+            "date": "Nov 9",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 1,
+            "assignment_name": "Assignment 2",
+            "assignment_status": "Assigned",
+            "due_date": "Dec 29",
+            "due_date_h": "11:59 PM",
+            "max_points": 55,
+            "comments": [
+                {
+                    "date": "Nov 9",
+                    "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Naveed Blake"
+                    }
+                },
+                {
+                    "due_date": "Dec 27",
+                    "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Cassia Beaumont"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 2,
             "date": "Oct 8",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 1,
@@ -34,7 +67,7 @@
             }
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "Sep 13",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
             "type": 0,
@@ -70,7 +103,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "Jul 4",
             "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
             "type": 2,
@@ -82,7 +115,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "date": "Apr 14",
             "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
             "type": 0,
@@ -142,7 +175,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "date": "Feb 3",
             "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
             "type": 1,
@@ -175,7 +208,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 7,
             "date": "Jan 4",
             "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
             "type": 0,
@@ -186,7 +219,7 @@
             }
         },
         {
-            "id": 7,
+            "id": 8,
             "date": "Jan 4",
             "description": "Nulla consectetur lacus suscipit, efficitur nulla non, convallis justo",
             "type": 0,
@@ -197,7 +230,7 @@
             }
         },
         {
-            "id": 8,
+            "id": 9,
             "date": "Jan 2",
             "description": "Suspendisse venenatis mauris ac odio viverra, a aliquam tortor convallis",
             "type": 0,
@@ -208,7 +241,7 @@
             }
         },
         {
-            "id": 9,
+            "id": 10,
             "date": "Jan 2",
             "description": "Sed quis purus sed ante tristique vulputate nec eleifend neque",
             "type": 0,
@@ -219,7 +252,7 @@
             }
         },
         {
-            "id": 10,
+            "id": 11,
             "date": "Jan 1",
             "description": "Mauris eu justo eu dolor congue placerat",
             "type": 0,
