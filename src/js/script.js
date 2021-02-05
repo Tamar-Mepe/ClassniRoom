@@ -22,35 +22,35 @@ if (dropDownButton) {
 const joinClassButton = document.getElementById('join-class');
 if (joinClassButton) {
     joinClassButton.addEventListener('click', () => {
-        document.getElementById('join-class-popup').style.visibility = 'visible';
+        document.getElementById('join-class-popup').style.display = 'block';
     })
 }
 
 const closeJoinButton = document.getElementById('close-join');
 if (closeJoinButton) {
     closeJoinButton.addEventListener('click', () => {
-        document.getElementById('join-class-popup').style.visibility = 'hidden';
+        document.getElementById('join-class-popup').style.display = 'none';
     })
 }
 
 const createClassButton = document.getElementById('create-class');
 if (createClassButton) {
     createClassButton.addEventListener('click', () => {
-        document.getElementById('create-class-popup').style.visibility = 'visible';
+        document.getElementById('create-class-popup').style.display = 'block';
     })
 }
 
 const createClassBtn = document.getElementById('create-button');
 if (createClassBtn) {
     createClassBtn.addEventListener('click', () => {
-        document.getElementById('create-class-popup').style.visibility = 'hidden';
+        document.getElementById('create-class-popup').style.display = 'none';
     })
 }
 
 const closeCreateButton = document.getElementById('close');
 if (closeCreateButton) {
     closeCreateButton.addEventListener('click', () => {
-        document.getElementById('create-class-popup').style.visibility = 'hidden';
+        document.getElementById('create-class-popup').style.display = 'none';
     })
 }
 
@@ -119,6 +119,10 @@ function getUrlParameter(urlParameter) {
     return urlParameters.get(urlParameter);
 }
 
+function removeWhiteBackground() {
+    document.getElementById('white-background').style.display = 'none'
+}
+
 //==============
 
 // Requests for Courses Page (Temporary)
@@ -161,17 +165,32 @@ if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1) ==
 
 // Requests for Login Page (Temporary)
 if (window.location.href.substring(window.location.href.lastIndexOf('/') + 1).startsWith('login.html')) {
-    alert('In order to login, please use:\nEmail: test@test\nPassword: test');
-    const logInButton = document.getElementById('button-lr');
-    logInButton.addEventListener('click', function (event) {
-        const emailField = document.getElementById('email').value;
-        const passwordField = document.getElementById('password').value;
-        event.preventDefault();
-        if (emailField.toLowerCase() === approvedEmail && passwordField === approvedPassword)
-            window.location.href = 'courses.html';
-        else
-            document.getElementById('wrong-credentials').style.display = 'block';
+    document.fonts.ready.then(function () {
+        removeWhiteBackground();
+        const logInButton = document.getElementById('button-lr');
+        const googleButton = document.getElementById('google-button');
+        const loadingScreenContainer = document.getElementById('loading-screen-container');
+        logInButton.addEventListener('click', function (event) {
+            alert('For login use:\nEmail: test@test\nPassword: test\nOR press google button');
+            const emailField = document.getElementById('email').value;
+            const passwordField = document.getElementById('password').value;
+            event.preventDefault();
+            if (emailField.toLowerCase() === approvedEmail && passwordField === approvedPassword)
+                window.location.href = 'courses.html';
+            else
+                document.getElementById('wrong-credentials').style.display = 'block';
+        });
+        googleButton.addEventListener('click', function () {
+            loadLoggingIn(loadingScreenContainer);
+        });
     });
+}
+
+async function loadLoggingIn(loadingScreenContainer) {
+    loadingScreenContainer.style.display = 'block';
+    await sleep(2000);
+    loadingScreenContainer.style.display = 'none';
+    window.location.href = 'courses.html';
 }
 
 // Requests for Stream Page (Temporary)
