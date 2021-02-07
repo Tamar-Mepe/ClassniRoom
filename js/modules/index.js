@@ -17,7 +17,7 @@ export class indexController {
         }
 
         function removeWhiteBackground() {
-            document.getEcxlementById('white-background').style.display = 'none';
+            document.getElementById('white-background').style.display = 'none';
         }
 
         fetch('/html/index.html')

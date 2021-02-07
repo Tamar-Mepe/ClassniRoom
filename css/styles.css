@@ -112,26 +112,20 @@ header ul {
     padding: 0px;
 }
 
-header ul:nth-child(1) {
-    padding-left: 30px;
-}
-
-header ul:last-child {
-    padding-right: 30px;
+.left-stuff {
+    padding: 23px;
 }
 
 .middle-text {
-    margin-right: 100px;
     flex: wrap;
-}
-
-.left-stuff {
-    padding: 23px;
+    display: none;
 }
 
 .right-stuff {
     height: 30px;
     align-content: center;
+    padding-right: 30px;
+    display: none;
 }
 
 .invite-button {

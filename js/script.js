@@ -84,6 +84,7 @@ function get(url, callback) {
     displayPostsRequest.send();
 }
 
+// Helper Functions
 function getCurrHM() {
     let currTime = new Date();
     let currTimeHours = currTime.getHours();
@@ -131,6 +132,40 @@ function handleClicksForAssignments() {
     });
 }
 
+function changeHeaderStyleAndNav(displayMiddle, displayJoinCreate, displayInvite, courseID) {
+    changeHeaderElementsDisplay(displayMiddle, displayJoinCreate, displayInvite);
+    setNavHrefs(courseID);
+}
+
+function changeHeaderElementsDisplay(displayMiddle, displayJoinCreate, displayInvite) {
+    document.getElementById('middle-text-id').style.display = displayMiddle ? 'flex' : 'none';
+    document.getElementById('right-join-and-create-id').style.display = displayJoinCreate ? 'flex' : 'none';
+    document.getElementById('right-invite-id').style.display = displayInvite ? 'flex' : 'none';
+}
+
+function setNavHrefs(courseID) {
+    document.getElementById('stream-page').href = '/courses/' + courseID;
+    document.getElementById('classwork-page').href = '/courses/' + courseID + '/classwork';
+    document.getElementById('students-page').href = '/courses/' + courseID + '/students';
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function handleSidebarInfo() {
+    const sidebarComponent = document.getElementById('sidebar-component');
+    const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
+    console.log(sidebarComponent);
+    get('/data/courses.json', function (jsonData) {
+        jsonData = jsonData.data
+        jsonData.forEach(function (currCourse) {
+            const sidebarClone = sidebarCourseTemplate.content.cloneNode(true);
+            const courseName = currCourse.name;
+            sidebarClone.querySelector('.classroom-icon').textContent = courseName[0];
+            sidebarClone.getElementById('course-name-label').textContent = courseName;
+            sidebarClone.querySelector('.sidebar-item').href += '/' + currCourse.id;
+            sidebarComponent.appendChild(sidebarClone);
+        });
+    });
 }
