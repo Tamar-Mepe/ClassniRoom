@@ -1,0 +1,108 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Programming",
+            "image": "/images/covers/img_code.jpg",
+            "subject": "OOP",
+            "room": 420,
+            "lecturer": "Klaudia Huff"
+        },
+        {
+            "id": 2,
+            "name": "Arts",
+            "image": "/images/covers/img_arts.jpg",
+            "subject": "Painting",
+            "room": null,
+            "lecturer": "Lilian Oneal"
+        },
+        {
+            "id": 3,
+            "name": "Chemistry",
+            "image": "/images/covers/Chemistry.jpg",
+            "subject": null,
+            "room": 207,
+            "lecturer": "Zeenat Levy"
+        },
+        {
+            "id": 4,
+            "name": "Literature",
+            "image": "/images/covers/Honors.jpg",
+            "subject": null,
+            "room": 301,
+            "lecturer": "Jo Paterson"
+        },
+        {
+            "id": 5,
+            "name": "Geography",
+            "image": "/images/covers/img_backtoschool.jpg",
+            "subject": null,
+            "room": 103,
+            "lecturer": "Ishaq Wheatley"
+        },
+        {
+            "id": 6,
+            "name": "Book Club",
+            "image": "/images/covers/img_bookclub.jpg",
+            "subject": "Reading",
+            "room": 202,
+            "lecturer": "Clarice Norman"
+        },
+        {
+            "id": 7,
+            "name": "Drama Club",
+            "image": "/images/covers/img_cinema.jpg",
+            "subject": null,
+            "room": 403,
+            "lecturer": "Dexter Ho"
+        },
+        {
+            "id": 8,
+            "name": "Freeuni Reunion",
+            "image": "/images/covers/img_graduation.jpg",
+            "subject": "Graduation",
+            "room": 200,
+            "lecturer": "Norman Slater"
+        },
+        {
+            "id": 9,
+            "name": "Culinary Class",
+            "image": "/images/covers/img_backtoschool.jpg",
+            "subject": "Culinary",
+            "room": 409,
+            "lecturer": "Adil Nieves"
+        },
+        {
+            "id": 10,
+            "name": "Spanish Language II",
+            "image": "/images/covers/img_learnlanguage.jpg",
+            "subject": "Spanish",
+            "room": 412,
+            "lecturer": "Marjorie Ryder"
+        },
+        {
+            "id": 11,
+            "name": "Journalism",
+            "image": "/images/covers/img_reachout.jpg",
+            "subject": null,
+            "room": null,
+            "lecturer": "Cherise Snider"
+        },
+        {
+            "id": 12,
+            "name": "Georgian History",
+            "image": "/images/covers/img_read.jpg",
+            "subject": "History",
+            "room": 122,
+            "lecturer": "Lea Hoover"
+        },
+        {
+            "id": 13,
+            "name": "World Studies",
+            "image": "/images/covers/WorldStudies.jpg",
+            "subject": null,
+            "room": 205,
+            "lecturer": "Jillian Pacheco"
+        }
+    ]
+}

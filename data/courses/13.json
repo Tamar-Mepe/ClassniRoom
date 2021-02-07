@@ -1,0 +1,248 @@
+{
+    "course": {
+        "id": 13,
+        "name": "World Studies",
+        "image": "/images/covers/WorldStudies.jpg",
+        "subject": null,
+        "room": 205,
+        "lecturer": "Jillian Pacheco"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Aug 23",
+            "description": "Donec at justo pretium nibh porttitor condimentum. Pellentesque sit amet eleifend sapien. Aenean elit sem, bibendum et arcu rhoncus, tempor efficitur enim. In id purus justo. Aliquam vitae lectus at ex ornare consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies turpis ac nisi tristique scelerisque. In porta placerat urna, ac aliquam urna sollicitudin nec. Aliquam scelerisque gravida elit eget tempor.",
+            "type": 1,
+            "assignment_name": "Final Project",
+            "assignment_status": "Assigned",
+            "due_date": "Sep 15",
+            "due_date_h": "11:59 PM",
+            "max_points": 50,
+            "comments": [
+                {
+                    "date": "Aug 23",
+                    "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
+                    "user": {
+                        "image": null,
+                        "displayName": "Simeon Watts"
+                    }
+                },
+                {
+                    "date": "Aug 29",
+                    "description": "Mauris eu justo eu dolor congue placerat",
+                    "user": {
+                        "image": null,
+                        "displayName": "Tasneem Rivers"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Jillian Pacheco"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Mar 2",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Jun 2",
+                    "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
+                    "user": {
+                        "image": null,
+                        "displayName": "Simeon Watts"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Tasneem Rivers"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Feb 1",
+            "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
+            "type": 1,
+            "assignment_name": "Assignment",
+            "assignment_status": "Graded",
+            "score": 35,
+            "due_date": "Feb 18",
+            "due_date_h": "11:59 PM",
+            "max_points": 35,
+            "comments": [
+                {
+                    "date": "Feb 5",
+                    "description": "Nullam at mauris eget ipsum semper scelerisque",
+                    "user": {
+                        "image": null,
+                        "displayName": "Christina Tyson"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Jillian Pacheco"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Jan 4",
+            "description": "Nullam a orci vitae dolor auctor tincidunt in in ante",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Yuvraj Ferry"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Jan 3",
+            "description": "Etiam convallis molestie augue, id scelerisque lacus euismod et. Curabitur mauris neque, porttitor id arcu eget, varius sollicitudin lectus. Mauris vehicula turpis at enim malesuada lacinia. Aliquam pulvinar lorem vitae tellus consectetur, ut molestie metus posuere. Morbi urna arcu, laoreet facilisis nibh vitae, porttitor ultricies massa. Sed libero sem, posuere at purus et, vulputate hendrerit diam. Vestibulum quis odio at nunc iaculis convallis a non felis. Nunc sem tortor, porta vel maximus sed, molestie eget massa. Morbi et ex id augue scelerisque luctus. Duis interdum lacinia nunc sed suscipit. Nullam lobortis erat mi. Vestibulum mollis pellentesque purus, vitae venenatis velit mollis in. Donec accumsan interdum est. Curabitur sit amet tincidunt magna, at consectetur tellus. Pellentesque sem odio, maximus a laoreet vitae, finibus eu dolor.",
+            "type": 2,
+            "assignment_name": "Welcome",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Jillian Pacheco"
+            }
+        },
+        {
+            "id": 6,
+            "date": "Jan 1",
+            "description": "Maecenas vestibulum arcu et nisi accumsan, sed facilisis diam rhoncus. Etiam imperdiet libero eu pharetra convallis. Pellentesque vel nisi sed ex rutrum mattis aliquet at dui. Nulla augue tellus, elementum sit amet nunc at, vulputate ornare arcu. Mauris sem turpis, hendrerit non purus in, auctor porta eros. Nunc vestibulum ante vel lorem ullamcorper fringilla. Nulla sollicitudin lacus nec turpis pharetra, mattis rutrum mauris venenatis. In eget mattis arcu. Duis lacinia urna eget ipsum congue, quis vestibulum augue molestie. Aliquam sit amet eros sed elit aliquet consectetur. Fusce rutrum mi vel dui aliquam commodo. Proin vel pulvinar lectus, ut efficitur augue. Etiam elit lectus, pellentesque rutrum orci ut, sagittis volutpat magna. Aenean libero quam, venenatis eget ex quis, ultricies mollis diam. ",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Jan 1",
+                    "description": "Suspendisse ornare magna nec justo efficitur aliquam",
+                    "user": {
+                        "image": null,
+                        "displayName": "Tammy Wong"
+                    }
+                },
+                {
+                    "date": "Jan 1",
+                    "description": "Morbi egestas est et vulputate malesuada",
+                    "user": {
+                        "image": null,
+                        "displayName": "Mikaela Ferrell"
+                    }
+                },
+                {
+                    "date": "Jan 1",
+                    "description": "Aliquam eu ipsum vel enim commodo condimentum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Tammy Wong"
+                    }
+                },
+                {
+                    "date": "Jan 1",
+                    "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Bertram Gould"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Mikaela Ferrell"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Tasneem Rivers"
+        },
+        {
+            "image": null,
+            "displayName": "Isaac Mcleod"
+        },
+        {
+            "image": null,
+            "displayName": "Esmee Crowther"
+        },
+        {
+            "image": null,
+            "displayName": "Christina Tyson"
+        },
+        {
+            "image": null,
+            "displayName": "Dru Douglas"
+        },
+        {
+            "image": null,
+            "displayName": "Tammy Wong"
+        },
+        {
+            "image": null,
+            "displayName": "Bertram Gould"
+        },
+        {
+            "image": null,
+            "displayName": "Mikaela Ferrell"
+        },
+        {
+            "image": null,
+            "displayName": "Jocelyn Eastwood"
+        },
+        {
+            "image": null,
+            "displayName": "Yuvraj Ferry"
+        },
+        {
+            "image": null,
+            "displayName": "Hollie Acevedo"
+        },
+        {
+            "image": null,
+            "displayName": "Simeon Watts"
+        },
+        {
+            "image": null,
+            "displayName": "Dillan Britt"
+        },
+        {
+            "image": null,
+            "displayName": "Maleeha Shields"
+        },
+        {
+            "image": null,
+            "displayName": "Aeryn Mcmillan"
+        },
+        {
+            "image": null,
+            "displayName": "Fiza Greenaway"
+        },
+        {
+            "image": null,
+            "displayName": "Benn Howarth"
+        },
+        {
+            "image": null,
+            "displayName": "Buddy Cline"
+        },
+        {
+            "image": null,
+            "displayName": "Kaylen Brookes"
+        },
+        {
+            "image": null,
+            "displayName": "Brad Adamson"
+        },
+        {
+            "image": null,
+            "displayName": "Bethanie Conner"
+        },
+        {
+            "image": null,
+            "displayName": "Leoni Whitaker"
+        }
+    ]
+}

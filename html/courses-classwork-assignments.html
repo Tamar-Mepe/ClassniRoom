@@ -1,0 +1,43 @@
+<div class="your-work-container" id="your-work-container">
+    <div class="student-info">
+        <img src="../images/girl.svg" class="girl-icon">
+        <span id="logged-in-id"></span>
+    </div>
+
+    <div class="your-work-assignments" id="your-work-assignments">
+        <template id="nothing-assigned-id">
+            <div class="nothing-assigned">
+                <img src="../images/student_desk.svg">
+                <div>Nothing has been assigned</div>
+            </div>
+        </template>
+        <template id="your-work-template">
+            <div class="assignment-bar-style">
+                <div class="assignment-bar">
+                    <div class="assignment-bar-left">
+                        <div class="assignment-name-style" id="your-work-assignment-name"></div>
+                        <div class="assignment-comments" id="your-work-comments">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM4 16V4h16v12H4z">
+                                </path>
+                                <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"></path>
+                            </svg>
+                        </div>
+                        <div class="comments-num-style" id="num-of-comments"></div>
+                    </div>
+                    <div class="due-date-style" id="your-work-due-date"></div>
+                    <div class="assignment-status" id="your-work-status-id"></div>
+                </div>
+                <div class="assignment-content-container">
+                    <div class="assignment-content">
+                        <div class="assignment-content-main" id="your-work-main"></div>
+                    </div>
+                    <div class="view-assignment-style">
+                        <button class="post-comments-button" id="your-work-view-button"></button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</div>

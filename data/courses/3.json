@@ -1,0 +1,221 @@
+{
+    "course": {
+        "id": 3,
+        "name": "Chemistry",
+        "image": "/images/covers/Chemistry.jpg",
+        "subject": null,
+        "room": 207,
+        "lecturer": "Zeenat Levy"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Sep 19",
+            "description": "Maecenas mauris felis, rutrum sed posuere et, vehicula ut est. Sed viverra pretium ex, ac rhoncus dolor. Nulla iaculis, nisl id ultrices sollicitudin, elit neque aliquet eros, id consectetur felis velit quis lectus. Proin nec lobortis felis. Pellentesque sem nunc, luctus at tincidunt sit amet, fermentum eu tellus. Vestibulum semper enim augue, eu elementum libero accumsan nec. Cras ut libero sem. Quisque dui tellus, porta eget tellus vel, accumsan dignissim arcu. Nunc non sapien et augue sodales varius. Proin hendrerit augue sed nulla iaculis, condimentum eleifend velit convallis. Pellentesque arcu nisi, euismod at consequat eget, ullamcorper in lacus. Nullam condimentum luctus erat, quis pretium sem convallis eu. Sed commodo metus a enim mollis, ultrices gravida sapien tincidunt. Curabitur suscipit interdum nibh vitae congue. Donec venenatis ex a nulla ornare iaculis sodales nec lectus. Etiam purus enim, tempus eu ante sit amet, bibendum accumsan erat.",
+            "type": 2,
+            "assignment_name": "Materials: 3",
+            "comments": [
+                {
+                    "date": "Sep 19",
+                    "description": "Nunc nec est sed risus viverra ullamcorper eu sit amet justo",
+                    "user": {
+                        "image": null,
+                        "displayName": "Gordon Mann"
+                    }
+                },
+                {
+                    "date": "Oct 9",
+                    "description": "Proin et risus eget mi blandit vulputate",
+                    "user": {
+                        "image": null,
+                        "displayName": "Max Trevino"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Zeenat Levy"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Oct 9",
+            "description": "Vivamus id turpis a orci viverra auctor. Donec non egestas eros, vitae posuere eros. Quisque efficitur odio non arcu molestie, nec rhoncus nulla viverra. Vestibulum dictum congue tellus ut tempor. Nam nec dictum urna. Nullam sollicitudin elit ac ligula pharetra, quis pretium ipsum molestie. Mauris a tempus orci. Nunc quis augue dignissim, convallis lectus aliquet, ultrices nisl. Aenean sollicitudin non sapien eu congue. Ut fermentum lacus vel sollicitudin finibus. Sed tincidunt libero vel blandit elementum. Curabitur interdum dui in mattis convallis. Aliquam porta lorem ac ante scelerisque consequat.",
+            "type": 2,
+            "assignment_name": "Materials: 2",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Zeenat Levy"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Jun 18",
+            "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus. Phasellus vel fermentum lectus. Pellentesque dapibus erat vitae leo lobortis dictum. Etiam dignissim lorem tellus, quis sodales lorem condimentum non. Cras non dolor vitae ante vulputate imperdiet.",
+            "type": 2,
+            "assignment_name": "Materials: 1",
+            "comments": [
+                {
+                    "date": "Jun 18",
+                    "description": "Morbi lobortis mauris in diam tempus, varius consectetur urna laoreet",
+                    "user": {
+                        "image": null,
+                        "displayName": "Byron Bruce"
+                    }
+                },
+                {
+                    "date": "Jun 18",
+                    "description": "Proin et risus eget mi blandit vulputate",
+                    "user": {
+                        "image": null,
+                        "displayName": "Zeenat Levy"
+                    }
+                },
+                {
+                    "date": "Jun 18",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Byron Bruce"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Zeenat Levy"
+            }
+        },
+        {
+            "id": 4,
+            "date": "May 9",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 1,
+            "assignment_name": "Midterm",
+            "assignment_status": "Assigned",
+            "due_date": "May 19",
+            "due_date_h": "11:59 PM",
+            "max_points": 60,
+            "comments": [
+                {
+                    "date": "May 9",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Honey Hooper"
+                    }
+                },
+                {
+                    "date": "May 9",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Rojin Franks"
+                    }
+                },
+                {
+                    "date": "May 10",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Max Trevino"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Zeenat Levy"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Mar 29",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Mar 29",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Barry Couch"
+                    }
+                },
+                {
+                    "date": "Mar 29",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Gordon Mann"
+                    }
+                },
+                {
+                    "date": "Mar 30",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Barry Couch"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Gordon Mann"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Lorcan Castro"
+        },
+        {
+            "image": null,
+            "displayName": "Byron Bruce"
+        },
+        {
+            "image": null,
+            "displayName": "Yu Andrews"
+        },
+        {
+            "image": null,
+            "displayName": "Tracy Yates"
+        },
+        {
+            "image": null,
+            "displayName": "Barry Couch"
+        },
+        {
+            "image": null,
+            "displayName": "Honey Hooper"
+        },
+        {
+            "image": null,
+            "displayName": "Holli Mccarty"
+        },
+        {
+            "image": null,
+            "displayName": "Haider Archer"
+        },
+        {
+            "image": null,
+            "displayName": "Sulayman Hale"
+        },
+        {
+            "image": null,
+            "displayName": "Max Trevino"
+        },
+        {
+            "image": null,
+            "displayName": "Gordon Mann"
+        },
+        {
+            "image": null,
+            "displayName": "Carson Terrell"
+        },
+        {
+            "image": null,
+            "displayName": "Rojin Franks"
+        }
+    ]
+}

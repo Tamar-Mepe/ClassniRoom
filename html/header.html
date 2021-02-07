@@ -1,0 +1,103 @@
+<header>
+    <nav>
+        <ul class="left-stuff">
+            <button class="burger-icon" id="burger-icon"><img src="../images/burger.svg"></button>
+            <li class="logo">ClassniRoom</li>
+        </ul>
+        <ul class="middle-text" id="middle-text-id">
+            <a href="/courses/" class="curr-page" id="stream-page">
+                <li>Stream</li>
+            </a>
+            <a href="/courses/" id="classwork-page">
+                <li>Classwork</li>
+            </a>
+            <a href="/courses/" id="students-page">
+                <li>People</li>
+            </a>
+        </ul>
+        <!-- <ul class="right-stuff" id="right-join-and-create-id">
+            <div class="dropdown">
+                <button class="plus-button">+</button>
+                <div class="menu-content">
+                    <button class="dropdown-button" id="join-class">Join Class</button>
+                    <button class="dropdown-button" id="create-class">Create Class</button>
+                </div>
+            </div>
+            <li><img src="../images/girl.svg" class="girl-icon"></li>
+        </ul> -->
+        <ul class="right-stuff" id="right-invite-id">
+            <button class="invite-button" id="invite-button">Invite</button>
+            <li><img src="../images/girl.svg" class="girl-icon"></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="popup-container" id="join-class-popup">
+    <div class="popup-style">
+        <div class="popup">
+            <div class="popup-main-label">Join Class</div>
+            <div class="popup-small-text">Ask your teacher for the class code, then enter it here.</div>
+            <input type="text" placeholder="Class code">
+            <div class="popup-buttons">
+                <button id="close-join">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-container" id="create-class-popup">
+    <div class="popup-style">
+        <div class="popup">
+            <div class="popup-main-label">Create Class</div>
+            <input type="text" placeholder="Class name (required)">
+            <input type="text" placeholder="Section">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Room">
+            <div class="popup-buttons">
+                <button id="close">Cancel</button>
+                <button id="create-button">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-container" id="invite-popup-container">
+    <div class="popup-style">
+        <div class="popup">
+            <div class="popup-main-label">Invite a friend</div>
+            <input type="text" placeholder="Email" class="invite-field">
+            <div class="popup-buttons">
+                <button id="invite-close-button">Cancel</button>
+                <button id="inv-button">Invite</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar-container" id="sidebar-container">
+    <div class="sidebar-style" id="sidebar-style">
+        <div class="sidebar">
+            <div class="sidebar-component">
+                <a href="/courses" class="sidebar-item" id="sidebar-curr">
+                    <span>
+                        <svg>
+                            <path d="M12 3L4 9v12h16V9l-8-6zm6 16h-3v-6H9v6H6v-9l6-4.5 6 4.5v9z"></path>
+                        </svg>
+                    </span>
+                    <span>Classes</span>
+                </a>
+            </div>
+            <div class="sidebar-component" id="sidebar-component">
+                <div class="component-label">Enrolled</div>
+                <template id="sidebar-course-template">
+                    <a href="/courses" class="sidebar-item" id="sidebar-href">
+                        <span class="classroom-icon">P</span>
+                        <span id="course-name-label">Programming</span>
+                    </a>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="main"></main>

@@ -1,0 +1,139 @@
+{
+    "course": {
+        "id": 10,
+        "name": "Spanish Language II",
+        "image": "/images/covers/img_learnlanguage.jpg",
+        "subject": "Spanish",
+        "room": 412,
+        "lecturer": "Marjorie Ryder"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Apr 23",
+            "description": "Donec at justo pretium nibh porttitor condimentum. Pellentesque sit amet eleifend sapien. Aenean elit sem, bibendum et arcu rhoncus, tempor efficitur enim. In id purus justo. Aliquam vitae lectus at ex ornare consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies turpis ac nisi tristique scelerisque. In porta placerat urna, ac aliquam urna sollicitudin nec. Aliquam scelerisque gravida elit eget tempor.",
+            "type": 1,
+            "assignment_name": "Final Project",
+            "assignment_status": "Assigned",
+            "due_date": "May 25",
+            "due_date_h": "10:00 PM",
+            "max_points": 100,
+            "comments": [
+                {
+                    "date": "Apr 23",
+                    "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
+                    "user": {
+                        "image": null,
+                        "displayName": "Blossom Parkinson"
+                    }
+                },
+                {
+                    "date": "Apr 29",
+                    "description": "Mauris eu justo eu dolor congue placerat",
+                    "user": {
+                        "image": null,
+                        "displayName": "Marjorie Ryder"
+                    }
+                },
+                {
+                    "date": "May 12",
+                    "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
+                    "user": {
+                        "image": null,
+                        "displayName": "Blossom Parkinson"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Marjorie Ryder"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Mar 2",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Jun 2",
+                    "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
+                    "user": {
+                        "image": null,
+                        "displayName": "Zunaira Calhoun"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Codey Parks"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Feb 1",
+            "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
+            "type": 1,
+            "assignment_name": "Assignment",
+            "assignment_status": "Turned in",
+            "due_date": "Feb 15",
+            "due_date_h": "11:59 PM",
+            "max_points": 100,
+            "comments": [
+                {
+                    "date": "Feb 5",
+                    "description": "Nullam at mauris eget ipsum semper scelerisque",
+                    "user": {
+                        "image": null,
+                        "displayName": "Kamile Findlay"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Marjorie Ryder"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Jan 3",
+            "description": "Vestibulum ac lectus vel eros tincidunt scelerisque",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Marjorie Ryder"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Lennon Bautista"
+        },
+        {
+            "image": null,
+            "displayName": "Kamile Findlay"
+        },
+        {
+            "image": null,
+            "displayName": "Eryk Melendez"
+        },
+        {
+            "image": null,
+            "displayName": "Dale Cox"
+        },
+        {
+            "image": null,
+            "displayName": "Blossom Parkinson"
+        },
+        {
+            "image": null,
+            "displayName": "Codey Parks"
+        },
+        {
+            "image": null,
+            "displayName": "Zunaira Calhoun"
+        }
+    ]
+}

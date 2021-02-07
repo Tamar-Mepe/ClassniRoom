@@ -1,0 +1,312 @@
+{
+    "course": {
+        "id": 11,
+        "name": "Journalism",
+        "image": "/images/covers/img_reachout.jpg",
+        "subject": null,
+        "room": null,
+        "lecturer": "Cherise Snider"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Nov 17",
+            "description": "Donec at justo pretium nibh porttitor condimentum. Pellentesque sit amet eleifend sapien. Aenean elit sem, bibendum et arcu rhoncus, tempor efficitur enim. In id purus justo. Aliquam vitae lectus at ex ornare consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies turpis ac nisi tristique scelerisque. In porta placerat urna, ac aliquam urna sollicitudin nec. Aliquam scelerisque gravida elit eget tempor.",
+            "type": 2,
+            "assignment_name": "Materials",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Cherise Snider"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Mar 3",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 2,
+            "assignment_name": "Exercises: Part 2",
+            "comments": [
+                {
+                    "date": "Mar 9",
+                    "description": "Pellentesque dapibus metus sit amet odio auctor porta",
+                    "user": {
+                        "image": null,
+                        "displayName": "Amelia-Rose Parrish"
+                    }
+                },
+                {
+                    "date": "Mar 19",
+                    "description": "Ut ac mauris feugiat, malesuada tortor quis, lacinia est",
+                    "user": {
+                        "image": null,
+                        "displayName": "Daryl Hurley"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Cherise Snider"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Feb 29",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 2,
+            "assignment_name": "Exercises",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Cherise Snider"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Feb 27",
+            "description": "Aliquam posuere libero non quam sodales, vitae venenatis velit tempus. Morbi finibus nisi volutpat augue accumsan, quis convallis nisi auctor. Maecenas venenatis massa at tincidunt dignissim. Suspendisse nec massa sit amet arcu feugiat finibus. Nam a massa id justo mollis consequat a ut odio. Fusce sit amet turpis quis purus varius semper. Integer urna massa, venenatis nec est non, accumsan auctor lacus. Vivamus volutpat euismod felis eget aliquam. Vestibulum sit amet faucibus arcu. Aliquam non feugiat diam. Sed blandit imperdiet eros bibendum tincidunt. Maecenas quis convallis sapien. Nullam eget turpis volutpat, vehicula quam ut, laoreet leo. Nam lorem lectus, gravida vitae libero ut, mollis gravida mauris. Donec lacinia erat libero, ac scelerisque elit dapibus sit amet.",
+            "type": 1,
+            "assignment_name": "Preparation for Finals",
+            "assignment_status": "Graded",
+            "score": 5,
+            "due_date": "Mar 19",
+            "due_date_h": "11:59 PM",
+            "max_points": 5,
+            "comments": [
+                {
+                    "date": "Feb 29",
+                    "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Bob Herbert"
+                    }
+                },
+                {
+                    "date": "Feb 29",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Kay Mayer"
+                    }
+                },
+                {
+                    "date": "Feb 29",
+                    "description": "Nullam at mauris eget ipsum semper scelerisque",
+                    "user": {
+                        "image": null,
+                        "displayName": "Katie Farrell"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Cherise Snider"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Feb 22",
+            "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Feb 22",
+                    "description": "Fusce ultricies lacus vel nibh euismod, sed lacinia nisl imperdiet",
+                    "user": {
+                        "image": null,
+                        "displayName": "Kay Mayer"
+                    }
+                },
+                {
+                    "date": "Feb 22",
+                    "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
+                    "user": {
+                        "image": null,
+                        "displayName": "Clarice Norman"
+                    }
+                },
+                {
+                    "date": "Feb 23",
+                    "description": "Quisque at massa eu nibh sagittis feugiat eu eu lorem",
+                    "user": {
+                        "image": null,
+                        "displayName": "August Hamer"
+                    }
+                },
+                {
+                    "date": "Feb 24",
+                    "description": "In consequat dui et vestibulum finibus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Albie Giles"
+                    }
+                },
+                {
+                    "date": "Feb 25",
+                    "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Anna-Marie Parkes"
+                    }
+                },
+                {
+                    "date": "Feb 25",
+                    "description": "In consequat dui et vestibulum finibus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Daryl Hurley"
+                    }
+                },
+                {
+                    "date": "Feb 27",
+                    "description": "Aenean porttitor ex eget ante tincidunt, quis condimentum dui lobortis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Selina Jones"
+                    }
+                },
+                {
+                    "date": "Feb 27",
+                    "description": "Sed nec odio bibendum sem gravida tincidunt et at metus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Charly Spooner"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Kay Mayer"
+            }
+        },
+        {
+            "id": 6,
+            "date": "Feb 3",
+            "description": "Curabitur finibus ligula condimentum quam consectetur, sed imperdiet dolor condimentum",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Feb 5",
+                    "description": "Nullam at mauris eget ipsum semper scelerisque",
+                    "user": {
+                        "image": null,
+                        "displayName": "Katie Farrell"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Kay Mayer"
+            }
+        },
+        {
+            "id": 7,
+            "date": "Jan 3",
+            "description": "Nullam at mauris eget ipsum semper scelerisque",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Kay Mayer"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Michalina Mccann"
+        },
+        {
+            "image": null,
+            "displayName": "Ishmael Newton"
+        },
+        {
+            "image": null,
+            "displayName": "Katie Farrell"
+        },
+        {
+            "image": null,
+            "displayName": "Donte Kumar"
+        },
+        {
+            "image": null,
+            "displayName": "Haaris Chaney"
+        },
+        {
+            "image": null,
+            "displayName": "Kay Mayer"
+        },
+        {
+            "image": null,
+            "displayName": "Caspar Prince"
+        },
+        {
+            "image": null,
+            "displayName": "Amelia-Rose Parrish"
+        },
+        {
+            "image": null,
+            "displayName": "Bob Herbert"
+        },
+        {
+            "image": null,
+            "displayName": "Eduardo Thompson"
+        },
+        {
+            "image": null,
+            "displayName": "August Hamer"
+        },
+        {
+            "image": null,
+            "displayName": "Will Mcgill"
+        },
+        {
+            "image": null,
+            "displayName": "Daryl Hurley"
+        },
+        {
+            "image": null,
+            "displayName": "Caroline Wu"
+        },
+        {
+            "image": null,
+            "displayName": "Courtney Wardle"
+        },
+        {
+            "image": null,
+            "displayName": "Albie Giles"
+        },
+        {
+            "image": null,
+            "displayName": "Charly Spooner"
+        },
+        {
+            "image": null,
+            "displayName": "Cecelia Holcomb"
+        },
+        {
+            "image": null,
+            "displayName": "Patience Cantu"
+        },
+        {
+            "image": null,
+            "displayName": "Selina Jones"
+        },
+        {
+            "image": null,
+            "displayName": "Joshua Ibarra"
+        },
+        {
+            "image": null,
+            "displayName": "Anum Hampton"
+        },
+        {
+            "image": null,
+            "displayName": "Rishi Cooke"
+        },
+        {
+            "image": null,
+            "displayName": "Anna-Marie Parkes"
+        }
+    ]
+}

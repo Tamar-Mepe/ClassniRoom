@@ -1,0 +1,346 @@
+{
+    "course": {
+        "id": 12,
+        "name": "Georgian History",
+        "image": "/images/covers/img_read.jpg",
+        "subject": "History",
+        "room": 122,
+        "lecturer": "Lea Hoover"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Dec 29",
+            "description": "Vivamus ipsum massa, volutpat et enim quis, consectetur egestas quam. Nullam vel mollis lacus. Vivamus sed enim id orci elementum accumsan nec sit amet lorem. Proin orci magna, dapibus non tincidunt congue, convallis sit amet leo. Aliquam nec rhoncus augue. Ut cursus enim ut felis maximus pretium. Vestibulum aliquam velit non est accumsan, at finibus mauris tempor. Proin sit amet efficitur nunc. Integer et rutrum est, a pharetra est. Nulla elementum mi quis nunc faucibus, in semper augue pretium. Curabitur quis luctus justo, eu tempus velit.",
+            "type": 2,
+            "assignment_name": "Materials 4",
+            "comments": [
+                {
+                    "date": "Dec 29",
+                    "description": "Donec eleifend risus in eros accumsan, vel lacinia lectus rutrum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Asiya Greenwood"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lea Hoover"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Dec 11",
+            "description": "Vivamus ipsum massa, volutpat et enim quis, consectetur egestas quam. Nullam vel mollis lacus. Vivamus sed enim id orci elementum accumsan nec sit amet lorem. Proin orci magna, dapibus non tincidunt congue, convallis sit amet leo. Aliquam nec rhoncus augue. Ut cursus enim ut felis maximus pretium. Vestibulum aliquam velit non est accumsan, at finibus mauris tempor. Proin sit amet efficitur nunc. Integer et rutrum est, a pharetra est. Nulla elementum mi quis nunc faucibus, in semper augue pretium. Curabitur quis luctus justo, eu tempus velit.",
+            "type": 2,
+            "assignment_name": "Materials 3",
+            "comments": [
+                {
+                    "date": "Dec 11",
+                    "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Honey Hooper"
+                    }
+                },
+                {
+                    "date": "Dec 11",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Asiya Greenwood"
+                    }
+                },
+                {
+                    "date": "Dec 11",
+                    "description": " Nulla vitae pretium risus, eu faucibus ex",
+                    "user": {
+                        "image": null,
+                        "displayName": "Haniya Morris"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lea Hoover"
+            }
+        },
+        {
+            "id": 3,
+            "date": "May 4",
+            "description": "Vivamus ipsum massa, volutpat et enim quis, consectetur egestas quam. Nullam vel mollis lacus. Vivamus sed enim id orci elementum accumsan nec sit amet lorem. Proin orci magna, dapibus non tincidunt congue, convallis sit amet leo. Aliquam nec rhoncus augue. Ut cursus enim ut felis maximus pretium. Vestibulum aliquam velit non est accumsan, at finibus mauris tempor. Proin sit amet efficitur nunc. Integer et rutrum est, a pharetra est. Nulla elementum mi quis nunc faucibus, in semper augue pretium. Curabitur quis luctus justo, eu tempus velit.",
+            "type": 2,
+            "assignment_name": "Materials 2",
+            "comments": [
+                {
+                    "date": "May 4",
+                    "description": "Donec eleifend risus in eros accumsan, vel lacinia lectus rutrum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Asiya Greenwood"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lea Hoover"
+            }
+        },
+        {
+            "id": 4,
+            "date": "May 1",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 2,
+            "assignment_name": "Materials 1",
+            "comments": [
+                {
+                    "date": "May 2",
+                    "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
+                    "user": {
+                        "image": null,
+                        "displayName": "Rui Delaney"
+                    }
+                },
+                {
+                    "date": "May 9",
+                    "description": "Nullam a orci vitae dolor auctor tincidunt in in ante",
+                    "user": {
+                        "image": null,
+                        "displayName": "Isma Joyner"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lea Hoover"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Feb 13",
+            "description": "Nunc eleifend sapien nibh. Cras accumsan consectetur interdum. Aliquam erat volutpat. Duis at aliquam orci. Sed dapibus volutpat mi sit amet tempus. Sed consequat sem enim, auctor faucibus enim suscipit id. Nulla vitae pretium risus, eu faucibus ex. Vivamus eu hendrerit nunc, vestibulum ornare nisi.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Mar 1",
+                    "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
+                    "user": {
+                        "image": null,
+                        "displayName": "Barry Couch"
+                    }
+                },
+                {
+                    "date": "Mar 3",
+                    "description": "Phasellus vel fermentum lectus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Mckenzie Lancaster"
+                    }
+                },
+                {
+                    "date": "Mar 4",
+                    "description": "Suspendisse in diam sit amet lacus luctus pharetra",
+                    "user": {
+                        "image": null,
+                        "displayName": "Helin Oliver"
+                    }
+                },
+                {
+                    "date": "Mar 11",
+                    "description": "Curabitur pretium turpis eu nisl aliquet viverra",
+                    "user": {
+                        "image": null,
+                        "displayName": "Jethro Macdonald"
+                    }
+                },
+                {
+                    "date": "Mar 12",
+                    "description": "Nam rhoncus nulla et lectus dapibus commodo",
+                    "user": {
+                        "image": null,
+                        "displayName": "Carys Mckenna"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Lacey-Mai Tyler"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Lacey-Mai Tyler"
+        },
+        {
+            "image": null,
+            "displayName": "Helin Oliver"
+        },
+        {
+            "image": null,
+            "displayName": "Mckenzie Lancaster"
+        },
+        {
+            "image": null,
+            "displayName": "Jethro Macdonald"
+        },
+        {
+            "image": null,
+            "displayName": "Adyan Head"
+        },
+        {
+            "image": null,
+            "displayName": "Carys Mckenna"
+        },
+        {
+            "image": null,
+            "displayName": "Isma Joyner"
+        },
+        {
+            "image": null,
+            "displayName": "Ariyah Frye"
+        },
+        {
+            "image": null,
+            "displayName": "Nadia Hackett"
+        },
+        {
+            "image": null,
+            "displayName": "Ashlee Rollins"
+        },
+        {
+            "image": null,
+            "displayName": "Rui Delaney"
+        },
+        {
+            "image": null,
+            "displayName": "Blanka Pratt"
+        },
+        {
+            "image": null,
+            "displayName": "Elwood Goldsmith"
+        },
+        {
+            "image": null,
+            "displayName": "Sofia Mcgee"
+        },
+        {
+            "image": null,
+            "displayName": "Taio Glover"
+        },
+        {
+            "image": null,
+            "displayName": "Roshni Thornton"
+        },
+        {
+            "image": null,
+            "displayName": "Haniya Morris"
+        },
+        {
+            "image": null,
+            "displayName": "Teri Griffiths"
+        },
+        {
+            "image": null,
+            "displayName": "Asiya Greenwood"
+        },
+        {
+            "image": null,
+            "displayName": "Alberto Velasquez"
+        },
+        {
+            "image": null,
+            "displayName": "Shabaz Barajas"
+        },
+        {
+            "image": null,
+            "displayName": "Yahya Mcculloch"
+        },
+        {
+            "image": null,
+            "displayName": "Skyla Stacey"
+        },
+        {
+            "image": null,
+            "displayName": "Peggy Thorne"
+        },
+        {
+            "image": null,
+            "displayName": "Tamera Mcmanus"
+        },
+        {
+            "image": null,
+            "displayName": "Savannah Crane"
+        },
+        {
+            "image": null,
+            "displayName": "Lydia Ellis"
+        },
+        {
+            "image": null,
+            "displayName": "Carol Mejia"
+        },
+        {
+            "image": null,
+            "displayName": "Ella-Mae Murillo"
+        },
+        {
+            "image": null,
+            "displayName": "Griffin Duarte"
+        },
+        {
+            "image": null,
+            "displayName": "Axel Perez"
+        },
+        {
+            "image": null,
+            "displayName": "Barnaby Schultz"
+        },
+        {
+            "image": null,
+            "displayName": "Scarlet Croft"
+        },
+        {
+            "image": null,
+            "displayName": "Danica Turner"
+        },
+        {
+            "image": null,
+            "displayName": "Subhaan Waters"
+        },
+        {
+            "image": null,
+            "displayName": "Adele Dorsey"
+        },
+        {
+            "image": null,
+            "displayName": "Milosz Nolan"
+        },
+        {
+            "image": null,
+            "displayName": "Cristina Sinclair"
+        },
+        {
+            "image": null,
+            "displayName": "Holli Garrett"
+        },
+        {
+            "image": null,
+            "displayName": "Ayse Franco"
+        },
+        {
+            "image": null,
+            "displayName": "Harvey-Lee Whelan"
+        },
+        {
+            "image": null,
+            "displayName": "Saad Chandler"
+        },
+        {
+            "image": null,
+            "displayName": "Killian Mckee"
+        }
+    ]
+}

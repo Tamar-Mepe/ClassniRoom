@@ -1,0 +1,525 @@
+{
+    "course": {
+        "id": 1,
+        "name": "Programming",
+        "image": "/images/covers/img_code.jpg",
+        "subject": "OOP",
+        "room": 420,
+        "lecturer": "Klaudia Huff"
+    },
+    "data": [
+        {
+            "id": 1,
+            "date": "Nov 9",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 1,
+            "assignment_name": "Assignment 2",
+            "assignment_status": "Assigned",
+            "due_date": "Dec 29",
+            "due_date_h": "11:59 PM",
+            "max_points": 55,
+            "comments": [
+                {
+                    "date": "Nov 9",
+                    "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Naveed Blake"
+                    }
+                },
+                {
+                    "due_date": "Dec 27",
+                    "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Cassia Beaumont"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 2,
+            "date": "Oct 8",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 1,
+            "assignment_name": "Assignment 1",
+            "assignment_status": "Turned in late",
+            "due_date": "Dec 12",
+            "due_date_h": "11:00 PM",
+            "max_points": 50,
+            "comments": [
+                {
+                    "date": "Oct 8",
+                    "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 3,
+            "date": "Sep 13",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit ac enim vel tristique. Ut id lacus tellus. Curabitur eu sapien tortor. Suspendisse at scelerisque urna. Aenean nec ligula felis. Cras a faucibus augue. Nullam eu mi et mi egestas aliquam. Mauris ut nunc nulla. Sed in turpis a mi dapibus egestas id at nisl. Integer non eros vel metus porta pulvinar.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Sep 13",
+                    "description": "First comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                },
+                {
+                    "date": "Sep 13",
+                    "description": "Second comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                },
+                {
+                    "date": "Sep 13",
+                    "description": "Third comment",
+                    "user": {
+                        "image": null,
+                        "displayName": "Ivy Wall"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "John Doe"
+            }
+        },
+        {
+            "id": 4,
+            "date": "Jul 4",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 2,
+            "assignment_name": "Additional Materials",
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 5,
+            "date": "Apr 14",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Apr 14",
+                    "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
+                    "user": {
+                        "image": null,
+                        "displayName": "Reema Mahoney"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Aenean nec nibh in purus bibendum venenatis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Norah Bolton"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Praesent a tortor ac quam rhoncus faucibus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Viktoria Medina"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Aliquam id libero ultricies, sagittis diam vitae, egestas metus",
+                    "user": {
+                        "image": null,
+                        "displayName": "Freddie Oneill"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Suspendisse ornare magna nec justo efficitur aliquam",
+                    "user": {
+                        "image": null,
+                        "displayName": "Adela Fole"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Morbi egestas est et vulputate malesuada",
+                    "user": {
+                        "image": null,
+                        "displayName": "Macie Buxton"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Raife Garrett"
+            }
+        },
+        {
+            "id": 6,
+            "date": "Feb 3",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 1,
+            "assignment_name": "Assignment - Zero",
+            "assignment_status": "Turned in",
+            "due_date": "Mar 3",
+            "due_date_h": "10:00 PM",
+            "max_points": 30,
+            "comments": [
+                {
+                    "date": "Apr 14",
+                    "description": "Suspendisse ornare magna nec justo efficitur aliquam",
+                    "user": {
+                        "image": null,
+                        "displayName": "Adela Fole"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Morbi egestas est et vulputate malesuada",
+                    "user": {
+                        "image": null,
+                        "displayName": "Macie Buxton"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Klaudia Huff"
+            }
+        },
+        {
+            "id": 7,
+            "date": "Jan 4",
+            "description": "Donec luctus lacus at varius sagittis. Proin vehicula fringilla enim, sed viverra metus consequat nec. Sed sed nibh diam. Vivamus consequat tortor mattis, lobortis lorem sollicitudin, bibendum risus. Sed sit amet tempus lacus. Etiam feugiat pretium risus, in mattis lectus maximus a. Vivamus vitae quam neque. Nunc ut tincidunt magna. Morbi imperdiet libero sed felis facilisis vulputate. Nam eget risus sed ligula ornare tempor. Mauris eleifend varius metus vitae congue. Sed suscipit varius enim, id ornare purus eleifend eu. Donec ut mi a nulla molestie elementum. Proin tincidunt, justo nec dignissim aliquam, est mauris porta nibh, bibendum fermentum nisl quam eget mauris. Duis fermentum nibh nunc, at euismod orci laoreet ac.",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Malachy Mcbride"
+            }
+        },
+        {
+            "id": 8,
+            "date": "Jan 4",
+            "description": "Nulla consectetur lacus suscipit, efficitur nulla non, convallis justo",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Ignacy Escobar"
+            }
+        },
+        {
+            "id": 9,
+            "date": "Jan 2",
+            "description": "Suspendisse venenatis mauris ac odio viverra, a aliquam tortor convallis",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Denny Harper"
+            }
+        },
+        {
+            "id": 10,
+            "date": "Jan 2",
+            "description": "Sed quis purus sed ante tristique vulputate nec eleifend neque",
+            "type": 0,
+            "comments": [],
+            "user": {
+                "image": null,
+                "displayName": "Yousef Buckner"
+            }
+        },
+        {
+            "id": 11,
+            "date": "Jan 1",
+            "description": "Mauris eu justo eu dolor congue placerat",
+            "type": 0,
+            "comments": [
+                {
+                    "date": "Apr 14",
+                    "description": "Suspendisse ornare magna nec justo efficitur aliquam",
+                    "user": {
+                        "image": null,
+                        "displayName": "Adela Fole"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Morbi egestas est et vulputate malesuada",
+                    "user": {
+                        "image": null,
+                        "displayName": "Macie Buxton"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Aliquam eu ipsum vel enim commodo condimentum",
+                    "user": {
+                        "image": null,
+                        "displayName": "Adela Fole"
+                    }
+                },
+                {
+                    "date": "Apr 14",
+                    "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
+                    "user": {
+                        "image": null,
+                        "displayName": "Macie Buxton"
+                    }
+                }
+            ],
+            "user": {
+                "image": null,
+                "displayName": "Shanay Walls"
+            }
+        }
+    ],
+    "students": [
+        {
+            "image": null,
+            "displayName": "Ivy Wall"
+        },
+        {
+            "image": null,
+            "displayName": "John Doe"
+        },
+        {
+            "image": null,
+            "displayName": "Yousef Buckner"
+        },
+        {
+            "image": null,
+            "displayName": "Ignacy Escobar"
+        },
+        {
+            "image": null,
+            "displayName": "Henrietta Patrick"
+        },
+        {
+            "image": null,
+            "displayName": "Shanay Walls"
+        },
+        {
+            "image": null,
+            "displayName": "Sahib Gilbert"
+        },
+        {
+            "image": null,
+            "displayName": "Malachy Mcbride"
+        },
+        {
+            "image": null,
+            "displayName": "Denny Harper"
+        },
+        {
+            "image": null,
+            "displayName": "Haydon Hyde"
+        },
+        {
+            "image": null,
+            "displayName": "Simra Carter"
+        },
+        {
+            "image": null,
+            "displayName": "Raife Garrett"
+        },
+        {
+            "image": null,
+            "displayName": "Pheobe Galvan"
+        },
+        {
+            "image": null,
+            "displayName": "Allison Welch"
+        },
+        {
+            "image": null,
+            "displayName": "Kristopher Whitehouse"
+        },
+        {
+            "image": null,
+            "displayName": "Reema Mahoney"
+        },
+        {
+            "image": null,
+            "displayName": "Norah Bolton"
+        },
+        {
+            "image": null,
+            "displayName": "Tobias Craft"
+        },
+        {
+            "image": null,
+            "displayName": "Lylah Murphy"
+        },
+        {
+            "image": null,
+            "displayName": "Zane Page"
+        },
+        {
+            "image": null,
+            "displayName": "Viktoria Medina"
+        },
+        {
+            "image": null,
+            "displayName": "Freddie Oneill"
+        },
+        {
+            "image": null,
+            "displayName": "Hywel Chan"
+        },
+        {
+            "image": null,
+            "displayName": "Leon Ireland"
+        },
+        {
+            "image": null,
+            "displayName": "Honor Carrillo"
+        },
+        {
+            "image": null,
+            "displayName": "Adela Fole"
+        },
+        {
+            "image": null,
+            "displayName": "Macie Buxton"
+        },
+        {
+            "image": null,
+            "displayName": "Ammaar Pace"
+        },
+        {
+            "image": null,
+            "displayName": "Nicky Hampton"
+        },
+        {
+            "image": null,
+            "displayName": "Walid Navarro"
+        },
+        {
+            "image": null,
+            "displayName": "Adrianna Ayers"
+        },
+        {
+            "image": null,
+            "displayName": "Aayat Matthams"
+        },
+        {
+            "image": null,
+            "displayName": "Rajveer Harding"
+        },
+        {
+            "image": null,
+            "displayName": "Iyla Mccray"
+        },
+        {
+            "image": null,
+            "displayName": "Kim Whitney"
+        },
+        {
+            "image": null,
+            "displayName": "Claire Michael"
+        },
+        {
+            "image": null,
+            "displayName": "Naveed Blake"
+        },
+        {
+            "image": null,
+            "displayName": "Margie Mahoney"
+        },
+        {
+            "image": null,
+            "displayName": "Jimmie Lugo"
+        },
+        {
+            "image": null,
+            "displayName": "Shelby Houghton"
+        },
+        {
+            "image": null,
+            "displayName": "Andre Jensen"
+        },
+        {
+            "image": null,
+            "displayName": "Natan Lutz"
+        },
+        {
+            "image": null,
+            "displayName": "Alice Slater"
+        },
+        {
+            "image": null,
+            "displayName": "Kierran Farley"
+        },
+        {
+            "image": null,
+            "displayName": "Ella-Rose Sparks"
+        },
+        {
+            "image": null,
+            "displayName": "Zakk Elliott"
+        },
+        {
+            "image": null,
+            "displayName": "Brooklyn Hays"
+        },
+        {
+            "image": null,
+            "displayName": "Patrycja Britt"
+        },
+        {
+            "image": null,
+            "displayName": "Nimra England"
+        },
+        {
+            "image": null,
+            "displayName": "Korban Rocha"
+        },
+        {
+            "image": null,
+            "displayName": "Shelley Hogan"
+        },
+        {
+            "image": null,
+            "displayName": "Jannat Kline"
+        },
+        {
+            "image": null,
+            "displayName": "Lucien Jefferson"
+        },
+        {
+            "image": null,
+            "displayName": "Isobel Fleming"
+        },
+        {
+            "image": null,
+            "displayName": "Saoirse Mcphee"
+        },
+        {
+            "image": null,
+            "displayName": "Cassia Beaumont"
+        }
+    ]
+}
