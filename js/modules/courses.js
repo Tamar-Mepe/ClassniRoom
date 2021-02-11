@@ -12,15 +12,78 @@ const header = () => {
 }
 
 function handleSidebarInfo() {
+    const dropDownButton = document.querySelector('.plus-button');
+    const menu = document.querySelector('.menu-content');
+    const joinClassButton = document.getElementById('join-class');
+    const closeJoinButton = document.getElementById('close-join');
+    const createClassButton = document.getElementById('create-class');
+    const createClassBtn = document.getElementById('create-button');
+    const createButtonJoin = document.getElementById('create-button-join');
+    const closeCreateButton = document.getElementById('close');
+    const inviteButton = document.getElementById('invite-button');
+    const inviteClose = document.getElementById('invite-close-button');
+    const iniviteBtn = document.getElementById('inv-button');
     const burgerIcon = document.getElementById('burger-icon');
     const sidebarContainer = document.getElementById('sidebar-container');
+
+    dropDownButton.addEventListener('click', () => {
+        if (menu.style.display !== 'block') {
+            menu.style.display = 'block';
+            dropDownButton.style.backgroundColor = 'rgb(236, 236, 236)';
+        } else {
+            menu.style.display = 'none';
+            dropDownButton.style.backgroundColor = 'white';
+        }
+    })
+
+    joinClassButton.addEventListener('click', () => {
+        document.getElementById('join-class-popup').style.display = 'block';
+        dropDownButton.click();
+    })
+
+    closeJoinButton.addEventListener('click', () => {
+        document.getElementById('join-class-popup').style.display = 'none';
+    })
+
+    createClassButton.addEventListener('click', () => {
+        document.getElementById('create-class-popup').style.display = 'block';
+        dropDownButton.click();
+    })
+
+    createClassBtn.addEventListener('click', () => {
+        operationSuccessful('Class created!');
+        document.getElementById('create-class-popup').style.display = 'none';
+    })
+
+    createButtonJoin.addEventListener('click', () => {
+        operationSuccessful('Class Joined!');
+        document.getElementById('join-class-popup').style.display = 'none';
+    })
+
+    closeCreateButton.addEventListener('click', () => {
+        document.getElementById('create-class-popup').style.display = 'none';
+    })
+
+    inviteButton.addEventListener('click', () => {
+        document.getElementById('invite-popup-container').style.display = 'block';
+    })
+
+    inviteClose.addEventListener('click', () => {
+        document.getElementById('invite-popup-container').style.display = 'none';
+    })
+
+    iniviteBtn.addEventListener('click', () => {
+        operationSuccessful('Friend invited!');
+        document.getElementById('invite-popup-container').style.display = 'none';
+    })
+
     burgerIcon.addEventListener('click', (e) => {
         e.stopPropagation();
         sidebarContainer.classList.add('show');
     });
+
     document.addEventListener('click', () => {
-        if (sidebarContainer.classList.contains('show'))
-            sidebarContainer.classList.remove('show');
+        if (sidebarContainer.classList.contains('show')) sidebarContainer.classList.remove('show');
     });
 
     const sidebarComponent = document.getElementById('sidebar-component');

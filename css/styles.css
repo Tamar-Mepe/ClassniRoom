@@ -1724,6 +1724,22 @@ tr:last-of-type {
     .column {
         width: 350px;
     }
+    .sidebar-style {
+        width: 200px;
+    }
+    .sidebar-item {
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+    .sidebar-item span {
+        height: auto;
+    }
+    .classroom-icon {
+        margin-right: 8px;
+    }
+    .sidebar-item svg {
+        margin-right: 8px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
