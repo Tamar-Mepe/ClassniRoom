@@ -4,6 +4,20 @@ const currLoggedIn = 'John Doe';
 const approvedEmail = 'test@test';
 const approvedPassword = 'test';
 
+const dropDownButton = document.querySelector('.plus-button');
+const menu = document.querySelector('.menu-content');
+if (dropDownButton) {
+    dropDownButton.addEventListener('click', () => {
+        if (menu.style.display !== 'block') {
+            menu.style.display = 'block';
+            dropDownButton.style.backgroundColor = 'rgb(236, 236, 236)';
+        } else {
+            menu.style.display = 'none';
+            dropDownButton.style.backgroundColor = 'white';
+        }
+    })
+}
+
 const joinClassButton = document.getElementById('join-class');
 if (joinClassButton) {
     joinClassButton.addEventListener('click', () => {
@@ -28,6 +42,7 @@ if (createClassButton) {
 const createClassBtn = document.getElementById('create-button');
 if (createClassBtn) {
     createClassBtn.addEventListener('click', () => {
+        operationSuccessful('Class created!');
         document.getElementById('create-class-popup').style.display = 'none';
     })
 }
@@ -55,33 +70,40 @@ if (burgerIcon) {
 const inviteButton = document.getElementById('invite-button');
 if (inviteButton) {
     inviteButton.addEventListener('click', () => {
-        document.getElementById('invite-popup-container').style.visibility = 'visible';
+        document.getElementById('invite-popup-container').style.display = 'block';
     })
 }
 
 const inviteClose = document.getElementById('invite-close-button');
 if (inviteClose) {
     inviteClose.addEventListener('click', () => {
-        document.getElementById('invite-popup-container').style.visibility = 'hidden';
+        document.getElementById('invite-popup-container').style.display = 'none';
     })
 }
 
 const iniviteBtn = document.getElementById('inv-button');
 if (iniviteBtn) {
     iniviteBtn.addEventListener('click', () => {
-        document.getElementById('invite-popup-container').style.visibility = 'hidden';
+        operationSuccessful('Friend invited!');
+        document.getElementById('invite-popup-container').style.display = 'none';
     })
 }
 
 // Get Wrapper
 function get(url, callback) {
-    const displayPostsRequest = new XMLHttpRequest();
-    displayPostsRequest.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200)
-            callback(JSON.parse(this.responseText))
-    }
-    displayPostsRequest.open('GET', url);
-    displayPostsRequest.send();
+    return new Promise((resolve, reject) => {
+        const displayPostsRequest = new XMLHttpRequest();
+        displayPostsRequest.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    callback(JSON.parse(this.responseText));
+                    return resolve();
+                } else return reject();
+            }
+        }
+        displayPostsRequest.open('GET', url);
+        displayPostsRequest.send();
+    })
 }
 
 // Helper Functions
@@ -153,19 +175,13 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function handleSidebarInfo() {
-    const sidebarComponent = document.getElementById('sidebar-component');
-    const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
-    console.log(sidebarComponent);
-    get('/data/courses.json', function (jsonData) {
-        jsonData = jsonData.data
-        jsonData.forEach(function (currCourse) {
-            const sidebarClone = sidebarCourseTemplate.content.cloneNode(true);
-            const courseName = currCourse.name;
-            sidebarClone.querySelector('.classroom-icon').textContent = courseName[0];
-            sidebarClone.getElementById('course-name-label').textContent = courseName;
-            sidebarClone.querySelector('.sidebar-item').href += '/' + currCourse.id;
-            sidebarComponent.appendChild(sidebarClone);
-        });
-    });
+async function operationSuccessful(stringToDisplay) {
+    const loadingScreenContainer = document.getElementById('loading-screen-container');
+    const mainLabel = document.getElementById('loading-screen-main-label');
+    mainLabel.textContent = 'Please wait';
+    loadingScreenContainer.style.display = 'block';
+    await sleep(1313);
+    mainLabel.textContent = stringToDisplay;
+    await sleep(1313);
+    loadingScreenContainer.style.display = 'none';
 }

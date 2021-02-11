@@ -1,23 +1,64 @@
-(function () {
-    fetch('/html/header.html')
+const header = () => {
+    return fetch('/html/header.html')
         .then(response => {
             return response.text();
         })
         .then(data => {
             document.getElementById('body').innerHTML = data;
+        })
+        .then(() => {
+            handleSidebarInfo();
         });
-})();
+}
+
+function handleSidebarInfo() {
+    const burgerIcon = document.getElementById('burger-icon');
+    const sidebarContainer = document.getElementById('sidebar-container');
+    burgerIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebarContainer.classList.add('show');
+    });
+    document.addEventListener('click', () => {
+        if (sidebarContainer.classList.contains('show'))
+            sidebarContainer.classList.remove('show');
+    });
+
+    const sidebarComponent = document.getElementById('sidebar-component');
+    const sidebarCourseTemplate = document.getElementById('sidebar-course-template');
+    get('/data/courses.json', function (jsonData) {
+        jsonData = jsonData.data
+        jsonData.forEach(function (currCourse) {
+            const sidebarClone = sidebarCourseTemplate.content.cloneNode(true);
+            const courseName = currCourse.name;
+            sidebarClone.querySelector('.classroom-icon').textContent = courseName[0];
+            sidebarClone.getElementById('course-name-label').textContent = courseName;
+            sidebarClone.querySelector('.sidebar-item').href += '/' + currCourse.id;
+            sidebarComponent.appendChild(sidebarClone);
+        });
+    });
+}
 
 export class coursesController {
-    static index() {
-        fetch('/html/courses-index.html')
+    static loadPage(url) {
+        return fetch(url)
             .then(response => {
                 return response.text();
             })
             .then(data => {
+                const main = document.getElementById('main');
+                if (!main) return header().then(() => { return data })
+                else return data;
+            })
+    }
+
+    static index() {
+        return coursesController.loadPage('/html/courses-index.html')
+            .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderElementsDisplay(false, true, false);
-                get('/data/courses.json', function (jsonData) {
+            })
+            .then(() => {
+                return get('/data/courses.json', function (jsonData) {
                     jsonData = jsonData.data
                     checkIfNoCourses(jsonData);
                     displayCourses(jsonData);
@@ -43,7 +84,7 @@ export class coursesController {
                 courseCardClone.querySelector('.class-label').textContent = currCourse.name;
                 courseCardClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
                 courseCardClone.querySelector('.class-label').href += '/' + currCourse.id;
-                courseCardClone.getElementById('redirect-to-your-work').href += '/' + currCourse.id;
+                courseCardClone.getElementById('redirect-to-your-work').href = '/courses/' + currCourse.id + '/classwork-assignments';
                 courseRow.appendChild(courseCardClone);
             });
         }
@@ -51,19 +92,18 @@ export class coursesController {
 
     static show(params) {
         let courseID = params.data.id;
-        fetch('/html/courses-show.html')
-            .then(response => {
-                return response.text();
-            })
+        return coursesController.loadPage('/html/courses-show.html')
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderStyleAndNav(true, false, true, courseID);
-                get('/data/courses/' + courseID + '.json', function (data) {
+            })
+            .then(() => {
+                return get('/data/courses/' + courseID + '.json', function (data) {
                     displayUpperPart(data, courseID);
                     announceContainer();
-                    displayPosts(data);
+                    displayPosts(data, courseID);
                     searchBar();
-                });
+                })
             });
 
         function displayUpperPart(data, courseID) {
@@ -107,10 +147,9 @@ export class coursesController {
                 if (currAssignment.type == 1 && currAssignment.assignment_status == "Assigned") {
                     const upcomingAssignmenthref = document.getElementById('upcoming-assignment-href');
                     document.getElementById('upcoming-assignment-text').style.display = 'none';
-                    upcomingAssignmenthref.href = window.location.href + '/classwork/' + currAssignment.id;
+                    upcomingAssignmenthref.href = 'courses/' + courseID + '/classwork/' + currAssignment.id;
                     upcomingAssignmenthref.textContent = currAssignment.assignment_name;
-                    document.getElementById('view-all-materials')
-                        .href = window.location.href + '/classwork-assignments';
+                    document.getElementById('view-all-materials').href = 'courses/' + courseID + '/classwork-assignments';
                     return;
                 }
             });
@@ -145,7 +184,7 @@ export class coursesController {
             postOnEnter(textArea, postButton);
         }
 
-        function displayPosts(data) {
+        function displayPosts(data, courseID) {
             const postData = data.data
             const rightPartContainer = document.getElementById('right-part-container');
             const postContainerTemplate = document.getElementById('class-post-template');
@@ -190,7 +229,7 @@ export class coursesController {
                         'assignment-announced-date', typeOfPost);
                     const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
                     assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost.length, null);
-                    assignmentAnnouncementClone.getElementById('assignment-href').href = window.location.href + '/classwork/' + currPost.id;
+                    assignmentAnnouncementClone.getElementById('assignment-href').href = 'courses/' + courseID + '/classwork/' + currPost.id;
                     if (!commentsForPost.length) commentsElem.style.display = 'none';
                     rightPartContainer.appendChild(assignmentAnnouncementClone);
                 }
@@ -347,14 +386,13 @@ export class coursesController {
 
     static students(params) {
         let courseID = params.data.id;
-        fetch('/html/courses-students.html')
-            .then(response => {
-                return response.text();
-            })
+        return coursesController.loadPage('/html/courses-students.html')
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderStyleAndNav(true, false, true, courseID);
-                get('/data/courses/' + courseID + '.json', function (data) {
+            })
+            .then(() => {
+                return get('/data/courses/' + courseID + '.json', function (data) {
                     document.title = data.course.name;
                     const studentsList = data.students;
                     const lecturerLabel = data.course.lecturer;
@@ -372,17 +410,17 @@ export class coursesController {
             });
     }
 
-    static classwork(params) {
+    static classwork(params, router) {
         let courseID = params.data.id;
-        fetch('/html/courses-classwork.html')
-            .then(response => {
-                return response.text();
-            })
+        return coursesController.loadPage('/html/courses-classwork.html')
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderStyleAndNav(true, false, true, courseID);
-                get('/data/courses/' + courseID + '.json', function (data) {
+            })
+            .then(() => {
+                return get('/data/courses/' + courseID + '.json', function (data) {
                     document.title = data.course.name;
+                    document.getElementById('view-your-work-btn-id').href = '/courses/' + courseID + '/classwork-assignments';
                     const assignments = data.data.filter(currData => currData.type == 1 || currData.type == 2);
                     const assignmentBarTemplate = document.getElementById('assignment-bar-style-id');
                     const assignmentBarContainer = document.getElementById('assignments-container');
@@ -396,7 +434,7 @@ export class coursesController {
                         const classworkButton = assignmentBarClone.getElementById('view-assignment-button');
                         classworkButton.textContent = curr.type == 1 ? "View assignment" : "View material";
                         classworkButton.addEventListener('click', function () {
-                            window.location.href += '/' + curr.id;
+                            router.navigate('/courses/' + courseID + '/classwork/' + curr.id);
                         });
                         if (!curr.comments.length) assignmentBarClone.getElementById('assignment-comments-id').style.display = 'none';
                         assignmentBarContainer.appendChild(assignmentBarClone);
@@ -409,14 +447,13 @@ export class coursesController {
     static classworkInner(params) {
         let courseID = params.data.id;
         let classWorkID = params.data.classworkid;
-        fetch('/html/courses-classwork-inner.html')
-            .then(response => {
-                return response.text();
-            })
+        return coursesController.loadPage('/html/courses-classwork-inner.html')
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderStyleAndNav(false, false, false, courseID);
-                get('/data/courses/' + courseID + '.json', function (data) {
+            })
+            .then(() => {
+                return get('/data/courses/' + courseID + '.json', function (data) {
                     const currAssignment = data.data.filter(currPost => currPost.id == classWorkID)
                     displayCurrentAssignment(currAssignment[0]);
                 });
@@ -491,16 +528,15 @@ export class coursesController {
         }
     }
 
-    static classworkAssignments(params) {
+    static classworkAssignments(params, router) {
         let courseID = params.data.id;
-        fetch('/html/courses-classwork-assignments.html')
-            .then(response => {
-                return response.text();
-            })
+        return coursesController.loadPage('/html/courses-classwork-assignments.html')
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderElementsDisplay(false, false, false);
-                get('/data/courses/' + courseID + '.json', function (data) {
+            })
+            .then(() => {
+                return get('/data/courses/' + courseID + '.json', function (data) {
                     document.title = data.course.name;
                     const assignments = data.data.filter(currData => currData.type == 1);
                     const assignmentBarTemplate = document.getElementById('your-work-template');
@@ -533,7 +569,7 @@ export class coursesController {
                         else yourWorkMainText.textContent = "Your " + mainText;
                         yourWorkViewButton.textContent = 'View details';
                         yourWorkViewButton.addEventListener('click', function () {
-                            window.location.href = window.location.href.replace('classwork-assignments', 'classwork/') + curr.id;
+                            router.navigate('/courses/' + courseID + '/classwork/' + curr.id);
                         });
                         if (!curr.comments.length) {
                             assignmentBarClone.getElementById('your-work-comments').style.display = 'none';

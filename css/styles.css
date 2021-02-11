@@ -47,6 +47,7 @@ header nav {
     display: flex;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -117,7 +118,6 @@ header ul {
 }
 
 .middle-text {
-    flex: wrap;
     display: none;
 }
 
@@ -1099,7 +1099,7 @@ textarea:focus {
 .student-info span {
     margin-left: 23px;
     font-size: 35px;
-    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -1286,7 +1286,7 @@ tr:last-of-type {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 1rem;
+    margin: 1rem;
     color: white;
     font-size: 25px;
     font-family: 'Google Sans', Roboto, Arial, sans-serif;
@@ -1303,7 +1303,7 @@ tr:last-of-type {
     position: absolute;
     top: 35px;
     left: 0;
-    padding: 1rem;
+    margin: 1rem;
     font-family: 'Google Sans', Roboto, Arial, sans-serif;
 }
 
@@ -1439,7 +1439,7 @@ tr:last-of-type {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans';
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
@@ -1450,18 +1450,18 @@ tr:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 .loading-screen {
-    border-radius: 15px;
+    border-radius: 5px;
     box-sizing: border-box;
-    border: 2px solid lightgray;
-    padding: 40px 60px;
+    padding: 20px 40px;
     background: white;
     position: relative;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 /* ================================================== */
@@ -1592,29 +1592,41 @@ tr:last-of-type {
 }
 
 @media only screen and (max-width: 700px) {
-    .middle-text a {
-        display: none;
+    .middle-text {
+        order: 3;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    main {
+        margin-top: 190px;
+    }
+    .single-assignment-container {
+        margin-top: -90px;
+    }
+    .your-work-container {
+        margin-top: -90px;
+    }
+    .courses-main {
+        margin-top: -90px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .burger-icon {
-        display: none;
-    }
-    header ul:nth-child(1) {
-        padding-left: 10px;
-    }
-}
-
-@media only screen and (max-width: 284px) {
     header .logo {
         display: none;
     }
-}
-
-@media only screen and (max-width: 500px) {
+    .middle-text li {
+        padding: 13px;
+        font-size: 13px;
+    }
     main {
-        margin-top: 80px;
+        margin-top: 160px;
+    }
+    .single-assignment-container {
+        margin-top: -70px;
+    }
+    .your-work-container {
+        margin-top: -70px;
     }
 }
 
@@ -1688,9 +1700,6 @@ tr:last-of-type {
         width: 600px;
         height: 300px;
     }
-    .courses-main {
-        margin-top: -30px;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1714,9 +1723,6 @@ tr:last-of-type {
 @media only screen and (max-width: 500px) {
     .column {
         width: 350px;
-    }
-    .courses-main {
-        margin-top: -10px;
     }
 }
 
@@ -1750,14 +1756,14 @@ tr:last-of-type {
         margin: 10px 0px;
     }
     .class-label {
-        padding: 11px;
+        margin: 11px;
         font-size: 15px;
     }
     .lecturer-icon {
         top: 20px;
     }
     .lecturer-label {
-        padding: 11px;
+        margin: 11px;
         font-size: 11px;
     }
     .col-img {

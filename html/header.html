@@ -1,17 +1,17 @@
 <header>
     <nav>
         <ul class="left-stuff">
-            <button class="burger-icon" id="burger-icon"><img src="../images/burger.svg"></button>
+            <button class="burger-icon" id="burger-icon"><img src="/images/burger.svg"></button>
             <li class="logo">ClassniRoom</li>
         </ul>
         <ul class="middle-text" id="middle-text-id">
-            <a href="/courses/" class="curr-page" id="stream-page">
+            <a href="/courses/" class="curr-page" id="stream-page" data-navigo>
                 <li>Stream</li>
             </a>
-            <a href="/courses/" id="classwork-page">
+            <a href="/courses/" id="classwork-page" data-navigo>
                 <li>Classwork</li>
             </a>
-            <a href="/courses/" id="students-page">
+            <a href="/courses/" id="students-page" data-navigo>
                 <li>People</li>
             </a>
         </ul>
@@ -23,11 +23,11 @@
                     <button class="dropdown-button" id="create-class">Create Class</button>
                 </div>
             </div>
-            <li><img src="../images/girl.svg" class="girl-icon"></li>
+            <li><img src="/images/girl.svg" class="girl-icon"></li>
         </ul>
         <ul class="right-stuff" id="right-invite-id">
             <button class="invite-button" id="invite-button">Invite</button>
-            <li><img src="../images/girl.svg" class="girl-icon"></li>
+            <li><img src="/images/girl.svg" class="girl-icon"></li>
         </ul>
     </nav>
 </header>
@@ -74,11 +74,19 @@
     </div>
 </div>
 
+<div class="loading-screen-container" id="loading-screen-container">
+    <div class="loading-screen-style">
+        <div class="loading-screen">
+            <div id="loading-screen-main-label"></div>
+        </div>
+    </div>
+</div>
+
 <div class="sidebar-container" id="sidebar-container">
     <div class="sidebar-style" id="sidebar-style">
         <div class="sidebar">
             <div class="sidebar-component">
-                <a href="/courses" class="sidebar-item" id="sidebar-curr">
+                <a href="/courses" class="sidebar-item" id="sidebar-curr" data-navigo>
                     <span>
                         <svg>
                             <path d="M12 3L4 9v12h16V9l-8-6zm6 16h-3v-6H9v6H6v-9l6-4.5 6 4.5v9z"></path>
@@ -90,7 +98,7 @@
             <div class="sidebar-component" id="sidebar-component">
                 <div class="component-label">Enrolled</div>
                 <template id="sidebar-course-template">
-                    <a href="/courses" class="sidebar-item" id="sidebar-href">
+                    <a href="/courses" class="sidebar-item" id="sidebar-href" data-navigo>
                         <span class="classroom-icon">P</span>
                         <span id="course-name-label">Programming</span>
                     </a>

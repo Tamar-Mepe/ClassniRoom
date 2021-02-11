@@ -20,7 +20,7 @@ export class indexController {
             document.getElementById('white-background').style.display = 'none';
         }
 
-        fetch('/html/index.html')
+        return fetch('/html/index.html')
             .then(response => {
                 return response.text();
             })
