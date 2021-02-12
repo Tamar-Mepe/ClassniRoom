@@ -1,6 +1,6 @@
-import { indexController } from './modules/index.js';
-import { loginController } from './modules/login.js';
-import { coursesController } from './modules/courses.js';
+// import { indexController } from "./indexController";
+// import { loginController } from "./loginController";
+// import { coursesController } from "./coursesController";
 
 const router = new Navigo('/');
 const renderer = (match, callback, navigo = null) => {

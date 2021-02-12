@@ -108,13 +108,15 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function operationSuccessful(stringToDisplay) {
+function operationSuccessful(stringToDisplay) {
     const loadingScreenContainer = document.getElementById('loading-screen-container');
     const mainLabel = document.getElementById('loading-screen-main-label');
     mainLabel.textContent = 'Please wait';
     loadingScreenContainer.style.display = 'block';
-    await sleep(1313);
-    mainLabel.textContent = stringToDisplay;
-    await sleep(1313);
-    loadingScreenContainer.style.display = 'none';
+    setTimeout(function () {
+        mainLabel.textContent = stringToDisplay;
+        setTimeout(function () {
+            loadingScreenContainer.style.display = 'none';
+        }, 1313)
+    }, 1313)
 }

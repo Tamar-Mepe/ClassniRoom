@@ -1,4 +1,4 @@
-export class loginController {
+class loginController {
     static login(match, router) {
         async function loadLoggingIn(loadingScreenContainer, mainLabel) {
             mainLabel.textContent = 'Please wait';

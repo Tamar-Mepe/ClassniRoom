@@ -1,4 +1,4 @@
-export class indexController {
+class indexController {
     static index() {
         async function typeWriter(personNames, personColors, labels, typeOutText, typeOutLine, typeOutLineLabel) {
             while (true) {

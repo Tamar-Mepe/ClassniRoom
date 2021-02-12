@@ -101,7 +101,7 @@ function handleSidebarInfo() {
     });
 }
 
-export class coursesController {
+class coursesController {
     static loadPage(url) {
         return fetch(url)
             .then(response => {
