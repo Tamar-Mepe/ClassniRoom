@@ -81,9 +81,27 @@ function changeHeaderElementsDisplay(displayMiddle, displayJoinCreate, displayIn
 }
 
 function setNavHrefs(courseID) {
-    document.getElementById('stream-page').href = '/courses/' + courseID;
-    document.getElementById('classwork-page').href = '/courses/' + courseID + '/classwork';
-    document.getElementById('students-page').href = '/courses/' + courseID + '/students';
+    const streamPage = document.getElementById('stream-page');
+    const classworkPage = document.getElementById('classwork-page');
+    const studentPage = document.getElementById('students-page');
+
+    streamPage.href = '/courses/' + courseID;
+    classworkPage.href = '/courses/' + courseID + '/classwork';
+    studentPage.href = '/courses/' + courseID + '/students';
+
+    const elems = document.querySelectorAll('.middle-text a');
+    elems.forEach(function (elem) {
+        elem.addEventListener('click', function () {
+            addBorderBottomMiddle(elems, elem);
+        })
+    })
+}
+
+function addBorderBottomMiddle(elems, elem) {
+    elems.forEach(function (currElem) {
+        if (currElem.classList.contains('curr-page')) currElem.classList.remove('curr-page');
+    })
+    elem.classList.add('curr-page');
 }
 
 function sleep(ms) {

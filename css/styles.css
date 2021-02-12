@@ -1611,7 +1611,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
     header .logo {
         display: none;
     }
@@ -1620,12 +1620,15 @@ tr:last-of-type {
         font-size: 13px;
     }
     main {
-        margin-top: 160px;
+        margin-top: 140px;
     }
     .single-assignment-container {
-        margin-top: -70px;
+        margin-top: -50px;
     }
     .your-work-container {
+        margin-top: -50px;
+    }
+    .courses-main {
         margin-top: -70px;
     }
 }

@@ -159,6 +159,7 @@ export class coursesController {
             .then(data => {
                 document.getElementById('main').innerHTML = data;
                 changeHeaderStyleAndNav(true, false, true, courseID);
+                addBorderBottomMiddle(document.querySelectorAll('.middle-text a'), document.getElementById('stream-page'));
             })
             .then(() => {
                 return get('/data/courses/' + courseID + '.json', function (data) {
@@ -172,14 +173,6 @@ export class coursesController {
         function displayUpperPart(data, courseID) {
             document.title = data.course.name;
             setNavHrefs(courseID);
-            const middleTextElems = document.querySelectorAll('.middle-text a')
-            Array.from(middleTextElems).forEach((currElem) => {
-                currElem.addEventListener('click', function () {
-                    const current = document.getElementsByClassName('curr-page');
-                    current[0].classList.remove('curr-page');
-                    this.className += ' curr-page';
-                })
-            })
 
             document.getElementById('classroom-title').textContent = data.course.name;
             document.getElementById('classroom-subject').textContent = data.course.subject;
@@ -212,9 +205,9 @@ export class coursesController {
                     document.getElementById('upcoming-assignment-text').style.display = 'none';
                     upcomingAssignmenthref.href = 'courses/' + courseID + '/classwork/' + currAssignment.id;
                     upcomingAssignmenthref.textContent = currAssignment.assignment_name;
-                    document.getElementById('view-all-materials').href = 'courses/' + courseID + '/classwork-assignments';
                     return;
                 }
+                document.getElementById('view-all-materials').href = 'courses/' + courseID + '/classwork-assignments';
             });
         }
 

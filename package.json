@@ -1,0 +1,22 @@
+{
+  "name": "classniroom",
+  "version": "1.0.0",
+  "description": "## Table of Contents * [Welcome Page](#Welcome-Page) * [ავტორიზაცია](#Authorization) * [კურსების ჩამონათვალი](#Courses) * [მთავარი გვერდი](#Main-Page) * [კურსის მასალების გვერდი](#Classwork) * [სტუდენტის დავალებების ჩამონათვალი](#Your-Work) * [სტუდენტების ჩამონათვალი](#Students) * [პოსტის გვერდი](#Assignment)",
+  "main": "router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamar-Mepe/ClassniRoom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamar-Mepe/ClassniRoom/issues"
+  },
+  "homepage": "https://github.com/Tamar-Mepe/ClassniRoom#readme",
+  "devDependencies": {
+    "webpack": "^5.21.2"
+  }
+}
