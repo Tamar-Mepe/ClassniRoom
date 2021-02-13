@@ -124,7 +124,7 @@ header ul {
 .right-stuff {
     height: 30px;
     align-content: center;
-    padding-right: 30px;
+    padding: 19px;
     display: none;
 }
 
@@ -150,6 +150,7 @@ header ul {
     right: 0;
     z-index: 111;
     box-shadow: 0 0 5px lightgray;
+    background-color: white;
 }
 
 .dropdown-button {
@@ -230,10 +231,6 @@ header ul {
     padding: 10px 10px 5px 0px;
 }
 
-.sidebar-item span {
-    height: 24px;
-}
-
 .sidebar-component a {
     text-decoration: none;
 }
@@ -250,10 +247,9 @@ header ul {
     margin-right: calc(49px - 2rem)
 }
 
-.sidebar-item svg {
+.sidebar-item img {
     width: 24px;
     height: 24px;
-    fill: #5f6368;
     margin-right: 25px;
 }
 
@@ -548,11 +544,10 @@ header ul {
     border-radius: 50%;
 }
 
-.show-additional-info svg {
+.show-additional-info img {
     margin: 0;
     width: 24px;
     height: 24px;
-    fill: white;
 }
 
 .show-additional-info:hover {
@@ -718,7 +713,7 @@ textarea:focus {
     cursor: pointer;
 }
 
-.right-part-container svg {
+.right-part-container img {
     width: 35px;
     height: 35px;
     margin-right: 20px;
@@ -846,7 +841,7 @@ textarea:focus {
     background-color: white;
 }
 
-.comment-input-field button svg {
+.comment-input-field button img {
     height: 24px;
     width: 24px;
     display: flex;
@@ -880,8 +875,7 @@ textarea:focus {
     margin-right: 20px;
 }
 
-.assignment-announcement-logo svg {
-    fill: white;
+.assignment-announcement-logo img {
     width: 24px;
     height: 24px;
     margin-right: 0;
@@ -933,7 +927,7 @@ textarea:focus {
     font-weight: bold;
 }
 
-.view-your-work-button svg {
+.view-your-work-button img {
     width: 24px;
     height: 24px;
 }
@@ -970,7 +964,7 @@ textarea:focus {
     pointer-events: none;
 }
 
-.assignment-logo svg {
+.assignment-logo img {
     width: 24px;
     height: 24px;
 }
@@ -996,7 +990,7 @@ textarea:focus {
     margin-right: 3px;
 }
 
-.assignment-comments svg {
+.assignment-comments img {
     width: 16px;
     height: 16px;
 }
@@ -1190,7 +1184,7 @@ table {
     font-size: 15px;
 }
 
-table svg {
+table img {
     width: 35px;
     height: 35px;
     margin-left: 20px;
@@ -1209,7 +1203,7 @@ td:nth-child(3) {
     text-align: right;
 }
 
-td:nth-child(3)>svg {
+td:nth-child(3)>img {
     width: 20px;
     height: 20px;
     margin-right: 20px;
@@ -1476,7 +1470,7 @@ tr:last-of-type {
     margin-bottom: 40px;
 }
 
-.single-assignment-container svg {
+.single-assignment-container img {
     width: 35px;
     height: 35px;
     margin-right: 20px;
@@ -1655,7 +1649,7 @@ tr:last-of-type {
         padding: 10px 0px 10px 10px;
         margin: 0px;
     }
-    table svg {
+    table img {
         margin-left: 10px;
     }
     td:nth-child(1) {
@@ -1677,7 +1671,7 @@ tr:last-of-type {
 
 /* MEDIA QUERIES FOR COURSES PAGE */
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 850px) {
     .empty-class-list {
         margin-top: 100px;
     }
@@ -1691,17 +1685,14 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 840px) {
-    .row {
-        margin-left: 0px;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 823px) {
+@media only screen and (max-width: 843px) {
     .column {
         width: 600px;
         height: 300px;
+    }
+    .row {
+        justify-content: center;
+        margin-left: 0px;
     }
 }
 
@@ -1740,7 +1731,7 @@ tr:last-of-type {
     .classroom-icon {
         margin-right: 8px;
     }
-    .sidebar-item svg {
+    .sidebar-item img {
         margin-right: 8px;
     }
 }
@@ -1775,14 +1766,14 @@ tr:last-of-type {
         margin: 10px 0px;
     }
     .class-label {
-        margin: 11px;
+        margin: 9px;
         font-size: 15px;
     }
     .lecturer-icon {
         top: 20px;
     }
     .lecturer-label {
-        margin: 11px;
+        margin: 9px;
         font-size: 11px;
     }
     .col-img {
@@ -1942,13 +1933,13 @@ tr:last-of-type {
         padding: 10px 0px 10px 20px;
         font-size: 12px;
     }
-    .right-part-container svg {
+    .right-part-container img {
         margin-right: 10px;
     }
     .assignment-announcement-logo {
         display: none;
     }
-    .assignment-announcement-logo svg {
+    .assignment-announcement-logo img {
         display: none;
     }
     .assignment-announcement .class-post-upper {
@@ -1966,18 +1957,21 @@ tr:last-of-type {
     .classroom-title {
         font-size: 23px;
     }
+    .comment-input-field input::placeholder {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 322px) {
     .announce-container {
         justify-content: center;
         padding: 10px;
     }
     .comment-input-field input::placeholder {
-        font-size: 11px;
+        font-size: 12px;
     }
-}
-
-@media only screen and (max-width: 300px) {
-    .announce-container svg {
-        display: none;
+    .search-stream-bar input {
+        padding: 15px 20px;
     }
 }
 
@@ -2164,7 +2158,7 @@ tr:last-of-type {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
     .single-assignment-container {
         flex-direction: column-reverse;
         width: 70%;
@@ -2182,7 +2176,10 @@ tr:last-of-type {
         padding: 5px;
     }
     .single-assignment-container .comment-input-field button {
-        right: 40px;
+        right: 10px;
+    }
+    .single-assignment-container .comment-input-field {
+        padding: 15px 5px;
     }
 }
 
@@ -2192,9 +2189,6 @@ tr:last-of-type {
     }
     .single-assignment-container {
         width: 80%;
-    }
-    .single-assignment-container .comment-input-field button {
-        right: 30px;
     }
 }
 
@@ -2244,7 +2238,7 @@ tr:last-of-type {
         padding: 15px 0px;
     }
     .single-assignment-container .comment-input-field button {
-        right: 10px;
+        right: 5px;
     }
     .single-assignment-right {
         margin-bottom: 15px;

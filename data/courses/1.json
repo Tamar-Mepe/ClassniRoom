@@ -23,7 +23,7 @@
                     "date": "Nov 9",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Naveed Blake"
                     }
                 },
@@ -56,7 +56,7 @@
                     "date": "Oct 8",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl.svg",
                         "displayName": "Ivy Wall"
                     }
                 }
@@ -76,7 +76,7 @@
                     "date": "Sep 13",
                     "description": "First comment",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl.svg",
                         "displayName": "Ivy Wall"
                     }
                 },
@@ -84,7 +84,7 @@
                     "date": "Sep 13",
                     "description": "Second comment",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl.svg",
                         "displayName": "Ivy Wall"
                     }
                 },
@@ -92,7 +92,7 @@
                     "date": "Sep 13",
                     "description": "Third comment",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl.svg",
                         "displayName": "Ivy Wall"
                     }
                 }
@@ -236,7 +236,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/boyblue.svg",
                 "displayName": "Denny Harper"
             }
         },
@@ -298,7 +298,7 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/girl.svg",
             "displayName": "Ivy Wall"
         },
         {
@@ -330,7 +330,7 @@
             "displayName": "Malachy Mcbride"
         },
         {
-            "image": null,
+            "image": "/images/users/boyblue.svg",
             "displayName": "Denny Harper"
         },
         {
@@ -442,7 +442,7 @@
             "displayName": "Claire Michael"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Naveed Blake"
         },
         {

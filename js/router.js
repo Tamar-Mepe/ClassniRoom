@@ -1,18 +1,12 @@
-// import { indexController } from "./indexController";
-// import { loginController } from "./loginController";
-// import { coursesController } from "./coursesController";
-
 const router = new Navigo('/');
 const renderer = (match, callback, navigo = null) => {
     if (navigo == null) {
         callback(match).then(() => {
             router.updatePageLinks();
-            console.log("Update Page Links")
         });
     } else {
         callback(match, navigo).then(() => {
             router.updatePageLinks();
-            console.log("Update Page Links")
         });
     }
 }
