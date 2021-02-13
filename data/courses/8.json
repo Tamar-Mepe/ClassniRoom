@@ -31,7 +31,7 @@
                     "date": "Jun 2",
                     "description": "Yay!!!",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Theodor Hooper"
                     }
                 }
@@ -48,7 +48,7 @@
             "displayName": "Quinn Dale"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Theodor Hooper"
         },
         {

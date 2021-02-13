@@ -19,7 +19,7 @@
                     "date": "Sep 19",
                     "description": "Nunc nec est sed risus viverra ullamcorper eu sit amet justo",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy7.svg",
                         "displayName": "Gordon Mann"
                     }
                 },
@@ -27,7 +27,7 @@
                     "date": "Oct 9",
                     "description": "Proin et risus eget mi blandit vulputate",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy5.svg",
                         "displayName": "Max Trevino"
                     }
                 }
@@ -60,7 +60,7 @@
                     "date": "Jun 18",
                     "description": "Morbi lobortis mauris in diam tempus, varius consectetur urna laoreet",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy6.svg",
                         "displayName": "Byron Bruce"
                     }
                 },
@@ -76,7 +76,7 @@
                     "date": "Jun 18",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy6.svg",
                         "displayName": "Byron Bruce"
                     }
                 }
@@ -117,7 +117,7 @@
                     "date": "May 10",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy5.svg",
                         "displayName": "Max Trevino"
                     }
                 }
@@ -137,7 +137,7 @@
                     "date": "Mar 29",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy8.svg",
                         "displayName": "Barry Couch"
                     }
                 },
@@ -145,7 +145,7 @@
                     "date": "Mar 29",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy7.svg",
                         "displayName": "Gordon Mann"
                     }
                 },
@@ -153,13 +153,13 @@
                     "date": "Mar 30",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy8.svg",
                         "displayName": "Barry Couch"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/boy7.svg",
                 "displayName": "Gordon Mann"
             }
         }
@@ -170,7 +170,7 @@
             "displayName": "Lorcan Castro"
         },
         {
-            "image": null,
+            "image": "/images/users/boy6.svg",
             "displayName": "Byron Bruce"
         },
         {
@@ -182,7 +182,7 @@
             "displayName": "Tracy Yates"
         },
         {
-            "image": null,
+            "image": "/images/users/boy8.svg",
             "displayName": "Barry Couch"
         },
         {
@@ -202,11 +202,11 @@
             "displayName": "Sulayman Hale"
         },
         {
-            "image": null,
+            "image": "/images/users/boy5.svg",
             "displayName": "Max Trevino"
         },
         {
-            "image": null,
+            "image": "/images/users/boy7.svg",
             "displayName": "Gordon Mann"
         },
         {

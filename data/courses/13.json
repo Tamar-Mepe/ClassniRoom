@@ -23,7 +23,7 @@
                     "date": "Aug 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Simeon Watts"
                     }
                 },
@@ -31,7 +31,7 @@
                     "date": "Aug 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlred.svg",
                         "displayName": "Tasneem Rivers"
                     }
                 }
@@ -51,13 +51,13 @@
                     "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Simeon Watts"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girlred.svg",
                 "displayName": "Tasneem Rivers"
             }
         },
@@ -77,7 +77,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlpink.svg",
                         "displayName": "Christina Tyson"
                     }
                 }
@@ -94,7 +94,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/boyoculus.svg",
                 "displayName": "Yuvraj Ferry"
             }
         },
@@ -120,7 +120,7 @@
                     "date": "Jan 1",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl8.svg",
                         "displayName": "Tammy Wong"
                     }
                 },
@@ -128,7 +128,7 @@
                     "date": "Jan 1",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlglasses.svg",
                         "displayName": "Mikaela Ferrell"
                     }
                 },
@@ -136,7 +136,7 @@
                     "date": "Jan 1",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl8.svg",
                         "displayName": "Tammy Wong"
                     }
                 },
@@ -144,7 +144,7 @@
                     "date": "Jan 1",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlginger.svg",
                         "displayName": "Bertram Gould"
                     }
                 }
@@ -157,7 +157,7 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/girlred.svg",
             "displayName": "Tasneem Rivers"
         },
         {
@@ -169,7 +169,7 @@
             "displayName": "Esmee Crowther"
         },
         {
-            "image": null,
+            "image": "/images/users/girlpink.svg",
             "displayName": "Christina Tyson"
         },
         {
@@ -177,11 +177,11 @@
             "displayName": "Dru Douglas"
         },
         {
-            "image": null,
+            "image": "/images/users/girl8.svg",
             "displayName": "Tammy Wong"
         },
         {
-            "image": null,
+            "image": "/images/users/girlginger.svg",
             "displayName": "Bertram Gould"
         },
         {
@@ -193,7 +193,7 @@
             "displayName": "Jocelyn Eastwood"
         },
         {
-            "image": null,
+            "image": "/images/users/boyoculus.svg",
             "displayName": "Yuvraj Ferry"
         },
         {
@@ -201,7 +201,7 @@
             "displayName": "Hollie Acevedo"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Simeon Watts"
         },
         {

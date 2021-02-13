@@ -23,7 +23,7 @@
                     "date": "Apr 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl5.svg",
                         "displayName": "Blossom Parkinson"
                     }
                 },
@@ -39,7 +39,7 @@
                     "date": "May 12",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl5.svg",
                         "displayName": "Blossom Parkinson"
                     }
                 }
@@ -59,13 +59,13 @@
                     "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Zunaira Calhoun"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/boy3.svg",
                 "displayName": "Codey Parks"
             }
         },
@@ -84,7 +84,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Kamile Findlay"
                     }
                 }
@@ -108,31 +108,31 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/boy10.svg",
             "displayName": "Lennon Bautista"
         },
         {
-            "image": null,
+            "image": "/images/users/girl3.svg",
             "displayName": "Kamile Findlay"
         },
         {
-            "image": null,
+            "image": "/images/users/boy5.svg",
             "displayName": "Eryk Melendez"
         },
         {
-            "image": null,
+            "image": "/images/users/girlglasses.svg",
             "displayName": "Dale Cox"
         },
         {
-            "image": null,
+            "image": "/images/users/girl5.svg",
             "displayName": "Blossom Parkinson"
         },
         {
-            "image": null,
+            "image": "/images/users/boy3.svg",
             "displayName": "Codey Parks"
         },
         {
-            "image": null,
+            "image": "/images/users/girl3.svg",
             "displayName": "Zunaira Calhoun"
         }
     ]

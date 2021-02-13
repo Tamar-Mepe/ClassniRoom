@@ -282,7 +282,7 @@ class coursesController {
                     // Displaying assignment posted by the teacher
                     const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
                     updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
-                        'assignment-announced-date', typeOfPost);
+                        'assignment-announced-date', null, typeOfPost);
                     const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
                     assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost.length, null);
                     assignmentAnnouncementClone.getElementById('assignment-href').href = 'courses/' + courseID + '/classwork/' + currPost.id;

@@ -18,7 +18,7 @@
                     "date": "May 11",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl6.svg",
                         "displayName": "Angel Hastings"
                     }
                 },
@@ -26,7 +26,7 @@
                     "date": "May 12",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Ravi Wright"
                     }
                 },
@@ -34,7 +34,7 @@
                     "date": "May 12",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy8.svg",
                         "displayName": "Robin Shields"
                     }
                 },
@@ -42,7 +42,7 @@
                     "date": "May 12",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -50,7 +50,7 @@
                     "date": "May 12",
                     "description": "Cras rhoncus ligula vel gravida facilisis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy8.svg",
                         "displayName": "Robin Shields"
                     }
                 }
@@ -70,7 +70,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -78,7 +78,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl6.svg",
                         "displayName": "Aisling Cash"
                     }
                 },
@@ -86,13 +86,13 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy8.svg",
                         "displayName": "Robin Shields"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girl4.svg",
                 "displayName": "Maddie Mcdonald"
             }
         },
@@ -123,7 +123,7 @@
                     "date": "Jan 31",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Carmel Whyte"
                     }
                 },
@@ -131,7 +131,7 @@
                     "date": "Jan 31",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -139,13 +139,13 @@
                     "date": "Feb 2",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Carmel Whyte"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girl6.svg",
                 "displayName": "Aisling Cash"
             }
         },
@@ -165,7 +165,7 @@
                     "date": "Dec 29, 2020",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Carmel Whyte"
                     }
                 }
@@ -178,15 +178,15 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/boy8.svg",
             "displayName": "Robin Shields"
         },
         {
-            "image": null,
+            "image": "/images/users/girl6.svg",
             "displayName": "Angel Hastings"
         },
         {
-            "image": null,
+            "image": "/images/users/girl3.svg",
             "displayName": "Carmel Whyte"
         },
         {
@@ -194,15 +194,15 @@
             "displayName": "Halimah Fuentes"
         },
         {
-            "image": null,
+            "image": "/images/users/girl6.svg",
             "displayName": "Aisling Cash"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Ravi Wright"
         },
         {
-            "image": null,
+            "image": "/images/users/girl4.svg",
             "displayName": "Maddie Mcdonald"
         }
     ]

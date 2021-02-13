@@ -40,7 +40,7 @@
                     "date": "Jul 15",
                     "description": "Aenean porttitor ex eget ante tincidunt, quis condimentum dui lobortis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy5.svg",
                         "displayName": "Cristian Nicholls"
                     }
                 },
@@ -48,7 +48,7 @@
                     "date": "Jul 15",
                     "description": "Suspendisse sodales diam vel odio auctor, sed aliquet velit efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy3.svg",
                         "displayName": "Eden Klein"
                     }
                 }
@@ -68,7 +68,7 @@
                     "date": "Jun 2",
                     "description": "Some random comment",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy10.svg",
                         "displayName": "Shola Lugo"
                     }
                 }
@@ -94,7 +94,7 @@
                     "date": "Mar 9",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlginger.svg",
                         "displayName": "Tanya Burnett"
                     }
                 },
@@ -102,7 +102,7 @@
                     "date": "Mar 23",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy3.svg",
                         "displayName": "Eden Klein"
                     }
                 }
@@ -122,7 +122,7 @@
                     "date": "Jan 31",
                     "description": "Nullam vitae nulla sed est aliquet tincidunt quis vitae sapien",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl7.svg",
                         "displayName": "Barbara Russell"
                     }
                 },
@@ -130,7 +130,7 @@
                     "date": "Jan 31",
                     "description": "Aliquam nec dolor quis velit egestas iaculis sit amet nec erat",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Deon Little"
                     }
                 },
@@ -138,7 +138,7 @@
                     "date": "Jan 31",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl7.svg",
                         "displayName": "Barbara Russell"
                     }
                 },
@@ -146,13 +146,13 @@
                     "date": "Jan 31",
                     "description": "Sed vehicula dui vitae quam interdum vestibulum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Deon Little"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/boy1.svg",
                 "displayName": "Deon Little"
             }
         },
@@ -186,7 +186,7 @@
                     "date": "Jan 2",
                     "description": "Suspendisse egestas ligula ac erat dignissim, in vulputate quam pulvinar",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlginger.svg",
                         "displayName": "Tanya Burnett"
                     }
                 },
@@ -210,7 +210,7 @@
                     "date": "Jan 2",
                     "description": "Sed quis purus sed ante tristique vulputate nec eleifend neque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy10.svg",
                         "displayName": "Nusaybah Parra"
                     }
                 }
@@ -236,14 +236,14 @@
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girl2.svg",
                 "displayName": "Cataleya Velasquez"
             }
         }
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/boy10.svg",
             "displayName": "Shola Lugo"
         },
         {
@@ -251,11 +251,11 @@
             "displayName": "Arielle Mcculloch"
         },
         {
-            "image": null,
+            "image": "/images/users/boy1.svg",
             "displayName": "Deon Little"
         },
         {
-            "image": null,
+            "image": "/images/users/girl7.svg",
             "displayName": "Barbara Russell"
         },
         {
@@ -299,7 +299,7 @@
             "displayName": "Fraser Talley"
         },
         {
-            "image": null,
+            "image": "/images/users/girlginger.svg",
             "displayName": "Tanya Burnett"
         },
         {
@@ -323,7 +323,7 @@
             "displayName": "Muna Johnson"
         },
         {
-            "image": null,
+            "image": "/images/users/boy10.svg",
             "displayName": "Nusaybah Parra"
         },
         {
@@ -335,15 +335,15 @@
             "displayName": "Emir Mcdermott"
         },
         {
-            "image": null,
+            "image": "/images/users/girl2.svg",
             "displayName": "Cataleya Velasquez"
         },
         {
-            "image": null,
+            "image": "/images/users/boy5.svg",
             "displayName": "Cristian Nicholls"
         },
         {
-            "image": null,
+            "image": "/images/users/boy3.svg",
             "displayName": "Eden Klein"
         },
         {

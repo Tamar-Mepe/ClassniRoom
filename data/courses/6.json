@@ -23,7 +23,7 @@
                     "due_date": "Nov 31",
                     "description": "Nullam pellentesque metus et ex fringilla mollis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl8.svg",
                         "displayName": "Cecelia Holcomb"
                     }
                 },
@@ -31,7 +31,7 @@
                     "due_date": "Nov 31",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boygreen.svg",
                         "displayName": "Eleri Phelps"
                     }
                 }
@@ -56,7 +56,7 @@
                     "date": "Oct 23",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlglasses.svg",
                         "displayName": "Patience Cantu"
                     }
                 },
@@ -64,7 +64,7 @@
                     "date": "Oct 23",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy2.svg",
                         "displayName": "Donte Kumar"
                     }
                 },
@@ -72,7 +72,7 @@
                     "date": "Oct 29",
                     "description": "Nullam pellentesque metus et ex fringilla mollis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl2.svg",
                         "displayName": "Albie Giles"
                     }
                 }
@@ -104,7 +104,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy3.svg",
                         "displayName": "Will Mcgill"
                     }
                 },
@@ -120,13 +120,13 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlglasses.svg",
                         "displayName": "Patience Cantu"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girlglasses.svg",
                 "displayName": "Patience Cantu"
             }
         },
@@ -137,14 +137,14 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/girl7.svg",
                 "displayName": "Lily-Mai Cornish"
             }
         }
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/girl7.svg",
             "displayName": "Lily-Mai Cornish"
         },
         {
@@ -172,7 +172,7 @@
             "displayName": "Katie Farrell"
         },
         {
-            "image": null,
+            "image": "/images/users/boy2.svg",
             "displayName": "Donte Kumar"
         },
         {
@@ -208,7 +208,7 @@
             "displayName": "August Hamer"
         },
         {
-            "image": null,
+            "image": "/images/users/boy3.svg",
             "displayName": "Will Mcgill"
         },
         {
@@ -224,7 +224,7 @@
             "displayName": "Courtney Wardle"
         },
         {
-            "image": null,
+            "image": "/images/users/girl2.svg",
             "displayName": "Albie Giles"
         },
         {
@@ -232,11 +232,11 @@
             "displayName": "Charly Spooner"
         },
         {
-            "image": null,
+            "image": "/images/users/girl8.svg",
             "displayName": "Cecelia Holcomb"
         },
         {
-            "image": null,
+            "image": "/images/users/girlglasses.svg",
             "displayName": "Patience Cantu"
         },
         {
@@ -268,7 +268,7 @@
             "displayName": "Kia Aldred"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Eleri Phelps"
         }
     ]

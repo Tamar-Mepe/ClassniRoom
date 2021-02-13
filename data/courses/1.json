@@ -31,7 +31,7 @@
                     "due_date": "Dec 27",
                     "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlred.svg",
                         "displayName": "Cassia Beaumont"
                     }
                 }
@@ -124,7 +124,7 @@
                     "date": "Apr 14",
                     "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl1.svg",
                         "displayName": "Reema Mahoney"
                     }
                 },
@@ -132,7 +132,7 @@
                     "date": "Apr 14",
                     "description": "Aenean nec nibh in purus bibendum venenatis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlpink.svg",
                         "displayName": "Norah Bolton"
                     }
                 },
@@ -140,7 +140,7 @@
                     "date": "Apr 14",
                     "description": "Praesent a tortor ac quam rhoncus faucibus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl2.svg",
                         "displayName": "Viktoria Medina"
                     }
                 },
@@ -148,7 +148,7 @@
                     "date": "Apr 14",
                     "description": "Aliquam id libero ultricies, sagittis diam vitae, egestas metus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boyblue.svg",
                         "displayName": "Freddie Oneill"
                     }
                 },
@@ -156,7 +156,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Adela Fole"
                     }
                 },
@@ -164,13 +164,13 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Macie Buxton"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/boyblue.svg",
                 "displayName": "Raife Garrett"
             }
         },
@@ -189,7 +189,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Adela Fole"
                     }
                 },
@@ -197,7 +197,7 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Macie Buxton"
                     }
                 }
@@ -214,7 +214,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/boy.svg",
                 "displayName": "Malachy Mcbride"
             }
         },
@@ -225,7 +225,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/boygreen.svg",
                 "displayName": "Ignacy Escobar"
             }
         },
@@ -261,7 +261,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Adela Fole"
                     }
                 },
@@ -269,7 +269,7 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Macie Buxton"
                     }
                 },
@@ -277,7 +277,7 @@
                     "date": "Apr 14",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl3.svg",
                         "displayName": "Adela Fole"
                     }
                 },
@@ -285,13 +285,13 @@
                     "date": "Apr 14",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl4.svg",
                         "displayName": "Macie Buxton"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girl4.svg",
                 "displayName": "Shanay Walls"
             }
         }
@@ -310,7 +310,7 @@
             "displayName": "Yousef Buckner"
         },
         {
-            "image": null,
+            "image": "/images/users/boygreen.svg",
             "displayName": "Ignacy Escobar"
         },
         {
@@ -318,7 +318,7 @@
             "displayName": "Henrietta Patrick"
         },
         {
-            "image": null,
+            "image": "/images/users/girl4.svg",
             "displayName": "Shanay Walls"
         },
         {
@@ -326,7 +326,7 @@
             "displayName": "Sahib Gilbert"
         },
         {
-            "image": null,
+            "image": "/images/users/boy.svg",
             "displayName": "Malachy Mcbride"
         },
         {
@@ -342,7 +342,7 @@
             "displayName": "Simra Carter"
         },
         {
-            "image": null,
+            "image": "/images/users/boyblue.svg",
             "displayName": "Raife Garrett"
         },
         {
@@ -358,11 +358,11 @@
             "displayName": "Kristopher Whitehouse"
         },
         {
-            "image": null,
+            "image": "/images/users/girl1.svg",
             "displayName": "Reema Mahoney"
         },
         {
-            "image": null,
+            "image": "/images/users/girlpink.svg",
             "displayName": "Norah Bolton"
         },
         {
@@ -378,11 +378,11 @@
             "displayName": "Zane Page"
         },
         {
-            "image": null,
+            "image": "/images/users/girl2.svg",
             "displayName": "Viktoria Medina"
         },
         {
-            "image": null,
+            "image": "/images/users/boyblue.svg",
             "displayName": "Freddie Oneill"
         },
         {
@@ -398,11 +398,11 @@
             "displayName": "Honor Carrillo"
         },
         {
-            "image": null,
+            "image": "/images/users/girl3.svg",
             "displayName": "Adela Fole"
         },
         {
-            "image": null,
+            "image": "/images/users/girl4.svg",
             "displayName": "Macie Buxton"
         },
         {
@@ -410,7 +410,7 @@
             "displayName": "Ammaar Pace"
         },
         {
-            "image": null,
+            "image": "/images/users/boyoculus.svg",
             "displayName": "Nicky Hampton"
         },
         {
@@ -474,7 +474,7 @@
             "displayName": "Kierran Farley"
         },
         {
-            "image": null,
+            "image": "/images/users/girlginger.svg",
             "displayName": "Ella-Rose Sparks"
         },
         {
@@ -502,7 +502,7 @@
             "displayName": "Shelley Hogan"
         },
         {
-            "image": null,
+            "image": "/images/users/girlglasses.svg",
             "displayName": "Jannat Kline"
         },
         {
@@ -518,7 +518,7 @@
             "displayName": "Saoirse Mcphee"
         },
         {
-            "image": null,
+            "image": "/images/users/girlred.svg",
             "displayName": "Cassia Beaumont"
         }
     ]

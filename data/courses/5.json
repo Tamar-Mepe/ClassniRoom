@@ -23,7 +23,7 @@
                     "due_date": "Nov 30",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girlpink.svg",
                         "displayName": "Kendra Mcfarland"
                     }
                 }
@@ -43,7 +43,7 @@
                     "date": "Apr 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boyoculus.svg",
                         "displayName": "Bhavik Clay"
                     }
                 },
@@ -51,7 +51,7 @@
                     "date": "Apr 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -59,13 +59,13 @@
                     "date": "May 12",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boyoculus.svg",
                         "displayName": "Bhavik Clay"
                     }
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/girl2.svg",
                 "displayName": "Sofia Potts"
             }
         },
@@ -95,7 +95,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -103,7 +103,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl5.svg",
                         "displayName": "Leela Macgregor"
                     }
                 },
@@ -144,7 +144,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -152,7 +152,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl5.svg",
                         "displayName": "Leela Macgregor"
                     }
                 },
@@ -180,7 +180,7 @@
                     "date": "Jan 1",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/girl2.svg",
                         "displayName": "Sofia Potts"
                     }
                 },
@@ -188,7 +188,7 @@
                     "date": "Jan 1",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy5.svg",
                         "displayName": "Federico Finnegan"
                     }
                 },
@@ -196,7 +196,7 @@
                     "date": "Jan 1",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy10.svg",
                         "displayName": "Mohammod Roy"
                     }
                 },
@@ -204,7 +204,7 @@
                     "date": "Jan 1",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boy1.svg",
                         "displayName": "Marwan Glass"
                     }
                 }
@@ -217,23 +217,23 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/boy5.svg",
             "displayName": "Federico Finnegan"
         },
         {
-            "image": null,
+            "image": "/images/users/girl2.svg",
             "displayName": "Sofia Potts"
         },
         {
-            "image": null,
+            "image": "/images/users/girl5.svg",
             "displayName": "Leela Macgregor"
         },
         {
-            "image": null,
+            "image": "/images/users/boy1.svg",
             "displayName": "Marwan Glass"
         },
         {
-            "image": null,
+            "image": "/images/users/boy10.svg",
             "displayName": "Mohammod Roy"
         },
         {
@@ -265,11 +265,11 @@
             "displayName": "Cheyanne Fountain"
         },
         {
-            "image": null,
+            "image": "/images/users/girlpink.svg",
             "displayName": "Kendra Mcfarland"
         },
         {
-            "image": null,
+            "image": "/images/users/boyoculus.svg",
             "displayName": "Bhavik Clay"
         },
         {
