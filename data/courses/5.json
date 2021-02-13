@@ -5,7 +5,8 @@
         "image": "/images/covers/img_backtoschool.jpg",
         "subject": null,
         "room": 103,
-        "lecturer": "Ishaq Wheatley"
+        "lecturer": "Ishaq Wheatley",
+        "lecturer_icon": "/images/users/lecturers/ishaq.svg"
     },
     "data": [
         {
@@ -76,7 +77,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/lecturers/ishaq.svg",
                 "displayName": "Ishaq Wheatley"
             }
         },
@@ -111,7 +112,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/ishaq.svg",
                         "displayName": "Ishaq Wheatley"
                     }
                 }
@@ -160,7 +161,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/ishaq.svg",
                         "displayName": "Ishaq Wheatley"
                     }
                 }
@@ -210,8 +211,8 @@
                 }
             ],
             "user": {
-                "image": null,
-                "displayName": "Shanay Walls"
+                "image": "/images/users/boy5.svg",
+                "displayName": "Federico Finnegan"
             }
         }
     ],

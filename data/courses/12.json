@@ -5,7 +5,8 @@
         "image": "/images/covers/img_read.jpg",
         "subject": "History",
         "room": 122,
-        "lecturer": "Lea Hoover"
+        "lecturer": "Lea Hoover",
+        "lecturer_icon": "/images/users/lecturers/lea.svg"
     },
     "data": [
         {

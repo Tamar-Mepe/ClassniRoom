@@ -5,7 +5,8 @@
         "image": "/images/covers/Honors.jpg",
         "subject": null,
         "room": 301,
-        "lecturer": "Jo Paterson"
+        "lecturer": "Jo Paterson",
+        "lecturer_icon": "/images/users/lecturers/jo.svg"
     },
     "data": [
         {
@@ -56,7 +57,7 @@
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/lecturers/jo.svg",
                 "displayName": "Jo Paterson"
             }
         },

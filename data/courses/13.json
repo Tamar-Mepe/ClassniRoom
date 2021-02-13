@@ -5,7 +5,8 @@
         "image": "/images/covers/WorldStudies.jpg",
         "subject": null,
         "room": 205,
-        "lecturer": "Jillian Pacheco"
+        "lecturer": "Jillian Pacheco",
+        "lecturer_icon": "/images/users/lecturers/jillian.svg"
     },
     "data": [
         {

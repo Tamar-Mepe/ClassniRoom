@@ -5,7 +5,8 @@
         "image": "/images/covers/img_code.jpg",
         "subject": "OOP",
         "room": 420,
-        "lecturer": "Klaudia Huff"
+        "lecturer": "Klaudia Huff",
+        "lecturer_icon": "/images/users/lecturers/klaudia.svg"
     },
     "data": [
         {

@@ -5,7 +5,8 @@
         "image": "/images/covers/img_cinema.jpg",
         "subject": null,
         "room": 403,
-        "lecturer": "Dexter Ho"
+        "lecturer": "Dexter Ho",
+        "lecturer_icon": "/images/users/lecturers/dexter.svg"
     },
     "data": [
         {
@@ -145,7 +146,7 @@
                     "date": "Jan 31",
                     "description": "Sed vehicula dui vitae quam interdum vestibulum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/boyblue.svg",
                         "displayName": "Deon Little"
                     }
                 }
@@ -200,7 +201,7 @@
     ],
     "students": [
         {
-            "image": null,
+            "image": "/images/users/boyblue.svg",
             "displayName": "Deon Little"
         },
         {

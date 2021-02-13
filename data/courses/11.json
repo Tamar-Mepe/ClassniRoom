@@ -5,7 +5,8 @@
         "image": "/images/covers/img_reachout.jpg",
         "subject": null,
         "room": null,
-        "lecturer": "Cherise Snider"
+        "lecturer": "Cherise Snider",
+        "lecturer_icon": "/images/users/lecturers/cherise.svg"
     },
     "data": [
         {

@@ -146,6 +146,7 @@ class coursesController {
                 courseCardClone.querySelector('img').src = currCourse.image;
                 courseCardClone.querySelector('.class-label').textContent = currCourse.name;
                 courseCardClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
+                courseCardClone.querySelector('.lecturer-icon').src = currCourse.lecturer_icon;
                 courseCardClone.querySelector('.class-label').href += '/' + currCourse.id;
                 courseCardClone.getElementById('redirect-to-your-work').href = '/courses/' + currCourse.id + '/classwork-assignments';
                 courseRow.appendChild(courseCardClone);
@@ -459,6 +460,7 @@ class coursesController {
                     const tableTemplate = document.getElementById('table-template');
                     const tableContainer = document.querySelector('.table-container table');
                     document.getElementById('lecturer-label').textContent = lecturerLabel;
+                    document.getElementById('students-page-lecturer').src = data.course.lecturer_icon;
                     studentsList.forEach(function (student) {
                         const studClone = tableTemplate.content.cloneNode(true);
                         studClone.getElementById('student-label').textContent = student.displayName;

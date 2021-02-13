@@ -5,7 +5,8 @@
         "image": "/images/covers/img_breakfast.jpg",
         "subject": "Culinary",
         "room": 409,
-        "lecturer": "Adil Nieves"
+        "lecturer": "Adil Nieves",
+        "lecturer_icon": "/images/users/lecturers/adil.svg"
     },
     "data": [
         {
@@ -42,7 +43,7 @@
                     "date": "Dec 28",
                     "description": "Sed vehicula dui vitae quam interdum vestibulum",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/adil.svg",
                         "displayName": "Adil Nieves"
                     }
                 }

@@ -5,7 +5,8 @@
         "image": "/images/covers/img_arts.jpg",
         "subject": "Painting",
         "room": null,
-        "lecturer": "Lilian Oneal"
+        "lecturer": "Lilian Oneal",
+        "lecturer_icon": "/images/users/lecturers/lilian.svg"
     },
     "data": [
         {
@@ -74,7 +75,7 @@
                 }
             ],
             "user": {
-                "image": null,
+                "image": "/images/users/lecturers/lilian.svg",
                 "displayName": "Lilian Oneal"
             }
         },

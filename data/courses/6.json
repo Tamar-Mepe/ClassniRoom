@@ -5,7 +5,8 @@
         "image": "/images/covers/img_bookclub.jpg",
         "subject": "Reading",
         "room": 202,
-        "lecturer": "Clarice Norman"
+        "lecturer": "Clarice Norman",
+        "lecturer_icon": "/images/users/lecturers/clarice.svg"
     },
     "data": [
         {
@@ -112,7 +113,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/clarice.svg",
                         "displayName": "Clarice Norman"
                     }
                 },

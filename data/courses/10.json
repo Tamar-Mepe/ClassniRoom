@@ -5,7 +5,8 @@
         "image": "/images/covers/img_learnlanguage.jpg",
         "subject": "Spanish",
         "room": 412,
-        "lecturer": "Marjorie Ryder"
+        "lecturer": "Marjorie Ryder",
+        "lecturer_icon": "/images/users/lecturers/marjorie.svg"
     },
     "data": [
         {
@@ -31,7 +32,7 @@
                     "date": "Apr 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/marjorie.svg",
                         "displayName": "Marjorie Ryder"
                     }
                 },
@@ -101,7 +102,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": null,
+                "image": "/images/users/lecturers/marjorie.svg",
                 "displayName": "Marjorie Ryder"
             }
         }

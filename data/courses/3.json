@@ -5,7 +5,8 @@
         "image": "/images/covers/Chemistry.jpg",
         "subject": null,
         "room": 207,
-        "lecturer": "Zeenat Levy"
+        "lecturer": "Zeenat Levy",
+        "lecturer_icon": "/images/users/lecturers/zeenat.svg"
     },
     "data": [
         {
@@ -68,7 +69,7 @@
                     "date": "Jun 18",
                     "description": "Proin et risus eget mi blandit vulputate",
                     "user": {
-                        "image": null,
+                        "image": "/images/users/lecturers/zeenat.svg",
                         "displayName": "Zeenat Levy"
                     }
                 },

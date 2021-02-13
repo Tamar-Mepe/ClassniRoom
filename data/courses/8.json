@@ -5,7 +5,8 @@
         "image": "/images/covers/img_graduation.jpg",
         "subject": "Graduation",
         "room": 200,
-        "lecturer": "Norman Slater"
+        "lecturer": "Norman Slater",
+        "lecturer_icon": "/images/users/lecturers/norman.svg"
     },
     "data": [
         {
