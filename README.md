@@ -16,7 +16,7 @@
 
 ### Welcome Page
 
-*[index.html](src/html/index.html)*
+*[index.html](html/index.html)*
 
 ---
 
@@ -24,46 +24,46 @@
 
 ### ავტორიზაცია
 
-*[login.html](src/html/login.html)*
+*[login.html](html/login.html)*
 
 ---
 
 <a name="Courses"></a>
 ### კურსების ჩამონათვალი
 
-*[courses.html](src/html/courses.html)*
+*[courses-index.html](html/courses-index.html)*
 
 ---
 
 <a name="Main-Page"></a>
 ### მთავარი გვერდი
 
-*[classroom.html](src/html/classroom.html)*
+*[courses-show.html](html/courses-show.html)*
 
 ---
 
 <a name="Classwork"></a>
 ### კურსის მასალების გვერდი
 
-*[classwork.html](src/html/classwork.html)*
+*[courses-classwork.html](html/courses-classwork.html)*
 
 ---
 
 <a name="Your-Work"></a>
 ### სტუდენტის დავალებების ჩამონათვალი
 
-*[yourwork.html](src/html/yourwork.html)*
+*[courses-classwork-assignments.html](html/courses-classwork-assignments.html)*
 
 ---
 
 <a name="Students"></a>
 ### სტუდენტების ჩამონათვალი
 
-*[students.html](src/html/students.html)*
+*[courses-students.html](html/courses-students.html)*
 
 ---
 
 <a name="Assignment"></a>
 ### პოსტის გვერდი
 
-*[assignment.html](src/html/assignment.html)*
+*[courses-classwork-inner.html](html/courses-classwork-inner.html)*
