@@ -1324,11 +1324,11 @@ tr:last-of-type {
     border-top: .0625rem solid #dadce0;
 }
 
-.classwork-icon-container svg:hover {
+.classwork-icon-container img:hover {
     background-color: rgb(236, 236, 236);
 }
 
-.classwork-icon-container svg {
+.classwork-icon-container img {
     float: right;
     padding: 8px;
     margin: 8px;
@@ -1757,7 +1757,7 @@ tr:last-of-type {
         font-size: 13px;
         top: 23px;
     }
-    .classwork-icon-container svg {
+    .classwork-icon-container img {
         padding: 0;
     }
     .lecturer-icon {
