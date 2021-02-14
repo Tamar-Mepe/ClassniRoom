@@ -5,8 +5,7 @@
         "image": "/images/covers/img_learnlanguage.jpg",
         "subject": "Spanish",
         "room": 412,
-        "lecturer": "Marjorie Ryder",
-        "lecturer_icon": "/images/users/lecturers/marjorie.svg"
+        "lecturer": "Marjorie Ryder"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "date": "Apr 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": "/images/users/girl5.svg",
+                        "image": null,
                         "displayName": "Blossom Parkinson"
                     }
                 },
@@ -32,7 +31,7 @@
                     "date": "Apr 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": "/images/users/lecturers/marjorie.svg",
+                        "image": null,
                         "displayName": "Marjorie Ryder"
                     }
                 },
@@ -40,7 +39,7 @@
                     "date": "May 12",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": "/images/users/girl5.svg",
+                        "image": null,
                         "displayName": "Blossom Parkinson"
                     }
                 }
@@ -60,13 +59,13 @@
                     "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Zunaira Calhoun"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/boy3.svg",
+                "image": null,
                 "displayName": "Codey Parks"
             }
         },
@@ -85,7 +84,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Kamile Findlay"
                     }
                 }
@@ -102,38 +101,38 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/lecturers/marjorie.svg",
+                "image": null,
                 "displayName": "Marjorie Ryder"
             }
         }
     ],
     "students": [
         {
-            "image": "/images/users/boy10.svg",
+            "image": null,
             "displayName": "Lennon Bautista"
         },
         {
-            "image": "/images/users/girl3.svg",
+            "image": null,
             "displayName": "Kamile Findlay"
         },
         {
-            "image": "/images/users/boy5.svg",
+            "image": null,
             "displayName": "Eryk Melendez"
         },
         {
-            "image": "/images/users/girlglasses.svg",
+            "image": null,
             "displayName": "Dale Cox"
         },
         {
-            "image": "/images/users/girl5.svg",
+            "image": null,
             "displayName": "Blossom Parkinson"
         },
         {
-            "image": "/images/users/boy3.svg",
+            "image": null,
             "displayName": "Codey Parks"
         },
         {
-            "image": "/images/users/girl3.svg",
+            "image": null,
             "displayName": "Zunaira Calhoun"
         }
     ]

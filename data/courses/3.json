@@ -5,8 +5,7 @@
         "image": "/images/covers/Chemistry.jpg",
         "subject": null,
         "room": 207,
-        "lecturer": "Zeenat Levy",
-        "lecturer_icon": "/images/users/lecturers/zeenat.svg"
+        "lecturer": "Zeenat Levy"
     },
     "data": [
         {
@@ -20,7 +19,7 @@
                     "date": "Sep 19",
                     "description": "Nunc nec est sed risus viverra ullamcorper eu sit amet justo",
                     "user": {
-                        "image": "/images/users/boy7.svg",
+                        "image": null,
                         "displayName": "Gordon Mann"
                     }
                 },
@@ -28,7 +27,7 @@
                     "date": "Oct 9",
                     "description": "Proin et risus eget mi blandit vulputate",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Max Trevino"
                     }
                 }
@@ -61,7 +60,7 @@
                     "date": "Jun 18",
                     "description": "Morbi lobortis mauris in diam tempus, varius consectetur urna laoreet",
                     "user": {
-                        "image": "/images/users/boy6.svg",
+                        "image": null,
                         "displayName": "Byron Bruce"
                     }
                 },
@@ -69,7 +68,7 @@
                     "date": "Jun 18",
                     "description": "Proin et risus eget mi blandit vulputate",
                     "user": {
-                        "image": "/images/users/lecturers/zeenat.svg",
+                        "image": null,
                         "displayName": "Zeenat Levy"
                     }
                 },
@@ -77,7 +76,7 @@
                     "date": "Jun 18",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": "/images/users/boy6.svg",
+                        "image": null,
                         "displayName": "Byron Bruce"
                     }
                 }
@@ -118,7 +117,7 @@
                     "date": "May 10",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Max Trevino"
                     }
                 }
@@ -138,7 +137,7 @@
                     "date": "Mar 29",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Barry Couch"
                     }
                 },
@@ -146,7 +145,7 @@
                     "date": "Mar 29",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/boy7.svg",
+                        "image": null,
                         "displayName": "Gordon Mann"
                     }
                 },
@@ -154,13 +153,13 @@
                     "date": "Mar 30",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Barry Couch"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/boy7.svg",
+                "image": null,
                 "displayName": "Gordon Mann"
             }
         }
@@ -171,7 +170,7 @@
             "displayName": "Lorcan Castro"
         },
         {
-            "image": "/images/users/boy6.svg",
+            "image": null,
             "displayName": "Byron Bruce"
         },
         {
@@ -183,7 +182,7 @@
             "displayName": "Tracy Yates"
         },
         {
-            "image": "/images/users/boy8.svg",
+            "image": null,
             "displayName": "Barry Couch"
         },
         {
@@ -203,11 +202,11 @@
             "displayName": "Sulayman Hale"
         },
         {
-            "image": "/images/users/boy5.svg",
+            "image": null,
             "displayName": "Max Trevino"
         },
         {
-            "image": "/images/users/boy7.svg",
+            "image": null,
             "displayName": "Gordon Mann"
         },
         {

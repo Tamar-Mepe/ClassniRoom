@@ -146,7 +146,6 @@ class coursesController {
                 courseCardClone.querySelector('img').src = currCourse.image;
                 courseCardClone.querySelector('.class-label').textContent = currCourse.name;
                 courseCardClone.querySelector('.lecturer-label').textContent = currCourse.lecturer;
-                courseCardClone.querySelector('.lecturer-icon').src = currCourse.lecturer_icon;
                 courseCardClone.querySelector('.class-label').href += '/' + currCourse.id;
                 courseCardClone.getElementById('redirect-to-your-work').href = '/courses/' + currCourse.id + '/classwork-assignments';
                 courseRow.appendChild(courseCardClone);
@@ -254,7 +253,7 @@ class coursesController {
                 if (!typeOfPost) {
                     // Displaying regular post
                     const postContainerClone = postContainerTemplate.content.cloneNode(true);
-                    updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', 'post-author-image', typeOfPost);
+                    updateUpperLabeling(currPost, postContainerClone, 'post-owner', 'date-style', typeOfPost);
                     postContainerClone.getElementById('post-class-main-text').textContent = currPost.description;
                     const commentsContainer = postContainerClone.getElementById('post-comments');
                     const postCommentsButton = commentsContainer.children[0];
@@ -264,7 +263,7 @@ class coursesController {
                     // Iterate over comments
                     const commentsTemplate = document.getElementById('post-comment-template');
                     commentsForPost.forEach(function (currComment) {
-                        displayComment(commentsContainer, commentsTemplate, currComment.user.displayName, currComment.date, currComment.description, currComment.user.image);
+                        displayComment(commentsContainer, commentsTemplate, currComment.user.displayName, currComment.date, currComment.description);
                     });
 
                     // Hide all comments but last
@@ -283,7 +282,7 @@ class coursesController {
                     // Displaying assignment posted by the teacher
                     const assignmentAnnouncementClone = assignmentAnnouncementTemplate.content.cloneNode(true);
                     updateUpperLabeling(currPost, assignmentAnnouncementClone, 'assignment-announcement-owner',
-                        'assignment-announced-date', null, typeOfPost);
+                        'assignment-announced-date', typeOfPost);
                     const commentsElem = assignmentAnnouncementClone.getElementById('assignment-announcement-comments');
                     assignmentAnnouncementClone.getElementById('assignment-comment-num').textContent = classCommentsButton(commentsForPost.length, null);
                     assignmentAnnouncementClone.getElementById('assignment-href').href = 'courses/' + courseID + '/classwork/' + currPost.id;
@@ -372,12 +371,11 @@ class coursesController {
             searchStreamBar.parentNode.insertBefore(postContainerClone, searchStreamBar.nextSibling);
         }
 
-        function displayComment(commentsContainer, commentsTemplate, displayName, postedDate, commentDesc, commenterImage) {
+        function displayComment(commentsContainer, commentsTemplate, displayName, postedDate, commentDesc) {
             const commentsClone = commentsTemplate.content.cloneNode(true);
             commentsClone.getElementById('comment-owner').textContent = displayName;
             commentsClone.getElementById('comment-posted').textContent = postedDate;
             commentsClone.getElementById('comment-text').textContent = commentDesc;
-            if (commenterImage) commentsClone.getElementById('commenter-image').src = commenterImage;
             commentsContainer.appendChild(commentsClone);
         }
 
@@ -405,14 +403,13 @@ class coursesController {
             });
         }
 
-        function updateUpperLabeling(currPost, clone, author, date, image, type) {
+        function updateUpperLabeling(currPost, clone, author, date, type) {
             const textToEdit = clone.getElementById(author);
             textToEdit.textContent = currPost.user.displayName;
             if (type > 0) textToEdit.textContent += ' posted a new ';
             if (type == 1) textToEdit.textContent += 'assignment: ' + currPost.assignment_name;
             if (type == 2) textToEdit.textContent += 'material: ' + currPost.assignment_name;
             clone.getElementById(date).textContent = currPost.date;
-            if (currPost.user.image) clone.getElementById(image).src = currPost.user.image;
         }
 
         function classCommentsButton(commentsForPostLen, postCommentsButton) {
@@ -460,11 +457,9 @@ class coursesController {
                     const tableTemplate = document.getElementById('table-template');
                     const tableContainer = document.querySelector('.table-container table');
                     document.getElementById('lecturer-label').textContent = lecturerLabel;
-                    document.getElementById('students-page-lecturer').src = data.course.lecturer_icon;
                     studentsList.forEach(function (student) {
                         const studClone = tableTemplate.content.cloneNode(true);
                         studClone.getElementById('student-label').textContent = student.displayName;
-                        if (student.image) studClone.getElementById('students-page-image').src = student.image;
                         tableContainer.appendChild(studClone);
                     });
                 });
@@ -566,7 +561,6 @@ class coursesController {
             assignmentCommentsClone.getElementById('comm-owner-id').textContent = isPrevComment ? currComment.user.displayName : currLoggedIn;
             assignmentCommentsClone.getElementById('comm-date-id').textContent = isPrevComment ? currComment.date : getCurrHM();
             assignmentCommentsClone.getElementById('comm-main-content').textContent = isPrevComment ? currComment.description : currComment;
-            if (isPrevComment) if (currComment.user.image) assignmentCommentsClone.getElementById('comm-owner-img').src = currComment.user.image;
             assignmentCommentsContainer.appendChild(assignmentCommentsClone);
         }
 

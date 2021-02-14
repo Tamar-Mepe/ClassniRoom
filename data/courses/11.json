@@ -5,8 +5,7 @@
         "image": "/images/covers/img_reachout.jpg",
         "subject": null,
         "room": null,
-        "lecturer": "Cherise Snider",
-        "lecturer_icon": "/images/users/lecturers/cherise.svg"
+        "lecturer": "Cherise Snider"
     },
     "data": [
         {
@@ -32,7 +31,7 @@
                     "date": "Mar 9",
                     "description": "Pellentesque dapibus metus sit amet odio auctor porta",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Amelia-Rose Parrish"
                     }
                 },
@@ -40,7 +39,7 @@
                     "date": "Mar 19",
                     "description": "Ut ac mauris feugiat, malesuada tortor quis, lacinia est",
                     "user": {
-                        "image": "/images/users/boy4.svg",
+                        "image": null,
                         "displayName": "Daryl Hurley"
                     }
                 }
@@ -78,7 +77,7 @@
                     "date": "Feb 29",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/boyoculus.svg",
+                        "image": null,
                         "displayName": "Bob Herbert"
                     }
                 },
@@ -86,7 +85,7 @@
                     "date": "Feb 29",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girlred.svg",
+                        "image": null,
                         "displayName": "Kay Mayer"
                     }
                 },
@@ -94,7 +93,7 @@
                     "date": "Feb 29",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Katie Farrell"
                     }
                 }
@@ -114,7 +113,7 @@
                     "date": "Feb 22",
                     "description": "Fusce ultricies lacus vel nibh euismod, sed lacinia nisl imperdiet",
                     "user": {
-                        "image": "/images/users/girlred.svg",
+                        "image": null,
                         "displayName": "Kay Mayer"
                     }
                 },
@@ -122,7 +121,7 @@
                     "date": "Feb 22",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": "/images/users/girl6.svg",
+                        "image": null,
                         "displayName": "Cecelia Holcomb"
                     }
                 },
@@ -130,7 +129,7 @@
                     "date": "Feb 23",
                     "description": "Quisque at massa eu nibh sagittis feugiat eu eu lorem",
                     "user": {
-                        "image": "/images/users/girl8.svg",
+                        "image": null,
                         "displayName": "August Hamer"
                     }
                 },
@@ -138,7 +137,7 @@
                     "date": "Feb 24",
                     "description": "In consequat dui et vestibulum finibus",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Albie Giles"
                     }
                 },
@@ -146,7 +145,7 @@
                     "date": "Feb 25",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/girl1.svg",
+                        "image": null,
                         "displayName": "Anna-Marie Parkes"
                     }
                 },
@@ -154,7 +153,7 @@
                     "date": "Feb 25",
                     "description": "In consequat dui et vestibulum finibus",
                     "user": {
-                        "image": "/images/users/boy4.svg",
+                        "image": null,
                         "displayName": "Daryl Hurley"
                     }
                 },
@@ -162,7 +161,7 @@
                     "date": "Feb 27",
                     "description": "Aenean porttitor ex eget ante tincidunt, quis condimentum dui lobortis",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Selina Jones"
                     }
                 },
@@ -170,13 +169,13 @@
                     "date": "Feb 27",
                     "description": "Sed nec odio bibendum sem gravida tincidunt et at metus",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Charly Spooner"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girlred.svg",
+                "image": null,
                 "displayName": "Kay Mayer"
             }
         },
@@ -190,13 +189,13 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Katie Farrell"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girlred.svg",
+                "image": null,
                 "displayName": "Kay Mayer"
             }
         },
@@ -207,7 +206,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/girlred.svg",
+                "image": null,
                 "displayName": "Kay Mayer"
             }
         }
@@ -222,7 +221,7 @@
             "displayName": "Ishmael Newton"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Katie Farrell"
         },
         {
@@ -234,7 +233,7 @@
             "displayName": "Haaris Chaney"
         },
         {
-            "image": "/images/users/girlred.svg",
+            "image": null,
             "displayName": "Kay Mayer"
         },
         {
@@ -242,11 +241,11 @@
             "displayName": "Caspar Prince"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Amelia-Rose Parrish"
         },
         {
-            "image": "/images/users/boyoculus.svg",
+            "image": null,
             "displayName": "Bob Herbert"
         },
         {
@@ -254,7 +253,7 @@
             "displayName": "Eduardo Thompson"
         },
         {
-            "image": "/images/users/girl8.svg",
+            "image": null,
             "displayName": "August Hamer"
         },
         {
@@ -262,7 +261,7 @@
             "displayName": "Will Mcgill"
         },
         {
-            "image": "/images/users/boy4.svg",
+            "image": null,
             "displayName": "Daryl Hurley"
         },
         {
@@ -274,15 +273,15 @@
             "displayName": "Courtney Wardle"
         },
         {
-            "image": "/images/users/girl.svg",
+            "image": null,
             "displayName": "Albie Giles"
         },
         {
-            "image": "/images/users/boy1.svg",
+            "image": null,
             "displayName": "Charly Spooner"
         },
         {
-            "image": "/images/users/girl6.svg",
+            "image": null,
             "displayName": "Cecelia Holcomb"
         },
         {
@@ -290,7 +289,7 @@
             "displayName": "Patience Cantu"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Selina Jones"
         },
         {
@@ -306,7 +305,7 @@
             "displayName": "Rishi Cooke"
         },
         {
-            "image": "/images/users/girl1.svg",
+            "image": null,
             "displayName": "Anna-Marie Parkes"
         }
     ]

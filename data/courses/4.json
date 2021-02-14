@@ -5,8 +5,7 @@
         "image": "/images/covers/Honors.jpg",
         "subject": null,
         "room": 301,
-        "lecturer": "Jo Paterson",
-        "lecturer_icon": "/images/users/lecturers/jo.svg"
+        "lecturer": "Jo Paterson"
     },
     "data": [
         {
@@ -19,7 +18,7 @@
                     "date": "May 11",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": "/images/users/girl6.svg",
+                        "image": null,
                         "displayName": "Angel Hastings"
                     }
                 },
@@ -27,7 +26,7 @@
                     "date": "May 12",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/boygreen.svg",
+                        "image": null,
                         "displayName": "Ravi Wright"
                     }
                 },
@@ -35,7 +34,7 @@
                     "date": "May 12",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Robin Shields"
                     }
                 },
@@ -43,7 +42,7 @@
                     "date": "May 12",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -51,13 +50,13 @@
                     "date": "May 12",
                     "description": "Cras rhoncus ligula vel gravida facilisis",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Robin Shields"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/lecturers/jo.svg",
+                "image": null,
                 "displayName": "Jo Paterson"
             }
         },
@@ -71,7 +70,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -79,7 +78,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl6.svg",
+                        "image": null,
                         "displayName": "Aisling Cash"
                     }
                 },
@@ -87,13 +86,13 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Robin Shields"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl4.svg",
+                "image": null,
                 "displayName": "Maddie Mcdonald"
             }
         },
@@ -124,7 +123,7 @@
                     "date": "Jan 31",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Carmel Whyte"
                     }
                 },
@@ -132,7 +131,7 @@
                     "date": "Jan 31",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Maddie Mcdonald"
                     }
                 },
@@ -140,13 +139,13 @@
                     "date": "Feb 2",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Carmel Whyte"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl6.svg",
+                "image": null,
                 "displayName": "Aisling Cash"
             }
         },
@@ -166,7 +165,7 @@
                     "date": "Dec 29, 2020",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Carmel Whyte"
                     }
                 }
@@ -179,15 +178,15 @@
     ],
     "students": [
         {
-            "image": "/images/users/boy8.svg",
+            "image": null,
             "displayName": "Robin Shields"
         },
         {
-            "image": "/images/users/girl6.svg",
+            "image": null,
             "displayName": "Angel Hastings"
         },
         {
-            "image": "/images/users/girl3.svg",
+            "image": null,
             "displayName": "Carmel Whyte"
         },
         {
@@ -195,15 +194,15 @@
             "displayName": "Halimah Fuentes"
         },
         {
-            "image": "/images/users/girl6.svg",
+            "image": null,
             "displayName": "Aisling Cash"
         },
         {
-            "image": "/images/users/boygreen.svg",
+            "image": null,
             "displayName": "Ravi Wright"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Maddie Mcdonald"
         }
     ]

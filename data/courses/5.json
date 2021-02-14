@@ -5,8 +5,7 @@
         "image": "/images/covers/img_backtoschool.jpg",
         "subject": null,
         "room": 103,
-        "lecturer": "Ishaq Wheatley",
-        "lecturer_icon": "/images/users/lecturers/ishaq.svg"
+        "lecturer": "Ishaq Wheatley"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "due_date": "Nov 30",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Kendra Mcfarland"
                     }
                 }
@@ -44,7 +43,7 @@
                     "date": "Apr 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": "/images/users/boyoculus.svg",
+                        "image": null,
                         "displayName": "Bhavik Clay"
                     }
                 },
@@ -52,7 +51,7 @@
                     "date": "Apr 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -60,13 +59,13 @@
                     "date": "May 12",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": "/images/users/boyoculus.svg",
+                        "image": null,
                         "displayName": "Bhavik Clay"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl2.svg",
+                "image": null,
                 "displayName": "Sofia Potts"
             }
         },
@@ -77,7 +76,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/lecturers/ishaq.svg",
+                "image": null,
                 "displayName": "Ishaq Wheatley"
             }
         },
@@ -96,7 +95,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -104,7 +103,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl5.svg",
+                        "image": null,
                         "displayName": "Leela Macgregor"
                     }
                 },
@@ -112,7 +111,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/lecturers/ishaq.svg",
+                        "image": null,
                         "displayName": "Ishaq Wheatley"
                     }
                 }
@@ -145,7 +144,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Marwan Glass"
                     }
                 },
@@ -153,7 +152,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl5.svg",
+                        "image": null,
                         "displayName": "Leela Macgregor"
                     }
                 },
@@ -161,7 +160,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/lecturers/ishaq.svg",
+                        "image": null,
                         "displayName": "Ishaq Wheatley"
                     }
                 }
@@ -181,7 +180,7 @@
                     "date": "Jan 1",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Sofia Potts"
                     }
                 },
@@ -189,7 +188,7 @@
                     "date": "Jan 1",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Federico Finnegan"
                     }
                 },
@@ -197,7 +196,7 @@
                     "date": "Jan 1",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": "/images/users/boy10.svg",
+                        "image": null,
                         "displayName": "Mohammod Roy"
                     }
                 },
@@ -205,36 +204,36 @@
                     "date": "Jan 1",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Marwan Glass"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/boy5.svg",
+                "image": null,
                 "displayName": "Federico Finnegan"
             }
         }
     ],
     "students": [
         {
-            "image": "/images/users/boy5.svg",
+            "image": null,
             "displayName": "Federico Finnegan"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Sofia Potts"
         },
         {
-            "image": "/images/users/girl5.svg",
+            "image": null,
             "displayName": "Leela Macgregor"
         },
         {
-            "image": "/images/users/boy1.svg",
+            "image": null,
             "displayName": "Marwan Glass"
         },
         {
-            "image": "/images/users/boy10.svg",
+            "image": null,
             "displayName": "Mohammod Roy"
         },
         {
@@ -266,11 +265,11 @@
             "displayName": "Cheyanne Fountain"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Kendra Mcfarland"
         },
         {
-            "image": "/images/users/boyoculus.svg",
+            "image": null,
             "displayName": "Bhavik Clay"
         },
         {

@@ -5,8 +5,7 @@
         "image": "/images/covers/img_cinema.jpg",
         "subject": null,
         "room": 403,
-        "lecturer": "Dexter Ho",
-        "lecturer_icon": "/images/users/lecturers/dexter.svg"
+        "lecturer": "Dexter Ho"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "date": "Nov 11",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": "/images/users/girlred.svg",
+                        "image": null,
                         "displayName": "Vivienne Sanderson"
                     }
                 },
@@ -32,7 +31,7 @@
                     "due_date": "Nov 28",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/boy1.svg",
+                        "image": null,
                         "displayName": "Eden Klein"
                     }
                 },
@@ -40,7 +39,7 @@
                     "due_date": "Nov 28",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Cataleya Velasquez"
                     }
                 },
@@ -48,7 +47,7 @@
                     "due_date": "Nov 28",
                     "description": "Aliquam nec dolor quis velit egestas iaculis sit amet nec erat",
                     "user": {
-                        "image": "/images/users/boyblue.svg",
+                        "image": null,
                         "displayName": "Antonio Seymour"
                     }
                 }
@@ -68,13 +67,13 @@
                     "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Roan Boone"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl2.svg",
+                "image": null,
                 "displayName": "Ciaran Stephenson"
             }
         },
@@ -94,7 +93,7 @@
                     "date": "Mar 9",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Roan Boone"
                     }
                 },
@@ -102,7 +101,7 @@
                     "date": "Mar 23",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Ciaran Stephenson"
                     }
                 }
@@ -122,7 +121,7 @@
                     "date": "Jan 31",
                     "description": "Nullam vitae nulla sed est aliquet tincidunt quis vitae sapien",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Ciaran Stephenson"
                     }
                 },
@@ -130,7 +129,7 @@
                     "date": "Jan 31",
                     "description": "Aliquam nec dolor quis velit egestas iaculis sit amet nec erat",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Roan Boone"
                     }
                 },
@@ -146,13 +145,13 @@
                     "date": "Jan 31",
                     "description": "Sed vehicula dui vitae quam interdum vestibulum",
                     "user": {
-                        "image": "/images/users/boyblue.svg",
+                        "image": null,
                         "displayName": "Deon Little"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl4.svg",
+                "image": null,
                 "displayName": "Barbara Russell"
             }
         },
@@ -172,7 +171,7 @@
                     "date": "Oct 14, 2020",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Barbara Russell"
                     }
                 },
@@ -188,7 +187,7 @@
                     "date": "Oct 14, 2020",
                     "description": "Aliquam nec dolor quis velit egestas iaculis sit amet nec erat",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Ciaran Stephenson"
                     }
                 }
@@ -201,11 +200,11 @@
     ],
     "students": [
         {
-            "image": "/images/users/boyblue.svg",
+            "image": null,
             "displayName": "Deon Little"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Barbara Russell"
         },
         {
@@ -221,7 +220,7 @@
             "displayName": "Abbigail Thomas"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Ciaran Stephenson"
         },
         {
@@ -233,7 +232,7 @@
             "displayName": "Kody Perez"
         },
         {
-            "image": "/images/users/boy8.svg",
+            "image": null,
             "displayName": "Roan Boone"
         },
         {
@@ -281,7 +280,7 @@
             "displayName": "Emir Mcdermott"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Cataleya Velasquez"
         },
         {
@@ -289,7 +288,7 @@
             "displayName": "Cristian Nicholls"
         },
         {
-            "image": "/images/users/boy1.svg",
+            "image": null,
             "displayName": "Eden Klein"
         },
         {
@@ -341,7 +340,7 @@
             "displayName": "Johanna Needham"
         },
         {
-            "image": "/images/users/girlred.svg",
+            "image": null,
             "displayName": "Vivienne Sanderson"
         },
         {
@@ -369,7 +368,7 @@
             "displayName": "Allana Brock"
         },
         {
-            "image": "/images/users/boyblue.svg",
+            "image": null,
             "displayName": "Antonio Seymour"
         },
         {

@@ -5,8 +5,7 @@
         "image": "/images/covers/img_read.jpg",
         "subject": "History",
         "room": 122,
-        "lecturer": "Lea Hoover",
-        "lecturer_icon": "/images/users/lecturers/lea.svg"
+        "lecturer": "Lea Hoover"
     },
     "data": [
         {
@@ -20,7 +19,7 @@
                     "date": "Dec 29",
                     "description": "Donec eleifend risus in eros accumsan, vel lacinia lectus rutrum",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Asiya Greenwood"
                     }
                 }
@@ -41,7 +40,7 @@
                     "date": "Dec 11",
                     "description": "Etiam vitae est sit amet nunc laoreet ultricies nec eu risus",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Isma Joyner"
                     }
                 },
@@ -49,7 +48,7 @@
                     "date": "Dec 11",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Asiya Greenwood"
                     }
                 },
@@ -57,7 +56,7 @@
                     "date": "Dec 11",
                     "description": " Nulla vitae pretium risus, eu faucibus ex",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Haniya Morris"
                     }
                 }
@@ -78,7 +77,7 @@
                     "date": "May 4",
                     "description": "Donec eleifend risus in eros accumsan, vel lacinia lectus rutrum",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Asiya Greenwood"
                     }
                 }
@@ -99,7 +98,7 @@
                     "date": "May 2",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": "/images/users/girl5.svg",
+                        "image": null,
                         "displayName": "Rui Delaney"
                     }
                 },
@@ -107,7 +106,7 @@
                     "date": "May 9",
                     "description": "Nullam a orci vitae dolor auctor tincidunt in in ante",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Isma Joyner"
                     }
                 }
@@ -127,7 +126,7 @@
                     "date": "Mar 1",
                     "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Taio Glover"
                     }
                 },
@@ -135,7 +134,7 @@
                     "date": "Mar 3",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/girl6.svg",
+                        "image": null,
                         "displayName": "Mckenzie Lancaster"
                     }
                 },
@@ -143,7 +142,7 @@
                     "date": "Mar 4",
                     "description": "Suspendisse in diam sit amet lacus luctus pharetra",
                     "user": {
-                        "image": "/images/users/boy7.svg",
+                        "image": null,
                         "displayName": "Helin Oliver"
                     }
                 },
@@ -151,7 +150,7 @@
                     "date": "Mar 11",
                     "description": "Curabitur pretium turpis eu nisl aliquet viverra",
                     "user": {
-                        "image": "/images/users/boy8.svg",
+                        "image": null,
                         "displayName": "Jethro Macdonald"
                     }
                 },
@@ -159,32 +158,32 @@
                     "date": "Mar 12",
                     "description": "Nam rhoncus nulla et lectus dapibus commodo",
                     "user": {
-                        "image": "/images/users/girl7.svg",
+                        "image": null,
                         "displayName": "Carys Mckenna"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl8.svg",
+                "image": null,
                 "displayName": "Lacey-Mai Tyler"
             }
         }
     ],
     "students": [
         {
-            "image": "/images/users/girl8.svg",
+            "image": null,
             "displayName": "Lacey-Mai Tyler"
         },
         {
-            "image": "/images/users/boy7.svg",
+            "image": null,
             "displayName": "Helin Oliver"
         },
         {
-            "image": "/images/users/girl6.svg",
+            "image": null,
             "displayName": "Mckenzie Lancaster"
         },
         {
-            "image": "/images/users/boy8.svg",
+            "image": null,
             "displayName": "Jethro Macdonald"
         },
         {
@@ -192,11 +191,11 @@
             "displayName": "Adyan Head"
         },
         {
-            "image": "/images/users/girl7.svg",
+            "image": null,
             "displayName": "Carys Mckenna"
         },
         {
-            "image": "/images/users/girl3.svg",
+            "image": null,
             "displayName": "Isma Joyner"
         },
         {
@@ -212,7 +211,7 @@
             "displayName": "Ashlee Rollins"
         },
         {
-            "image": "/images/users/girl5.svg",
+            "image": null,
             "displayName": "Rui Delaney"
         },
         {
@@ -228,7 +227,7 @@
             "displayName": "Sofia Mcgee"
         },
         {
-            "image": "/images/users/boy5.svg",
+            "image": null,
             "displayName": "Taio Glover"
         },
         {
@@ -236,7 +235,7 @@
             "displayName": "Roshni Thornton"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Haniya Morris"
         },
         {
@@ -244,7 +243,7 @@
             "displayName": "Teri Griffiths"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Asiya Greenwood"
         },
         {

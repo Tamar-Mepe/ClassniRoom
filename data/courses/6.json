@@ -5,8 +5,7 @@
         "image": "/images/covers/img_bookclub.jpg",
         "subject": "Reading",
         "room": 202,
-        "lecturer": "Clarice Norman",
-        "lecturer_icon": "/images/users/lecturers/clarice.svg"
+        "lecturer": "Clarice Norman"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "due_date": "Nov 31",
                     "description": "Nullam pellentesque metus et ex fringilla mollis",
                     "user": {
-                        "image": "/images/users/girl8.svg",
+                        "image": null,
                         "displayName": "Cecelia Holcomb"
                     }
                 },
@@ -32,7 +31,7 @@
                     "due_date": "Nov 31",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": "/images/users/boygreen.svg",
+                        "image": null,
                         "displayName": "Eleri Phelps"
                     }
                 }
@@ -57,7 +56,7 @@
                     "date": "Oct 23",
                     "description": "Aenean vitae tortor mattis, accumsan enim bibendum, sagittis mauris",
                     "user": {
-                        "image": "/images/users/girlglasses.svg",
+                        "image": null,
                         "displayName": "Patience Cantu"
                     }
                 },
@@ -65,7 +64,7 @@
                     "date": "Oct 23",
                     "description": "Sed elementum mi ac enim ultrices egestas id non nulla",
                     "user": {
-                        "image": "/images/users/boy2.svg",
+                        "image": null,
                         "displayName": "Donte Kumar"
                     }
                 },
@@ -73,7 +72,7 @@
                     "date": "Oct 29",
                     "description": "Nullam pellentesque metus et ex fringilla mollis",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Albie Giles"
                     }
                 }
@@ -105,7 +104,7 @@
                     "date": "Feb 3",
                     "description": "Proin at dui ut orci dignissim maximus ac ut tortor",
                     "user": {
-                        "image": "/images/users/boy3.svg",
+                        "image": null,
                         "displayName": "Will Mcgill"
                     }
                 },
@@ -113,7 +112,7 @@
                     "date": "Feb 4",
                     "description": "Phasellus vel fermentum lectus",
                     "user": {
-                        "image": "/images/users/lecturers/clarice.svg",
+                        "image": null,
                         "displayName": "Clarice Norman"
                     }
                 },
@@ -121,13 +120,13 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/girlglasses.svg",
+                        "image": null,
                         "displayName": "Patience Cantu"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girlglasses.svg",
+                "image": null,
                 "displayName": "Patience Cantu"
             }
         },
@@ -138,14 +137,14 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/girl7.svg",
+                "image": null,
                 "displayName": "Lily-Mai Cornish"
             }
         }
     ],
     "students": [
         {
-            "image": "/images/users/girl7.svg",
+            "image": null,
             "displayName": "Lily-Mai Cornish"
         },
         {
@@ -173,7 +172,7 @@
             "displayName": "Katie Farrell"
         },
         {
-            "image": "/images/users/boy2.svg",
+            "image": null,
             "displayName": "Donte Kumar"
         },
         {
@@ -209,7 +208,7 @@
             "displayName": "August Hamer"
         },
         {
-            "image": "/images/users/boy3.svg",
+            "image": null,
             "displayName": "Will Mcgill"
         },
         {
@@ -225,7 +224,7 @@
             "displayName": "Courtney Wardle"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Albie Giles"
         },
         {
@@ -233,11 +232,11 @@
             "displayName": "Charly Spooner"
         },
         {
-            "image": "/images/users/girl8.svg",
+            "image": null,
             "displayName": "Cecelia Holcomb"
         },
         {
-            "image": "/images/users/girlglasses.svg",
+            "image": null,
             "displayName": "Patience Cantu"
         },
         {
@@ -269,7 +268,7 @@
             "displayName": "Kia Aldred"
         },
         {
-            "image": "/images/users/boygreen.svg",
+            "image": null,
             "displayName": "Eleri Phelps"
         }
     ]

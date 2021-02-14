@@ -6,8 +6,7 @@
             "image": "/images/covers/img_code.jpg",
             "subject": "OOP",
             "room": 420,
-            "lecturer": "Klaudia Huff",
-            "lecturer_icon": "/images/users/lecturers/klaudia.svg"
+            "lecturer": "Klaudia Huff"
         },
         {
             "id": 2,
@@ -15,8 +14,7 @@
             "image": "/images/covers/img_arts.jpg",
             "subject": "Painting",
             "room": null,
-            "lecturer": "Lilian Oneal",
-            "lecturer_icon": "/images/users/lecturers/lilian.svg"
+            "lecturer": "Lilian Oneal"
         },
         {
             "id": 3,
@@ -24,8 +22,7 @@
             "image": "/images/covers/Chemistry.jpg",
             "subject": null,
             "room": 207,
-            "lecturer": "Zeenat Levy",
-            "lecturer_icon": "/images/users/lecturers/zeenat.svg"
+            "lecturer": "Zeenat Levy"
         },
         {
             "id": 4,
@@ -33,8 +30,7 @@
             "image": "/images/covers/Honors.jpg",
             "subject": null,
             "room": 301,
-            "lecturer": "Jo Paterson",
-            "lecturer_icon": "/images/users/lecturers/jo.svg"
+            "lecturer": "Jo Paterson"
         },
         {
             "id": 5,
@@ -42,8 +38,7 @@
             "image": "/images/covers/img_backtoschool.jpg",
             "subject": null,
             "room": 103,
-            "lecturer": "Ishaq Wheatley",
-            "lecturer_icon": "/images/users/lecturers/ishaq.svg"
+            "lecturer": "Ishaq Wheatley"
         },
         {
             "id": 6,
@@ -51,8 +46,7 @@
             "image": "/images/covers/img_bookclub.jpg",
             "subject": "Reading",
             "room": 202,
-            "lecturer": "Clarice Norman",
-            "lecturer_icon": "/images/users/lecturers/clarice.svg"
+            "lecturer": "Clarice Norman"
         },
         {
             "id": 7,
@@ -60,8 +54,7 @@
             "image": "/images/covers/img_cinema.jpg",
             "subject": null,
             "room": 403,
-            "lecturer": "Dexter Ho",
-            "lecturer_icon": "/images/users/lecturers/dexter.svg"
+            "lecturer": "Dexter Ho"
         },
         {
             "id": 8,
@@ -69,8 +62,7 @@
             "image": "/images/covers/img_graduation.jpg",
             "subject": "Graduation",
             "room": 200,
-            "lecturer": "Norman Slater",
-            "lecturer_icon": "/images/users/lecturers/norman.svg"
+            "lecturer": "Norman Slater"
         },
         {
             "id": 9,
@@ -78,8 +70,7 @@
             "image": "/images/covers/img_backtoschool.jpg",
             "subject": "Culinary",
             "room": 409,
-            "lecturer": "Adil Nieves",
-            "lecturer_icon": "/images/users/lecturers/adil.svg"
+            "lecturer": "Adil Nieves"
         },
         {
             "id": 10,
@@ -87,8 +78,7 @@
             "image": "/images/covers/img_learnlanguage.jpg",
             "subject": "Spanish",
             "room": 412,
-            "lecturer": "Marjorie Ryder",
-            "lecturer_icon": "/images/users/lecturers/marjorie.svg"
+            "lecturer": "Marjorie Ryder"
         },
         {
             "id": 11,
@@ -96,8 +86,7 @@
             "image": "/images/covers/img_reachout.jpg",
             "subject": null,
             "room": null,
-            "lecturer": "Cherise Snider",
-            "lecturer_icon": "/images/users/lecturers/cherise.svg"
+            "lecturer": "Cherise Snider"
         },
         {
             "id": 12,
@@ -105,8 +94,7 @@
             "image": "/images/covers/img_read.jpg",
             "subject": "History",
             "room": 122,
-            "lecturer": "Lea Hoover",
-            "lecturer_icon": "/images/users/lecturers/lea.svg"
+            "lecturer": "Lea Hoover"
         },
         {
             "id": 13,
@@ -114,8 +102,7 @@
             "image": "/images/covers/WorldStudies.jpg",
             "subject": null,
             "room": 205,
-            "lecturer": "Jillian Pacheco",
-            "lecturer_icon": "/images/users/lecturers/jillian.svg"
+            "lecturer": "Jillian Pacheco"
         }
     ]
 }

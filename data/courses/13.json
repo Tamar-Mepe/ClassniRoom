@@ -5,8 +5,7 @@
         "image": "/images/covers/WorldStudies.jpg",
         "subject": null,
         "room": 205,
-        "lecturer": "Jillian Pacheco",
-        "lecturer_icon": "/images/users/lecturers/jillian.svg"
+        "lecturer": "Jillian Pacheco"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "date": "Aug 23",
                     "description": "Vestibulum maximus neque luctus libero tempus, cursus vehicula tellus efficitur",
                     "user": {
-                        "image": "/images/users/boygreen.svg",
+                        "image": null,
                         "displayName": "Simeon Watts"
                     }
                 },
@@ -32,7 +31,7 @@
                     "date": "Aug 29",
                     "description": "Mauris eu justo eu dolor congue placerat",
                     "user": {
-                        "image": "/images/users/girlred.svg",
+                        "image": null,
                         "displayName": "Tasneem Rivers"
                     }
                 }
@@ -52,13 +51,13 @@
                     "date": "Jun 2",
                     "description": "Donec maximus erat congue lectus mollis, non convallis ipsum sollicitudin",
                     "user": {
-                        "image": "/images/users/boygreen.svg",
+                        "image": null,
                         "displayName": "Simeon Watts"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girlred.svg",
+                "image": null,
                 "displayName": "Tasneem Rivers"
             }
         },
@@ -78,7 +77,7 @@
                     "date": "Feb 5",
                     "description": "Nullam at mauris eget ipsum semper scelerisque",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Christina Tyson"
                     }
                 }
@@ -95,7 +94,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/boyoculus.svg",
+                "image": null,
                 "displayName": "Yuvraj Ferry"
             }
         },
@@ -121,7 +120,7 @@
                     "date": "Jan 1",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": "/images/users/girl8.svg",
+                        "image": null,
                         "displayName": "Tammy Wong"
                     }
                 },
@@ -129,7 +128,7 @@
                     "date": "Jan 1",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": "/images/users/girlglasses.svg",
+                        "image": null,
                         "displayName": "Mikaela Ferrell"
                     }
                 },
@@ -137,7 +136,7 @@
                     "date": "Jan 1",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": "/images/users/girl8.svg",
+                        "image": null,
                         "displayName": "Tammy Wong"
                     }
                 },
@@ -145,7 +144,7 @@
                     "date": "Jan 1",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": "/images/users/girlginger.svg",
+                        "image": null,
                         "displayName": "Bertram Gould"
                     }
                 }
@@ -158,7 +157,7 @@
     ],
     "students": [
         {
-            "image": "/images/users/girlred.svg",
+            "image": null,
             "displayName": "Tasneem Rivers"
         },
         {
@@ -170,7 +169,7 @@
             "displayName": "Esmee Crowther"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Christina Tyson"
         },
         {
@@ -178,11 +177,11 @@
             "displayName": "Dru Douglas"
         },
         {
-            "image": "/images/users/girl8.svg",
+            "image": null,
             "displayName": "Tammy Wong"
         },
         {
-            "image": "/images/users/girlginger.svg",
+            "image": null,
             "displayName": "Bertram Gould"
         },
         {
@@ -194,7 +193,7 @@
             "displayName": "Jocelyn Eastwood"
         },
         {
-            "image": "/images/users/boyoculus.svg",
+            "image": null,
             "displayName": "Yuvraj Ferry"
         },
         {
@@ -202,7 +201,7 @@
             "displayName": "Hollie Acevedo"
         },
         {
-            "image": "/images/users/boygreen.svg",
+            "image": null,
             "displayName": "Simeon Watts"
         },
         {

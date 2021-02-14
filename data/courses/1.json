@@ -5,8 +5,7 @@
         "image": "/images/covers/img_code.jpg",
         "subject": "OOP",
         "room": 420,
-        "lecturer": "Klaudia Huff",
-        "lecturer_icon": "/images/users/lecturers/klaudia.svg"
+        "lecturer": "Klaudia Huff"
     },
     "data": [
         {
@@ -24,7 +23,7 @@
                     "date": "Nov 9",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/boygreen.svg",
+                        "image": null,
                         "displayName": "Naveed Blake"
                     }
                 },
@@ -32,7 +31,7 @@
                     "due_date": "Dec 27",
                     "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
                     "user": {
-                        "image": "/images/users/girlred.svg",
+                        "image": null,
                         "displayName": "Cassia Beaumont"
                     }
                 }
@@ -57,7 +56,7 @@
                     "date": "Oct 8",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Ivy Wall"
                     }
                 }
@@ -77,7 +76,7 @@
                     "date": "Sep 13",
                     "description": "First comment",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Ivy Wall"
                     }
                 },
@@ -85,7 +84,7 @@
                     "date": "Sep 13",
                     "description": "Second comment",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Ivy Wall"
                     }
                 },
@@ -93,7 +92,7 @@
                     "date": "Sep 13",
                     "description": "Third comment",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Ivy Wall"
                     }
                 }
@@ -125,7 +124,7 @@
                     "date": "Apr 14",
                     "description": "Phasellus non lectus a risus convallis dignissim et a tortor",
                     "user": {
-                        "image": "/images/users/girl1.svg",
+                        "image": null,
                         "displayName": "Reema Mahoney"
                     }
                 },
@@ -133,7 +132,7 @@
                     "date": "Apr 14",
                     "description": "Aenean nec nibh in purus bibendum venenatis",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Norah Bolton"
                     }
                 },
@@ -141,7 +140,7 @@
                     "date": "Apr 14",
                     "description": "Praesent a tortor ac quam rhoncus faucibus",
                     "user": {
-                        "image": "/images/users/girl2.svg",
+                        "image": null,
                         "displayName": "Viktoria Medina"
                     }
                 },
@@ -149,7 +148,7 @@
                     "date": "Apr 14",
                     "description": "Aliquam id libero ultricies, sagittis diam vitae, egestas metus",
                     "user": {
-                        "image": "/images/users/boyblue.svg",
+                        "image": null,
                         "displayName": "Freddie Oneill"
                     }
                 },
@@ -157,7 +156,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Adela Fole"
                     }
                 },
@@ -165,13 +164,13 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Macie Buxton"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/boyblue.svg",
+                "image": null,
                 "displayName": "Raife Garrett"
             }
         },
@@ -190,7 +189,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Adela Fole"
                     }
                 },
@@ -198,7 +197,7 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Macie Buxton"
                     }
                 }
@@ -215,7 +214,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/boy.svg",
+                "image": null,
                 "displayName": "Malachy Mcbride"
             }
         },
@@ -226,7 +225,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/boygreen.svg",
+                "image": null,
                 "displayName": "Ignacy Escobar"
             }
         },
@@ -237,7 +236,7 @@
             "type": 0,
             "comments": [],
             "user": {
-                "image": "/images/users/boyblue.svg",
+                "image": null,
                 "displayName": "Denny Harper"
             }
         },
@@ -262,7 +261,7 @@
                     "date": "Apr 14",
                     "description": "Suspendisse ornare magna nec justo efficitur aliquam",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Adela Fole"
                     }
                 },
@@ -270,7 +269,7 @@
                     "date": "Apr 14",
                     "description": "Morbi egestas est et vulputate malesuada",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Macie Buxton"
                     }
                 },
@@ -278,7 +277,7 @@
                     "date": "Apr 14",
                     "description": "Aliquam eu ipsum vel enim commodo condimentum",
                     "user": {
-                        "image": "/images/users/girl3.svg",
+                        "image": null,
                         "displayName": "Adela Fole"
                     }
                 },
@@ -286,20 +285,20 @@
                     "date": "Apr 14",
                     "description": "Praesent viverra est vitae metus iaculis, et dictum sapien mattis",
                     "user": {
-                        "image": "/images/users/girl4.svg",
+                        "image": null,
                         "displayName": "Macie Buxton"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl4.svg",
+                "image": null,
                 "displayName": "Shanay Walls"
             }
         }
     ],
     "students": [
         {
-            "image": "/images/users/girl.svg",
+            "image": null,
             "displayName": "Ivy Wall"
         },
         {
@@ -311,7 +310,7 @@
             "displayName": "Yousef Buckner"
         },
         {
-            "image": "/images/users/boygreen.svg",
+            "image": null,
             "displayName": "Ignacy Escobar"
         },
         {
@@ -319,7 +318,7 @@
             "displayName": "Henrietta Patrick"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Shanay Walls"
         },
         {
@@ -327,11 +326,11 @@
             "displayName": "Sahib Gilbert"
         },
         {
-            "image": "/images/users/boy.svg",
+            "image": null,
             "displayName": "Malachy Mcbride"
         },
         {
-            "image": "/images/users/boyblue.svg",
+            "image": null,
             "displayName": "Denny Harper"
         },
         {
@@ -343,7 +342,7 @@
             "displayName": "Simra Carter"
         },
         {
-            "image": "/images/users/boyblue.svg",
+            "image": null,
             "displayName": "Raife Garrett"
         },
         {
@@ -359,11 +358,11 @@
             "displayName": "Kristopher Whitehouse"
         },
         {
-            "image": "/images/users/girl1.svg",
+            "image": null,
             "displayName": "Reema Mahoney"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Norah Bolton"
         },
         {
@@ -379,11 +378,11 @@
             "displayName": "Zane Page"
         },
         {
-            "image": "/images/users/girl2.svg",
+            "image": null,
             "displayName": "Viktoria Medina"
         },
         {
-            "image": "/images/users/boyblue.svg",
+            "image": null,
             "displayName": "Freddie Oneill"
         },
         {
@@ -399,11 +398,11 @@
             "displayName": "Honor Carrillo"
         },
         {
-            "image": "/images/users/girl3.svg",
+            "image": null,
             "displayName": "Adela Fole"
         },
         {
-            "image": "/images/users/girl4.svg",
+            "image": null,
             "displayName": "Macie Buxton"
         },
         {
@@ -411,7 +410,7 @@
             "displayName": "Ammaar Pace"
         },
         {
-            "image": "/images/users/boyoculus.svg",
+            "image": null,
             "displayName": "Nicky Hampton"
         },
         {
@@ -443,7 +442,7 @@
             "displayName": "Claire Michael"
         },
         {
-            "image": "/images/users/boygreen.svg",
+            "image": null,
             "displayName": "Naveed Blake"
         },
         {
@@ -475,7 +474,7 @@
             "displayName": "Kierran Farley"
         },
         {
-            "image": "/images/users/girlginger.svg",
+            "image": null,
             "displayName": "Ella-Rose Sparks"
         },
         {
@@ -503,7 +502,7 @@
             "displayName": "Shelley Hogan"
         },
         {
-            "image": "/images/users/girlglasses.svg",
+            "image": null,
             "displayName": "Jannat Kline"
         },
         {
@@ -519,7 +518,7 @@
             "displayName": "Saoirse Mcphee"
         },
         {
-            "image": "/images/users/girlred.svg",
+            "image": null,
             "displayName": "Cassia Beaumont"
         }
     ]

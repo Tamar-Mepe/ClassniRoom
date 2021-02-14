@@ -5,8 +5,7 @@
         "image": "/images/covers/img_breakfast.jpg",
         "subject": "Culinary",
         "room": 409,
-        "lecturer": "Adil Nieves",
-        "lecturer_icon": "/images/users/lecturers/adil.svg"
+        "lecturer": "Adil Nieves"
     },
     "data": [
         {
@@ -35,7 +34,7 @@
                     "date": "Dec 28",
                     "description": "Vivamus eget mi porttitor, blandit neque sit amet, efficitur purus",
                     "user": {
-                        "image": "/images/users/boyoculus.svg",
+                        "image": null,
                         "displayName": "Omar Sweet"
                     }
                 },
@@ -43,13 +42,13 @@
                     "date": "Dec 28",
                     "description": "Sed vehicula dui vitae quam interdum vestibulum",
                     "user": {
-                        "image": "/images/users/lecturers/adil.svg",
+                        "image": null,
                         "displayName": "Adil Nieves"
                     }
                 }
             ],
             "user": {
-                "image": "/images/users/girl.svg",
+                "image": null,
                 "displayName": "Nellie Burch"
             }
         },
@@ -68,7 +67,7 @@
                     "date": "Jan 5",
                     "description": "Suspendisse in diam sit amet lacus luctus pharetra",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Nellie Burch"
                     }
                 },
@@ -76,7 +75,7 @@
                     "date": "Jan 5",
                     "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
                     "user": {
-                        "image": "/images/users/boy.svg",
+                        "image": null,
                         "displayName": "Arham Friedman"
                     }
                 },
@@ -84,7 +83,7 @@
                     "date": "Jan 5",
                     "description": "Phasellus nec eros vitae orci laoreet gravida",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Nellie Burch"
                     }
                 }
@@ -105,7 +104,7 @@
                     "date": "Jan 5",
                     "description": "Suspendisse in diam sit amet lacus luctus pharetra",
                     "user": {
-                        "image": "/images/users/boy.svg",
+                        "image": null,
                         "displayName": "Arham Friedman"
                     }
                 },
@@ -113,7 +112,7 @@
                     "date": "Jan 5",
                     "description": "Aenean tempus quam et arcu mollis, vitae aliquet quam consectetur",
                     "user": {
-                        "image": "/images/users/girlpink.svg",
+                        "image": null,
                         "displayName": "Sakina Whittle"
                     }
                 },
@@ -121,7 +120,7 @@
                     "date": "Jan 5",
                     "description": "Vestibulum nec metus feugiat, porttitor ex et, rhoncus dolor",
                     "user": {
-                        "image": "/images/users/girl.svg",
+                        "image": null,
                         "displayName": "Nellie Burch"
                     }
                 }
@@ -147,7 +146,7 @@
                     "date": "Jan 5",
                     "description": "Suspendisse in diam sit amet lacus luctus pharetra",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Olly Solomon"
                     }
                 },
@@ -155,7 +154,7 @@
                     "date": "Jan 5",
                     "description": "Nam id lacus nec elit rhoncus malesuada a nec velit",
                     "user": {
-                        "image": "/images/users/girl7.svg",
+                        "image": null,
                         "displayName": "Abby Sharma"
                     }
                 },
@@ -163,7 +162,7 @@
                     "date": "Jan 5",
                     "description": "Phasellus nec eros vitae orci laoreet gravida",
                     "user": {
-                        "image": "/images/users/boy5.svg",
+                        "image": null,
                         "displayName": "Olly Solomon"
                     }
                 }
@@ -188,7 +187,7 @@
             "displayName": "Zoha Felix"
         },
         {
-            "image": "/images/users/girl.svg",
+            "image": null,
             "displayName": "Nellie Burch"
         },
         {
@@ -196,7 +195,7 @@
             "displayName": "Amar Bradley"
         },
         {
-            "image": "/images/users/girlpink.svg",
+            "image": null,
             "displayName": "Sakina Whittle"
         },
         {
@@ -212,11 +211,11 @@
             "displayName": "Clement Mcmillan"
         },
         {
-            "image": "/images/users/boy5.svg",
+            "image": null,
             "displayName": "Olly Solomon"
         },
         {
-            "image": "/images/users/boy.svg",
+            "image": null,
             "displayName": "Arham Friedman"
         },
         {
@@ -232,7 +231,7 @@
             "displayName": "Kelly Clay"
         },
         {
-            "image": "/images/users/boyoculus.svg",
+            "image": null,
             "displayName": "Omar Sweet"
         }
     ]
