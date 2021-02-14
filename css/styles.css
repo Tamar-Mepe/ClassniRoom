@@ -1088,7 +1088,7 @@ textarea:focus {
     border-bottom: 0.5px solid gray;
 }
 
-.student-info img {
+.student-info svg {
     width: 80px;
     height: 80px;
 }
@@ -2113,7 +2113,7 @@ tr:last-of-type {
 }
 
 @media only screen and (max-width: 500px) {
-    .student-info img {
+    .student-info svg {
         width: 50px;
         height: 50px;
     }
