@@ -51,12 +51,12 @@ function handleSidebarInfo() {
     })
 
     createClassBtn.addEventListener('click', () => {
-        operationSuccessful('Class created!');
+        operationSuccessful('Class created!', '.create-class-in-field');
         document.getElementById('create-class-popup').style.display = 'none';
     })
 
     createButtonJoin.addEventListener('click', () => {
-        operationSuccessful('Class Joined!');
+        operationSuccessful('Class Joined!', '.join-class-input-id');
         document.getElementById('join-class-popup').style.display = 'none';
     })
 
@@ -73,7 +73,7 @@ function handleSidebarInfo() {
     })
 
     iniviteBtn.addEventListener('click', () => {
-        operationSuccessful('Friend invited!');
+        operationSuccessful('Friend invited!', '.invite-field');
         document.getElementById('invite-popup-container').style.display = 'none';
     })
 

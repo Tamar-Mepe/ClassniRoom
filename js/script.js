@@ -108,11 +108,14 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function operationSuccessful(stringToDisplay) {
+function operationSuccessful(stringToDisplay, fieldToClear) {
     const loadingScreenContainer = document.getElementById('loading-screen-container');
     const mainLabel = document.getElementById('loading-screen-main-label');
     mainLabel.textContent = 'Please wait';
     loadingScreenContainer.style.display = 'block';
+    document.querySelectorAll(fieldToClear).forEach(function (currInput) {
+        currInput.value = '';
+    })
     setTimeout(function () {
         mainLabel.textContent = stringToDisplay;
         setTimeout(function () {
